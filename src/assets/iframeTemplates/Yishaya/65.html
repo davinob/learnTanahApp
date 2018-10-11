@@ -1,0 +1,302 @@
+<html><head>
+				<link rel='stylesheet' type='text/css' href='../css/stylesTorah.css'>
+			<script src='../js/myScript.js'></script>				
+			
+				</head>
+							<body class='theBody' onload='initClassesBasedOnCookies()'>
+						<div id='mySidenav' class='sidenav'>
+ 
+ 					<span class='trads'>
+					<span type='button' id='passukEn'  onClick="hideShow('passukEn',this)" class='button'>EN</span>
+					<span type='button' id='passukFr'  onClick="hideShow('passukFr',this)" class='button'>FR</span>					
+					</span>
+					<span class='pirushim'>
+					<span type='button' id='rashi' onClick="hideShow('rashi',this)" class='button'>רש"י</span><span type='button' id='mezudatDavid' onClick="hideShow('mezudatDavid',this)" class='button'>מצודת דוד</span><span type='button' id='mezudatZion' onClick="hideShow('mezudatZion',this)" class='button'>מצודת ציון</span><span type='button' id='malbim' onClick="hideShow('malbim',this)" class='button'>מלבי"ם</span></span>
+  
+					</div>
+					<span id='buttonNav' style='font-size:35px;cursor:pointer; position:fixed' onclick='openNav()'>&#9776;</span>
+		
+						<div class='theContent' onclick='closeNav()'><div class='newSefer'><span class='inSeferTitle'><a href='../index.html'>נביאים</a></span><span class='inSeferTitle'><a href='1.html'>ישעיה</a></span><div id='prakimHead' class='prakim'><span class='perekTitle'><a href='1.html'>1</a></span><span class='perekTitle'><a href='2.html'>2</a></span><span class='perekTitle'><a href='3.html'>3</a></span><span class='perekTitle'><a href='4.html'>4</a></span><span class='perekTitle'><a href='5.html'>5</a></span><span class='perekTitle'><a href='6.html'>6</a></span><span class='perekTitle'><a href='7.html'>7</a></span><span class='perekTitle'><a href='8.html'>8</a></span><span class='perekTitle'><a href='9.html'>9</a></span><span class='perekTitle'><a href='10.html'>10</a></span><span class='perekTitle'><a href='11.html'>11</a></span><span class='perekTitle'><a href='12.html'>12</a></span><span class='perekTitle'><a href='13.html'>13</a></span><span class='perekTitle'><a href='14.html'>14</a></span><span class='perekTitle'><a href='15.html'>15</a></span><span class='perekTitle'><a href='16.html'>16</a></span><span class='perekTitle'><a href='17.html'>17</a></span><span class='perekTitle'><a href='18.html'>18</a></span><span class='perekTitle'><a href='19.html'>19</a></span><span class='perekTitle'><a href='20.html'>20</a></span><span class='perekTitle'><a href='21.html'>21</a></span><span class='perekTitle'><a href='22.html'>22</a></span><span class='perekTitle'><a href='23.html'>23</a></span><span class='perekTitle'><a href='24.html'>24</a></span><span class='perekTitle'><a href='25.html'>25</a></span><span class='perekTitle'><a href='26.html'>26</a></span><span class='perekTitle'><a href='27.html'>27</a></span><span class='perekTitle'><a href='28.html'>28</a></span><span class='perekTitle'><a href='29.html'>29</a></span><span class='perekTitle'><a href='30.html'>30</a></span><span class='perekTitle'><a href='31.html'>31</a></span><span class='perekTitle'><a href='32.html'>32</a></span><span class='perekTitle'><a href='33.html'>33</a></span><span class='perekTitle'><a href='34.html'>34</a></span><span class='perekTitle'><a href='35.html'>35</a></span><span class='perekTitle'><a href='36.html'>36</a></span><span class='perekTitle'><a href='37.html'>37</a></span><span class='perekTitle'><a href='38.html'>38</a></span><span class='perekTitle'><a href='39.html'>39</a></span><span class='perekTitle'><a href='40.html'>40</a></span><span class='perekTitle'><a href='41.html'>41</a></span><span class='perekTitle'><a href='42.html'>42</a></span><span class='perekTitle'><a href='43.html'>43</a></span><span class='perekTitle'><a href='44.html'>44</a></span><span class='perekTitle'><a href='45.html'>45</a></span><span class='perekTitle'><a href='46.html'>46</a></span><span class='perekTitle'><a href='47.html'>47</a></span><span class='perekTitle'><a href='48.html'>48</a></span><span class='perekTitle'><a href='49.html'>49</a></span><span class='perekTitle'><a href='50.html'>50</a></span><span class='perekTitle'><a href='51.html'>51</a></span><span class='perekTitle'><a href='52.html'>52</a></span><span class='perekTitle'><a href='53.html'>53</a></span><span class='perekTitle'><a href='54.html'>54</a></span><span class='perekTitle'><a href='55.html'>55</a></span><span class='perekTitle'><a href='56.html'>56</a></span><span class='perekTitle'><a href='57.html'>57</a></span><span class='perekTitle'><a href='58.html'>58</a></span><span class='perekTitle'><a href='59.html'>59</a></span><span class='perekTitle'><a href='60.html'>60</a></span><span class='perekTitle'><a href='61.html'>61</a></span><span class='perekTitle'><a href='62.html'>62</a></span><span class='perekTitle'><a href='63.html'>63</a></span><span class='perekTitle'><a href='64.html'>64</a></span><span class='perekTitle'><a id='linkSelectedHead' class='linkSelected' href='65.html'>65</a></span><span class='perekTitle'><a href='66.html'>66</a></span></div></div><div class='seferContent'>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{א}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">נִדְרַ&#1433;שְׁתִּי&#1433; לְל&#1443;וֹא שָׁאָ&#1428;לוּ נִמְצֵ&#1430;אתִי לְלֹ&#1443;א בִקְשֻׁ&#1425;נִי אָמַ&#1433;רְתִּי&#1433; הִנֵּ&#1443;נִי הִנֵּ&#1428;נִי אֶל-גּ&#1430;וֹי לֹֽא-קֹרָ&#1445;א בִשְׁמִֽי:</span>
+</div><div class='passukFr'> J&rsquo;ai &eacute;t&eacute; accueillant pour qui n&rsquo;avait pas demand&eacute; apr&egrave;s moi, d&rsquo;un abord facile pour qui ne m&rsquo;avait point recherch&eacute;; j&rsquo;ai dit: &quot;Me voici, me voici!&quot; &agrave; un peuple qui ne Se r&eacute;clamait plus de mon nom.
+</div><div class='passukEn'>I gave access to them that asked not for Me,
+I was at hand to them that sought Me not;
+I said: 'Behold Me, behold Me',
+Unto a nation that was not called by My name.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>נדרשתי ללא שאלו.</b> הקב''ה משיבו א''א שלא להנקם מהם כי נדרשתי מהם להוכיחם על ידי נביאי והם לא היו שואלים : <b>אמרתי הנני הנני.</b> שובו אלי והנני מוכן לקבל. <b>אל גוי לא קורא בשמי</b>. אשר לא היה חפץ להיות נקרא על שמי : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>נדרשתי.</b> כאלו האל משיב לבני הגולה על תלונתם לומר איך אגאל אתכם הלא המצאתי עצמי להיות נדרש בצרה אבל היתה בלא תועלת כי היא היתה לעם אשר לא שאלו לדרוש אלי : <b>נמצאתי.</b> הייתי ממציא עצמי והיא היתה מבלי תועלת כי היתה לעם אשר לא בקשו אותי וכפל הדברים פעמים רבות להפלגת הענין והתמדתו כי הרבה לשלוח נביאים להחזירם למוטב ולא הועיל : <b>אמרתי הנני.</b> לקבל תפלתך : <b>אל גוי.</b> ר''ל אבל היתה אל גוי אשר לא רצו לקרוא בשמי : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>נדרשתי, </b> כגבור יקיץ מתרדמה, מתעצם הצופה ברוח קדשו, אומר <b>תחשה ותעננו עד מאד, </b> אתה משיב לנו לאמר, מה התלונן עלי, תאמר כי התאפקתי העלמתי עין, הלא אני <b>נדרשתי</b> אבל זה היה <b>ללוא שאלו, </b> הלא נדרשתי להם ע''י נביאיי אבל הם לא שאלו את פי הנביא אשר על ידו הדרש אדרש להם, ויותר מזה הלא אני גם <b>נמצאתי</b> למלאת בקשתם, אבל זה היה <b>ללא בקשני, </b> אל עם אשר לא בקשוני, ויותר מזה כי גם <b>אמרתי הנני הנני, </b> כאילו אני עומד מוכן לכל אשר יצוו עד שלא יצטרכו לבקש אותי ולדרוש אחרי, אבל זה היה <b>אל גוי לא קרא בשמי</b>. אשר לא רצו להקרא עוד בשמי, להקרא עם אלהי ישראל ויותר מזה כי גם. <small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">פֵּרַ&#1447;שְׂתִּי יָדַ&#1435;י כָּל-הַיּ&#1430;וֹם אֶל-עַ&#1443;ם סוֹרֵ&#1425;ר הַהֹלְכִים&#1433; הַדֶּ&#1443;רֶךְ לֹא-ט&#1428;וֹב אַחַ&#1430;ר מַחְשְׁבֹתֵיהֶֽם:</span>
+</div><div class='passukFr'> Constamment j&rsquo;ai tendu les mains &agrave; une nation infid&egrave;le, qui s&rsquo;est engag&eacute;e dans une mauvaise voie, au gr&eacute; de ses id&eacute;es;
+</div><div class='passukEn'>I have spread out My hands all the day
+Unto a rebellious people,
+That walk in a way that is not good,
+After their own thoughts;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>פרשתי ידי.</b> כדי לקבלם בתשובה : <b>סורר.</b> סר מן הדרך : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>פרשתי ידי.</b> שיתקרבו אלי ואקבל תשובה כאדם המרמז לחבירו לבוא אליו : <b>אל עם סורר.</b> אבל היתה אל עם סורר אשר הולכים בדרך לא טוב אחר מחשבות לבם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>סורר.</b> מעוות וכן בן סורר ומורה (דברים כא) : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp; <b>פרשתי ידי, </b> והלכתי אליהם, בקשתי אותם, דרשתי אותם, ולא פעם אחד, רק <b>כל היום, </b> כל הימים תמיד, אבל זה היה <b>אל עם סורר</b> ומורד <b>ההולכים הדרך לא טוב אחר מחשבתיהם, </b> הדרך הרע שהולכים בו לא הלכו בו ע''י טעות ושגיאה רק אחר מחשבותיהם לפי מחשבותיהם, שאחר שחשבו ועיינו איזה דרך יבחרו, בחרו להם דרך הרע מצד המינות והכפירה :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">הָעָ&#1431;ם הַמַּכְעִיסִ&#1445;ים אוֹתִ&#1435;י עַל-פָּנַ&#1430;י תָּמִ&#1425;יד זֹֽבְחִים&#1433; בַּגַּנּ&#1428;וֹת וּֽמְקַטְּרִ&#1430;ים עַל-הַלְּבֵנִֽים:</span>
+</div><div class='passukFr'> &agrave; une nation qui n&rsquo;a cess&eacute; de m&rsquo;irriter en me bravant, en sacrifiant dans les jardins et br&ucirc;lant de l&rsquo;encens sur les briques;
+</div><div class='passukEn'>A people that provoke Me
+To My face continually,
+That sacrifice in gardens,
+And burn incense upon bricks;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>זובחים בגנות.</b> מעמידים עכו''ם בגנותיהן ושם מקטרין בשמים על הלבנים : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>העם.</b> הם העם המכעיסים וכו' : <b>על פני.</b> לפני בירושלים מקום השראת השכינה. <b>זובחים</b>. לעכו''ם : <b>בגנות.</b> דרכם היה להעמיד עכו''ם בתוך הגנות וכן נאמר המתקדשים והמטהרים אל הגנות (לקמן סו) : <b>על הלבנים.</b> בשעה שהיו שורפין הלבנים היו משימין עליהם קטורת לשם עכו''ם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>על פני.</b> לפני וכן על פניך יברכך (איוב א) : <b>הלבנים.</b> עשוים מחומר ושורפין בכבשן לשומם בבנין : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>העם, </b> ולא לבד שחוטאים כי גם עושים להכעיסני <b>על פני, </b> פני השגחתי הרואה כל תועבותיהם, כי הם <b>זבחים בגנות</b> לע''ז <b>ומקטרים על הלבנים, </b> יען שמסתירים א''ע מבני אדם ויראים לעשות מזבחות לע''ז בפרהסיא, כי בפני בני אדם הם מתקדשים כאילו הם יראי ה', הם מקטרים על הלבנים בל ירגישו בהם, ובזה הם מכעיסים אותי על פני, כאילו אין עושים החטאים רק לפני, שאדע רק אני בהם אני ולא אחר :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">הַיֹּֽשְׁבִים&#1433; בַּקְּבָרִ&#1428;ים וּבַנְּצוּרִ&#1430;ים יָלִ&#1425;ינוּ הָאֹֽכְלִים&#1433; בְּשַׂ&#1443;ר הַחֲזִ&#1428;יר (ופרק) וּמְרַ&#1445;ק פִּגֻּלִ&#1430;ים כְּלֵיהֶֽם:</span>
+</div><div class='passukFr'> qui a &eacute;lu domicile parmi les tombeaux, &eacute;tabli son g&icirc;te dans les ruines, se nourrissant de chair de porc et de plats couverts de mets impurs;
+</div><div class='passukEn'>That sit among the graves,
+And lodge in the vaults;
+That eat swine's flesh,
+And broth of abominable things is in their vessels;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>היושבים בקברים.</b> שתשרה עליהם רוח טומאה של שדים : <b>ובנצורים.</b> הם פגרי המתים שהם כנתונים במצור שאינם יכולים לצאת : <b>ומרק פגולים.</b> רוטב נתעב כמו ואת המרק שפך (שופטים ו) : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>היושבים בקברים.</b> שתשרה עליהם רוח טומאה של שדים : <b>ובנצורים ילינו.</b> היו לנים בין פגרי המתים שאינם יכולים לצאת ממקומם כמו הנתונים במצור והוא כפל ענין במ''ש : <b>ומרק פגולים כליהם.</b> כל כליהם בלוע מרוטב מתועב מדבר טמא : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>ובנצורים.</b> מלשון מצור כמו כעיר נצורה (לעיל א) : <b>ומרק.</b> רוטב מבישול הבשר כמו ואת המרק שפך (שופטים ו) : <b>פגולים.</b> ענין תעוב כמו פגול הוא לא ירצה (ויקרא יט) : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>הישבים בקברים, </b> ויותר מזה כי <b>בנצורים ילינו</b> המקומות המטונפות שמשליכים לשם פגרי הבהמות שם ילינו להסתתר מבני אדם ושם הם <b>אכלים בשר החזיר</b> במקום אשר אין רואה, <b>ומרק</b> וכליהם בלועים מרוטב של פגולים, אוכלים מאכלות טמאים במקום טמא נסתר מבני אדם, רק על פני רק אני רואה שם :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ה}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">הָאֹֽמְרִים&#1433; קְרַ&#1443;ב אֵלֶ&#1428;יךָ אַל-תִּגַּשׁ-בִּ&#1430;י כִּ&#1443;י קְדַשְׁתִּ&#1425;יךָ אֵ&#1434;לֶּה עָשָׁ&#1443;ן בְּאַפִּ&#1428;י אֵ&#1445;שׁ יֹקֶ&#1430;דֶת כָּל-הַיּֽוֹם:</span>
+</div><div class='passukFr'> o&ugrave; les gens disent: &quot;Retire-toi, ne me touche point, car je suis saint pour toi!&quot; Ces pratiques attisent ma col&egrave;re; c&rsquo;est un feu qui flambe toujours.
+</div><div class='passukEn'>That say: 'Stand by thyself,
+Come not near to me, for I am holier than thou';
+These are a smoke in My nose,
+A fire that burneth all the day.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>האומרים.</b> אל הצדיקים קרב אליך עמוד בעצמך ואל תגש בי : <b>כי קדשתיך.</b> כי קדשתי וטהרתי יותר ממך כן ת''י : <b>אלה.</b> התועבה אשר עשו הנה לעשן חמה באפי : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>האומרים.</b> לאלה שאינם אוכלים ממאכלים יאמרו גשה אליך לעמוד במקומך אל תגש לנגוע בי כי קדשתי ממך ואל תטמא אותי : <b>אלה.</b> הדברים האלה העלו עשן באפי להיות חמתי בוערת כל היום כאש הבוער : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>עשן.</b> ענין כעס כמו עלה עשן באפו (תהלים יח) : <b>יקדת.</b> בוערת כמו אש תמיד תוקד (ויקרא ו) : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>האמרים, </b> ועל כל הטומאות האלה אשר הם מטמאים א''ע בסתר הם מראים א''ע קדושים וטהורים לפני ב''א עד שאומרים אל יתר העם בל יקרבו אליהם ובל יגעו בהם מקדושתם, וז''ש <b>קרב אליך</b> אל גבולך <b>ואל תגש בי</b> אל גבולי <b>כי קדשתיך</b> כי תתקדש אם תיגע בי מחזיקים א''ע לקדושים כ''כ עד שכל הנוגע בהם יקדש, כענין כל הנוגע במזבח יקדש, וחושבים שכל ב''א טמאים לנגדם, ואסור להם שיגעו בהם כנוגע בקדש. <b>אלה</b> הצבועים הם עשן באפי ע''י האש היוקדת כל היום מן חטאתם :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">הִנֵּ&#1445;ה כְתוּבָ&#1430;ה לְפָנָ&#1425;י לֹ&#1444;א אֶחֱשֶׂה&#1433; כִּ&#1443;י אִם-שִׁלַּ&#1428;מְתִּי וְשִׁלַּמְתִּ&#1430;י עַל-חֵיקָֽם:</span>
+</div><div class='passukFr'> Certes, tout cela est inscrit devant moi; je n&rsquo;aurai de cesse que je ne les aie pay&eacute;s, pay&eacute;s en faisant retomber sur leur t&ecirc;te
+</div><div class='passukEn'>Behold, it is written before Me;
+I will not keep silence, except I have requited,
+Yea, I will requite into their bosom,
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>הנה כתובה.</b> חטאתם לפני כבר נגזר דינם ונחתם : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>הנה כתובה לפני.</b> הרעות שעשו כתובה לפני ולא נשכחו : <b>לא אחשה.</b> לא אשתוק עליהם כי אם אשלם גמול והתשלומין יהיה על חיקם ולא לבניהם אחריהם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>אחשה.</b> ענין שתיקה : <b>על חיקם.</b> ר''ל על עצמם ובשרם : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>הנה כתובה לפני, </b> ולא ככותב לזכרון לעתים רחוקות כי תכלית הכתיבה היא כדי <b>שלא אחשה כי אם שלמתי, </b> שע''י הכתיבה אתעורר ממנו תמיד עד שלא אוכל לחשות עד אחר ששלמתי את עונשם, ולא שאשלם את עונשם אל חיק בניהם, רק <b>ושלמתי אל חיקם, </b> התשלומין יהיה להם עצמם :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">עֲ&#1440;וֹנֹתֵיכֶם וַעֲוֹנֹ&#1448;ת אֲבוֹתֵיכֶ&#1444;ם יַחְדָּו&#1433; אָמַ&#1443;ר יְהוָ&#1428;ה אֲשֶׁ&#1444;ר קִטְּרוּ&#1433; עַל-הֶ&#1443;הָרִ&#1428;ים וְעַל-הַגְּבָע&#1430;וֹת חֵרְפ&#1425;וּנִי וּמַדֹּתִ&#1447;י פְעֻלָּתָ&#1435;ם רִֽאשֹׁנָ&#1430;ה (על)-אֶל-חֵיקָֽם:</span> <b>(ס)</b>
+</div><div class='passukFr'> tout ensemble leurs p&eacute;ch&eacute;s et les p&eacute;ch&eacute;s de leurs anc&ecirc;tres, dit l&rsquo;&Eacute;ternel qui ont offert de l&rsquo;encens sur les montagnes et m&rsquo;ont outrag&eacute; sur les coteaux. Je ferai bonne mesure en chargeant leur t&ecirc;te du fruit de leurs &oelig;uvres pass&eacute;es.
+</div><div class='passukEn'>Your own iniquities, and the iniquities of your fathers together,
+Saith the Lord, that have offered upon the mountains,
+And blasphemed Me upon the hills;
+Therefore will I first measure their wage into their bosom.
+
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>עונותיכם.</b> שלכם ושל אבותיכם יחדיו אשלם לכם : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>עונותיכם.</b> תשלום הגמול יהיה על עונותיכם ועל עונות אבותיכם יחדיו : <b>אשר קטרו.</b> לעכו''ם : <b>חרפוני.</b> במה שעבדו שמה לעכו''ם בפרסום רב : <b>ומדותי.</b> בראשונה אמדוד אל חיקם גמול פעולתם ואח''ז אפרע מהם עון אבותם הואיל ואחזו במעשה אבותם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>חרפוני.</b> מל' חרוף וגדוף : <b>ומדותי.</b> מלשון מדידה : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>עונתיכם, </b> אבל להם אשלם גם עון אבותיהם, ושיעור הכתוב ושלמתי אל חיקם עונותיכם ועונות אבותיכם אשלם לכם יחד, כי עון אבותיכם היה בגלוי בלא גניבת דעת, <b>כי הם קטרו על ההרים ועל הגבעות חרפוני, </b> לא על הגנות, לא בקברים ובנצורים כמו שאתם עושים, (ומצייר כי על ההר עמדו להקטיר לע''ז ועל הגבעה שתחת ההר עמדו לחרף ולגדף) ולכן תשאו אתם עון אבותיכם, אבל <b>ומדתי פעלתם ראשונה אל חיקם, </b> תחלה אמוד להם פעולתם, ואח''ז אשלם להם גם עון אבותיהם, כי פעולתם גדולה יותר ע''י שהיה בצביעות ובחונף :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כֹּ&#1443;ה | אָמַ&#1443;ר יְהוָ&#1431;ה כַּאֲשֶׁ&#1448;ר יִמָּצֵ&#1444;א הַתִּירוֹשׁ&#1433; בָּֽאֶשְׁכּ&#1428;וֹל וְאָמַר&#1433; אַל-תַּשְׁחִיתֵ&#1428;הוּ כִּ&#1445;י בְרָכָ&#1430;ה בּ&#1425;וֹ כֵּ&#1444;ן אֶֽעֱשֶׂה&#1433; לְמַ&#1443;עַן עֲבָדַ&#1428;י לְבִלְתִּ&#1430;י הַֽשְׁחִ&#1445;ית הַכֹּֽל:</span>
+</div><div class='passukFr'> Ainsi parle l&rsquo;&Eacute;ternel: &quot;Tout comme lorsqu&rsquo;on trouve une grappe pleine de jus, on dit: Ne la d&eacute;truis point, car c&rsquo;est un fruit b&eacute;ni ainsi je me comporterai par &eacute;gard pour mes serviteurs et n&rsquo;aurai garde de tout d&eacute;truire.
+</div><div class='passukEn'>Thus saith the Lord:
+As, when wine is found in the cluster,
+One saith: 'Destroy it not,
+For a blessing is in it';
+So will I do for My servants' sakes,
+That I may not destroy all.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>כאשר ימצא התירוש באשכול.</b> ת''י כמה דאשתכח נח זכאי בדרא דטופנא : <b>התירוש.</b> זה נח שהיה מתוק : <b>באשכול.</b> בדור המשוכל ויש לפתור כמשמעו : <b>למען עבדי.</b> למען כל צדיק וצדיק הנמצא בם : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כאשר ימצא.</b> ר''ל עכ''ז אל תתייאשו מן הגאולה כי כמו כאשר ימצא באשכול ענבים גרגרים מבושלים כל צרכם הראויים לעשות מהם יין : <b>ואמר.</b> ר''ל ואם מי רוצה להשחיתו יאמר האומר אל תשחיתהו כי יש בו תירוש שהוא ברכה וטובה ואף על פי שיש בו חרצנים וזגים שאינם ברכה מ''מ השאירהו בעבור התירוש : <b>למען עבדי.</b> הצדיקים אשר בקרבם : <b>לבלתי השחית הכל.</b> כלל וכלל לא אשחית בעבור עבדי הצדיקים : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>התירוש.</b> היין כמו ותירושך ויצהרך (דברים יא) : <b>באשכול.</b> ענף מגרגרי ענבים כמו ואשכול ענבים (במדבר יג) : <b>ברכה.</b> ר''ל דבר טובה : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>כה אמר ה', </b> (זה סיום הנבואה כולה, שעקרה על לעתיד, שסיפר איך חטאו נגד ה' בגלותם ולכן ארכה גלותם כי לא מצא להם זכות לגאלם, וה' יעניש פושעי ישראל, אבל הצדיקים ישארו והם יושעו, כמ''ש וצרפתים כצרוף את הכסף פי שנים יגועו וכו'). <b>כאשר ימצא התירוש באשכול, </b> גפן שנשחת כולה ועשה באושים, אם נמצא תירוש באשכול אחד, שנשאר אשכול אחד מן הגפן שלא נשחת, אז <b>יאמר</b> בעל הגפן <b>אל תשחיתהו אחר שנמצא בו ברכה</b> שהוא האשכול האחד העושה ענבים, כן אעשה למען עבדי הצדיקים לבלתי השחית הכל, רק. <small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְהוֹצֵאתִ&#1444;י מִֽיַּעֲקֹב&#1433; זֶ&#1428;רַע וּמִיהוּדָ&#1430;ה יוֹרֵ&#1443;שׁ הָרָ&#1425;י וִירֵשׁ&#1443;וּהָ בְחִירַ&#1428;י וַעֲבָדַ&#1430;י יִשְׁכְּנוּ-שָֽׁמָּה:</span>
+</div><div class='passukFr'> Mais j&rsquo;extrairai de Jacob une lign&eacute;e, et de Juda des possesseurs de mes montagnes: mes &eacute;lus en auront la propri&eacute;t&eacute;, et mes serviteurs y r&eacute;sideront.
+</div><div class='passukEn'>And I will bring forth a seed out of Jacob,
+And out of Judah an inheritor of My mountains;
+And Mine elect shall inherit it,
+And My servants shall dwell there.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>זרע.</b> רצה לומר זרע ברכה הראויה ליעקב : <b>יורש הרי.</b> הר ציון והר הבית. <b>וירשוה בחירי</b>. העם שבחרתי לי הם ירשו את הירושה שהבטחתי להם זו ארץ ישראל : <b>ישכנו שמה.</b> ולא יגלו עוד ממנה : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp; <b>והוצאתי מיעקב, </b> שהם עשרת השבטים מהם אוציא זרע טוב, <b>ומשבט יהודה</b> (אוציא) יורש הרי כי ציון היתה בחלק יהודה ובנימין שהם היו למלכות אחד. <b>וירשוה בחירי</b> השבטים יקחו חלקם בארץ. <b>ועבדי</b> הכהנים והלוים עובדי ה' שהם לא לקחו חלק בארץ, <b>ישכנו שמה</b> ויקבעו שם דירתם :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{י}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְהָיָ&#1444;ה הַשָּׁרוֹן&#1433; לִנְוֵה-צֹ&#1428;אן וְעֵ&#1445;מֶק עָכ&#1430;וֹר לְרֵ&#1443;בֶץ בָּקָ&#1425;ר לְעַמִּ&#1430;י אֲשֶׁ&#1445;ר דְּרָשֽׁוּנִי:</span>
+</div><div class='passukFr'> Le Saron deviendra un parc pour les brebis, et la vall&eacute;e d&rsquo;Akhor un g&icirc;te pour les b&oelig;ufs, au profit de ceux de mon peuple qui m&rsquo;auront recherch&eacute;.
+</div><div class='passukEn'>And Sharon shall be a fold of flocks,
+And the valley of Achor a place for herds to lie down in,
+For My people that have sought Me;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>השרון.</b> שם מחוז שהיה בארץ ישראל : <b>ועמק עכור.</b> כמשמעו : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>והיה השרון.</b> מקום המישור והשמן יהיה לנוה צאן כי שמה ירעו כמאז ולא תהיה שממה כמות שהיתה בזמן הגולה : <b>ועמק עכור.</b> אף העמקים העכורים והמקולקלים יהיה לרבץ בקר כי שם ירבצו ושם ירעו מרעה שמן : <b>לעמי.</b> כל הטובה הזו תהיה לעמי אשר דרשוני בהיותם בגולה ולא עזבו את ה' : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>השרון.</b> מקום מישור ושמן כמו הרועים בשרון (דה''א כז). לנוה. ענין מדור : <b>ועמק עכור.</b> עמק מקולקל וכן ואת עמק עכור לפתח תקוה (הושע ב) : <b>לרבץ.</b> מלשון רביצה והוא השכיבה לנוח : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>והיה השרון, </b> כמ''ש עוד יהיה וכו' נוה רועים מרביצים צאן (ירמיה ל''ג י''ב) <b>ועמק עכור</b> נקרא כן על שם חרבותיו יהיה לרבץ בקר. אבל זה יהיה רק <b>לעמי אשר דרשוני</b> שהם הצדיקים, אבל. <small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יא}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְאַתֶּם&#1433; עֹזְבֵ&#1443;י יְהוָ&#1428;ה הַשְּׁכֵחִ&#1430;ים אֶת-הַ&#1443;ר קָדְשִׁ&#1425;י הַֽעֹרְכִ&#1444;ים לַגַּד&#1433; שֻׁלְחָ&#1428;ן וְהַֽמְמַלְאִ&#1430;ים לַמְנִ&#1445;י מִמְסָֽךְ:</span>
+</div><div class='passukFr'> Mais vous qui d&eacute;laissez le Seigneur, oublieux de ma sainte montagne, vous qui dressez une table pour Gad et remplissez plein les coupes en l&rsquo;honneur de Meni,
+</div><div class='passukEn'>But ye that forsake the Lord,
+That forget My holy mountain,
+That prepare a table for Fortune,
+And that offer mingled wine in full measure unto Destiny,
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>עוזבי ה'.</b> רשעי ישראל שהחזיקו בעכו''ם ומתו ברשעם : <b>העורכים לגד.</b> שם עכו''ם העשוים על שם המזל ובלשון משנה יש גד גדי וסינוק לא : <b>למני.</b> למניין חשבון הכומרים היו ממלאים אגנות מזג יין : <b>ממסך.</b> יין מזוג במים כמשפטו כמו לחקור ממסך (משלי כג) מסכה יינה (שם ט) ויש פותרים למני לע''ז שמניתם עליכם אבל ומניתי אתכם שלא נקוד ומניתי דגש יורה שהוא לשון מניין : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ואתם.</b> אבל אתם העוזבים את ה' וכפרו בו : <b>השכחים.</b> אשר שכחו את בית המקדש ולא זכרו שבו לבד ראוי להקריב קרבנות : <b>העורכים.</b> אשר ערכו מאכלים על השלחן להקריב לגד והוא כוכב צדק והיו ממלאים יין מזוג לנסך למני וגם הוא שם כוכב : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>העורכים.</b> ענין סדור : <b>לגד. למני.</b> שמות כוכבים : <b>ממסך.</b> יין מזוג כמו לחקור ממסך (משלי כז) : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp; <b>אתם, </b> הרשעים שעזבו את ה'. <b>השכחים את הר קדשי</b> שכפרו בביאת הגואל, רק <b>הערכים לגד שלחן, </b> מתאספים גדודים לאכול ולשתות <b>והממלאים למני ממסך</b> מתקבצים מלא חבורות, ומני מנין אנשים למסוך שכר בכנופיא, הרודפים אחר תענוגים ואת פועל ה' לא יביטו :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וּמָנִ&#1448;יתִי אֶתְכֶ&#1436;ם לַחֶ&#1431;רֶב וְכֻלְּכֶם&#1433; לַטֶּ&#1443;בַח תִּכְרָ&#1428;עוּ יַ&#1444;עַן קָרָ&#1433;אתִי&#1433; וְלֹ&#1443;א עֲנִיתֶ&#1428;ם דִּבַּ&#1430;רְתִּי וְלֹ&#1443;א שְׁמַעְתֶּ&#1425;ם וַתַּעֲשׂ&#1444;וּ הָרַע&#1433; בְּעֵינַ&#1428;י וּבַאֲשֶׁ&#1445;ר לֹֽא-חָפַ&#1430;צְתִּי בְּחַרְתֶּֽם:</span> <b>(פ)</b>
+</div><div class='passukFr'> vous, je vous destine au glaive; tant que vous &ecirc;tes, vous ploierez le genou pour recevoir le coup mortel, puisque j&rsquo;ai appel&eacute; et que vous n&rsquo;avez pas r&eacute;pondu, puisque vous avez fait ce qui me d&eacute;pla&icirc;t et donn&eacute; votre pr&eacute;f&eacute;rence &agrave; ce que je n&rsquo;aime point.&quot;
+</div><div class='passukEn'>I will destine you to the sword,
+And ye shall all bow down to the slaughter;
+Because when I called, ye did not answer,
+Ehen I spoke, ye did not hear;
+But ye did that which was evil in Mine eyes,
+And chose that wherein I delighted not.
+
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ומניתי אתכם לחרב.</b> במנין אמסר אתכם לחרב למען לא יפקד מי : <b>וכולכם לטבח תכרעו.</b> איש לא נעדר מן המנין : <b>יען.</b> בעבור אשר קראתי אליכם ביד עבדי הנביאים לעזוב דרך ההוא ולא עניתם לאמר נעזוב הדרך הרע הזה : <b>ובאשר.</b> בהדבר אשר לא חפצתי אני בחרתם אתם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>ומניתי.</b> מלשון מנין ומספר : <b>לטבח.</b> ענין שחיטה : <b>תכרעו.</b> ענין נפילה על הברכים : <b>עיניתם.</b> מלשון עניה ותשובה : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>ומניתי, </b> כמו שאתם מונים מנין למסוך שכר, כן אמנה אתכם במנין לחרב, ולא שיהיה המנין להרוג מקצתכם רק <b>כלכם לטבח תכרעו</b> המנין יהיה כדי שלא יחסר אחד מכם אשר לא יפול בחרב, <b>יען קראתי</b> אתכם שתבואו אלי לשמוע דברי ולא עניתם, וגם אח''כ באתי אליכם <b>ודברתי</b> דברי אליכם <b>ולא שמעתם</b> כי אטמתם אזנכם מלשמוע דבר, <b>ותעשו הרע בעיני</b> במל''ת, <b>ובאשר לא חפצתי בחרתם, </b> המצות אשר בחרתם לכם לעשות אותם, הם מצות אשר לא חפצתי בהם רק אשר בדיתם מלבכם :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לָכֵ&#1438;ן כֹּה-אָמַ&#1443;ר | אֲדֹנָ&#1443;י יְהוִ&#1431;ה הִנֵּ&#1448;ה עֲבָדַ&#1444;י | יֹאכֵ&#1433;לוּ&#1433; וְאַתֶּ&#1443;ם תִּרְעָ&#1428;בוּ הִנֵּ&#1447;ה עֲבָדַ&#1435;י יִשְׁתּ&#1430;וּ וְאַתֶּ&#1443;ם תִּצְמָ&#1425;אוּ הִנֵּ&#1447;ה עֲבָדַ&#1435;י יִשְׂמָ&#1430;חוּ וְאַתֶּ&#1445;ם תֵּבֹֽשׁוּ:</span>
+</div><div class='passukFr'> C&rsquo;est pourquoi, ainsi parle le Seigneur, l&rsquo;&Eacute;ternel: &quot;Voici, mes serviteurs mangeront et vous souffrirez la faim; voici, mes serviteurs boiront et vous aurez soif; voici, mes serviteurs se r&eacute;jouiront et vous serez couverts de confusion;
+</div><div class='passukEn'>Therefore thus saith the Lord God:
+Behold, My servants shall eat,
+But ye shall be hungry;
+Behold, My servants shall drink,
+But ye shall be thirsty;
+Behold, My servants shall rejoice,
+But ye shall be ashamed;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>עבדי.</b> הצדיקים (של ישראל) : <b>ואתם.</b> הפושעים בי : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>לכן וכו'.</b> ר''ל מלבד העונש שיהיה לכם בעולם הזה עוד תקבלו עונש בעולם הבא כי עבדי הצדיקים יאכלו ר''ל יהנו מזיו השכינה וכן ויחזו את האלהים ויאכלו וישתו (שמות כד) ור''ל שנהנו מזיו השכינה כאלו אכלו ושתו : <b>ואתם.</b> אבל אתם עוזבי ה' תהיו רעבים מזה ההנאה כי לא תזכו לזה : <b>הנה עבדי ישתו וכו'.</b> כפל הדבר במ''ש. ואתם תבושו. על אשר מעלתם בה' : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>לכן, </b> נגד העורכים לגד שלחן <b>הנה עבדי יאכלו</b> וכו'. נגד הממלאים למני ממסך <b>הנה עבדי ישתו, </b> נגד שעזבתם את ה' <b>הנה עבדי ישמחו</b> בה' ואתם תבושו מאלים אשר בחרתם :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">הִנֵּ&#1447;ה עֲבָדַ&#1435;י יָרֹ&#1430;נּוּ מִטּ&#1443;וּב לֵ&#1425;ב וְאַתֶּ&#1444;ם תִּצְעֲקוּ&#1433; מִכְּאֵ&#1443;ב לֵ&#1428;ב וּמִשֵּׁ&#1445;בֶר ר&#1430;וּחַ תְּיֵלִֽילוּ:</span>
+</div><div class='passukFr'> voici, mes serviteurs chanteront dans le contentement de leur c&oelig;ur, et vous crierez sous les souffrances du v&ocirc;tre, vous vous lamenterez dans l&rsquo;abattement de votre esprit.
+</div><div class='passukEn'>Behold, My servants shall sing
+For joy of heart,
+But ye shall cry for sorrow of heart,
+And shall wail for vexation of spirit.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>מטוב לב.</b> מסיבת טוב לב : <b>ומשבר.</b> מסיבת שבר רוח תעסקו ביללה : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>ומשבר רוח.</b> ר''ל מצער ויגון : <b>תילילו.</b> מלשון יללה : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>הנה, </b> נגד השוכחים את הר קדשי <b>הנה עבדי ירנו</b> על בנין ציון, ולא שירונו על צרתכם רק <b>מטוב לב, </b> ואתם <b>תצעקו מכאב לב</b> הוא מכאוב חיצוני <b>ומשבר רוח תילילו</b> הוא שבר רוח הפנימי אשר תראו כי אבדה תקותכם :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{טו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְהִנַּחְתֶּ&#1448;ם שִׁמְכֶ&#1444;ם לִשְׁבוּעָה&#1433; לִבְחִירַ&#1428;י וֶהֱמִיתְךָ&#1430; אֲדֹנָ&#1443;י יְהוִ&#1425;ה וְלַעֲבָדָ&#1445;יו יִקְרָ&#1430;א שֵׁ&#1445;ם אַחֵֽר:</span>
+</div><div class='passukFr'> Et vous laisserez votre nom comme une formule d&rsquo;impr&eacute;cation &agrave; mes &eacute;lus: &quot;Que Dieu te fasse p&eacute;rir...! Mais ses serviteurs, il les d&eacute;signera par un nom bien diff&eacute;rent.
+</div><div class='passukEn'>And ye shall leave your name for a curse unto Mine elect:
+'So may the Lord God slay thee';
+But He shall call His servants by another name;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>שמכם לשבועה.</b> לוקח משמכם קללה ושבועה לדורות אם לא יקרינו כאשר אירע לפלוני : <b>והמיתך.</b> מיתת עולם : <b>ולעבדיו יקרא שם אחר.</b> שם טוב וזכר לברכה : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>והנחתם שמכם.</b> לאחר שתמותון תניחו את שמכם להיות לשבועה לבחירו הצדיקים כי יאמרו בשבועתם אם עשיתי כזאת יקרני כמקרה הרשעים ההם כמו ישימך ה' כצדקיהו וכאחאב וכו' (ירמיה כט) : <b>והמיתך.</b> כל אחד מכם ימות מיתת עולם באבדן הנפש בעולם הבא : <b>ולעבדיו.</b> אבל לעבדיו שדבקו בו יקרא שם אחר לכבוד ולתפארת וכמ''ש ואתם כהני ה' תקראו וכו' (לעיל סא) : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>והנחתם, </b> לא תמותו תיכף, רק תחלה תניחו שמכם לאלה ולשבועה שע''י רוב היסורים שיהיו לכם ישבעו בכם שכן יקרה לפלוני, ואח''כ <b>והמיתך ה'</b> ימות כ''א במיתה משונה אחרת, ואח''כ <b>לעבדיו יקרא שם אחר, </b> מי שהיה לו שמו כשם הרשע ישנה את שמו, ור''ל שמה שתהיו לאלה ולשבועה יהיה רק בתחלה, כי אח''כ ימיתם וישנה שם עבדיו עד שישכח שמם בהחלט למען לא יהיה זכר למו, ולא זכר להצרות בכלל, כי אח''כ. <small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{טז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">אֲשֶׁ&#1448;ר הַמִּתְבָּרֵ&#1436;ךְ בָּאָ&#1431;רֶץ יִתְבָּרֵךְ&#1433; בֵּאלֹהֵ&#1443;י אָמֵ&#1428;ן וְהַנִּשְׁבָּ&#1443;ע בָּאָ&#1428;רֶץ יִשָּׁבַ&#1430;ע בֵּאלֹהֵ&#1443;י אָמֵ&#1425;ן כִּ&#1443;י נִשְׁכְּח&#1431;וּ הַצָּרוֹת&#1433; הָרִ&#1443;אשֹׁנ&#1428;וֹת וְכִ&#1445;י נִסְתְּר&#1430;וּ מֵעֵינָֽי:</span>
+</div><div class='passukFr'> Car celui qui voudra faire des souhaits de bonheur dans le pays les fera au nom du Dieu de v&eacute;rit&eacute;, et celui qui jurera dans le pays jurera au nom du Dieu de v&eacute;rit&eacute;; en effet, les souffrances ant&eacute;rieures seront oubli&eacute;es et compl&egrave;tement effac&eacute;es de devant mes yeux.
+</div><div class='passukEn'>So that he who blesseth himself in the earth
+Shall bless himself by the God of truth;
+And he that sweareth in the earth 
+Shall swear by the God of truth;
+Because the former troubles are forgotten,
+And because they are hid from Mine eyes.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>אשר המתברך בארץ.</b> כי תהיה יראתי על כולם ומלא' הארץ דעה והמתהלל ומשתבח בארץ יתברך באלהי אמן יתהלל שהוא עבד לאלהי אמן אלהי האמת שאימן ושמר הבטחתו זאת : <b>כי נשכחו הצרות.</b> לכך יקראוני אלהי אמן : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>אשר המתברך בארץ.</b> ר''ל כ''כ יגדל שמם עד אשר שכל המתברך והמתהלל בפי אנשים בכל הארץ לא יתהלל בשום דבר כי אם בזאת יתהלל לומר עליו שנדבק באלהים אמת שאימן ושמר ההבטחה ההיא לגדל שמות הדבקים בו : <b>ישבע באלהי אמן.</b> כי כולם יאמינו בו על שהאמין הבטחתו ולכן ישבעו בו ובמ''ש ונשבעות לה' צבאות (לעיל יט) : <b>כי נשכחו.</b> ר''ל כ''כ חרבה הטובה עד שיהיו נשכחים כל הצרות הראשונות שסבלו בהיותם בגולה : <b>וכי נסתרו מעיני.</b> גם מעיני יהיו נסתרים צרות כאלה כי לא יהיה עוד בעולם א''כ לא יהיה נראה : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>המתברך.</b> ענין התפארות כמו מברך רעהו (משלי כז) : <b>אמן.</b> ענינו כמו אמת : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp; <b>המתברך בארץ, </b> לא יתברך בשום הצלחה שבעולם רק <b>באלהי אמן</b> כי הוא יהיה מקור הברכות כולם <b>והנשבע בארץ</b> לא ישבע עוד בשם הרשעים האלה כמו שהיה תחלה שהיה שמם לאלה ולשבועה בתוך עמם רק ישבע באלהי אמן, <b>כי נשכחו הצרות הראשונות</b> ולא יהיו עוד במציאות להשבע בהם כי לא יהיה זכר לצרה כלל, <b>וכי נסתרו מעיני</b> ר''ל עד עתה היו הצרות עומדים נגד עיני לתת שכר לצדיקים שסבלו צרות בחנם, אבל אז יסתרו גם מעיני, כי כבר קבל כ''א שכר ועונש ולא יהיה זכרון לרע עבר כלל :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כִּֽי-הִנְנִ&#1445;י בוֹרֵ&#1435;א שָׁמַ&#1445;יִם חֲדָשִׁ&#1430;ים וָאָ&#1443;רֶץ חֲדָשָׁ&#1425;ה וְלֹ&#1444;א תִזָּכַ&#1433;רְנָה&#1433; הָרִ&#1443;אשֹׁנ&#1428;וֹת וְלֹ&#1445;א תַעֲלֶ&#1430;ינָה עַל-לֵֽב:</span>
+</div><div class='passukFr'> Oui! Me voici en train de cr&eacute;er un ciel nouveau et une terre nouvelle, si bien qu&rsquo;on ne se rappellera plus ce qui aura pr&eacute;c&eacute;d&eacute;; on n&rsquo;en gardera pas le moindre souvenir.
+</div><div class='passukEn'>For, behold, I create new heavens
+And a new earth;
+And the former things shall not be remembered,
+Nor come into mind.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>שמים חדשים.</b> יתחדשו השרים של מעלה ויהיו שרי ישראל שרי עליונים ושרי האומות תחתונים, וכן בארץ ; ויש אומרים שמים חדשים ממש וכן עיקר כי מקרא מוכיח כי כאשר השמים החדשים וגו' (לקמן סו) : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כי הנני בורא שמים וכו'.</b> ר''ל יהיה רוב טובה בעולם כאלו נברא עולם חדש אשר לא ימצא שם צרות, או הדברים כמשמען וכמ''ש כי כאשר השמים החדשים וכו' עומדים לפני (לקמן סו) : <b>ולא תזכרנה הראשונות.</b> לפי רוב הטובה שיהיה אז לא תזכרנה הצרות הראשונות : <b>ולא תעלינה על לב.</b> כפל הדבר במ''ש : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>כי הנני בורא שמים חדשים, </b> השמים והארץ הנמצאים עתה נבראו על תכונה וטבע, שמן הנמנע שיהיה טוב תמידי בלא רע, כי החומר ההיולי כולו פושט צורה ולובש צורה תמיד וא''א להויה בלא העדר, וכן המזגים שיתהוו ע''י תנועת השמים מן הנמנע שלא ימצא ג''כ רע ע''י ככל הדברים המשתנים וממירים צורותיהם, אבל אז יהיה חומרם משונה בטבעו ממה שהיה עד הנה, עד שלא ימצא רע והעדר כלל, עד <b>שלא תזכרנה הראשונות וגם לא תעלינה על לב, </b> כי לא יוכלו לצייר לעצמם העדר ומות ורע כלל, כי לא יהיה זה בטבע המציאות, וכ''ז על התרבות הטוב וההצלחה :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כִּֽי-אִם-שִׂ&#1444;ישׂוּ וְגִ&#1433;ילוּ&#1433; עֲדֵי-עַ&#1428;ד אֲשֶׁ&#1430;ר אֲנִ&#1443;י בוֹרֵ&#1425;א כִּי&#1449; הִנְנִ&#1448;י בוֹרֵ&#1447;א אֶת-יְרוּשָׁלַ&#1435;ִם גִּילָ&#1430;ה וְעַמָּ&#1445;הּ מָשֽׂוֹשׂ:</span>
+</div><div class='passukFr'> R&eacute;jouissez-vous, au contraire, et f&eacute;licitez-vous &agrave; jamais de ce que je vais cr&eacute;er; car voici, je fais de J&eacute;rusalem un sujet d&rsquo;all&eacute;gresse, et de son peuple une source de joie.
+</div><div class='passukEn'>But be ye glad and rejoice for ever
+In that which I create;
+For, behold, I create Jerusalem a rejoicing,
+And her people a joy.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כי אם שישו.</b> רצה לומר לא יאמר לכם שום דבר כי אם שישו וגילו עד עולם על אשר אני הוא הבורא את השמחה ותהיה מתקיימת לעולם : <b>בורא את ירושלים גולה.</b> אחדש שם ירושלים להקרא גולה ואחדש שם עמה להקרא משוש : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>וגילו.</b> ענין שמחה : <b>עדי עד.</b> עד עולם כמו בטחו בה' עדי עד (לעיל כו) : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>כי אם שישו, </b> יש הבדל בין שישה וגילה, השישה היא עשות מעשים בפועל להתגלות השמחה כמו משוש תופים משוש כנור לבישת בגדי יום טוב וכדומה, והגילה היא בלב, אמנם הגיל נבדל משמחה במה שגיל מורה השמחה הפתאומית על בשורה חדשה שנתבשרה לו, והנה שיהיה הגילה תמידית הוא דבר בלתי אפשר, כי מלבד שגם שמחה תמידית הוא בלתי אפשר מצד טבע האדם עצמו שהשמח בתמידות על הטוב תמידי ישוב הטוב ההוא כדבר רגיל עד שלא ישמח בו עוד, כ''ש שלא יצוייר גילה תמידית, כי הגיל היא רק ברגע התחדשות הבשורה, אמנם אז והיה השישה והגילה <b>עדי עד</b> מתמידים בלי הפסק, והנה בזמן הזה לא יצוייר שיגיל האדם רק על דבר נעדר לו תחלה, או על דבר שחסר לאדם אחר, כי לא יגיל האדם על שיש לו עינים ופה, אבל אז שלא יהיה העדר כלל רק מציאות, ואעפי''כ יהיה גילה תמידית, אומר שתהיה הגילה הזאת <b>אשר אני בורא, </b> לא על העדר הבריאה רק על הבריאה הכללית, וזה עצמו יהיה בריאה חדשה שיגילו וישישו באופן זה אשר לא יצוייר עתה בטבע האדם, ועז''א <b>כי הנני בורא את ירושלים גילה, </b> ירושלים עצמה תהיה גילה תמידית ע''י השכינה והאור האלהי שיתראה בה, והסימנים החיצונים שיעשו להתגלות הגיל הזה, יהיה העם בעצמו, כאילו ע''י העם והצלחתם ורבוים יתגלה הגיל כמי שמראה שמחתו ע''י לבישת בגדי יום טוב. וזה <b>ועמה משוש</b> :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְגַלְתִּ&#1445;י בִירוּשָׁלַ&#1430;ִם וְשַׂשְׂתִּ&#1443;י בְעַמִּ&#1425;י וְלֹֽא-יִשָּׁמַ&#1445;ע בָּהּ&#1433; ע&#1428;וֹד ק&#1445;וֹל בְּכִ&#1430;י וְק&#1445;וֹל זְעָקָֽה:</span>
+</div><div class='passukFr'> Et moi-m&ecirc;me je me r&eacute;jouirai de J&eacute;rusalem et j&rsquo;aurai du plaisir de mon peuple: on n&rsquo;y entendra plus ni bruit de pleurs, ni cris de douleur.
+</div><div class='passukEn'>And I will rejoice in Jerusalem,
+And joy in My people;
+And the voice of weeping shall be no more heard in her,
+Nor the voice of crying.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>וגלתי בירושלים.</b> כי כשהיתה ירושלים חריבה ועמה בגולה לא היתה שמחה לפני המקום לכן אמר כשתהיה בנויה ועמה יהיו בטובה יהיה שמחה לפני המקום : <b>ולא ישמע וכו'.</b> כי לא יבוא עוד עליהם צרות : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>וגלתי.</b> מלשון גילה : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>וגלתי, </b> אני אגיל גילה חדשה ע''י ירושלים כי בה אראה אותותי ומופתי תמיד מחדש, <b>וששתי בעמי, </b> ע''י עמי אראה אותות השמחה לעיני רבים עמים כנ''ל. <b>ולא ישמע עוד קול בכי וקול זעקה, </b> הבכי הוא מה שבוכים על צרה שכבר באה ונהייתה, והצעקה הוא שצועקים לתשועה על שבר הממשמש ובא, הבכיה היא לרוב על מת ודומהו, והזעקה על דבר שיש הצלה ממנו וכמו שיבאר :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כ}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לֹא-יִֽהְיֶ&#1448;ה מִשָּׁ&#1436;ם ע&#1431;וֹד ע&#1444;וּל יָמִים&#1433; וְזָקֵ&#1428;ן אֲשֶׁ&#1445;ר לֹֽא-יְמַלֵּ&#1430;א אֶת-יָמָ&#1425;יו כִּ&#1443;י הַנַּ&#1431;עַר בֶּן-מֵאָ&#1444;ה שָׁנָה&#1433; יָמ&#1428;וּת וְהַ&#1443;חוֹטֶ&#1428;א בֶּן-מֵאָ&#1445;ה שָׁנָ&#1430;ה יְקֻלָּֽל:</span>
+</div><div class='passukFr'> On n&rsquo;y verra plus d&rsquo;enfant [ne vivant que] quelques jours, ni de vieillard qui n&rsquo;ach&egrave;ve sa carri&egrave;re; car sera consid&eacute;r&eacute; comme jeune homme celui qui mourra &agrave; cent ans, et comme maudit le p&eacute;cheur devenu centenaire.
+</div><div class='passukEn'>There shall be no more thence an infant of days, nor an old man,
+That hath not filled his days;
+For the youngest shall die a hundred years old,
+And the sinner being a hundred years old shall be accursed.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>עול ימים.</b> נער כמו עולל (איכה ב) עול ימים קטן בשנים : <b>בן מאה שנה ימות.</b> יהא בן עונשין להתחייב מיתה בעבירה שיש בה מיתה כך מפרש בב''ר : <b>יקולל.</b> בעבירה שהיא צריכה נדוי : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>לא יהיה משם.</b> לא יצא משם לקבר אדם שהוא קטן בשנים ואף הזקן קצת שלא השלים כל ימיו ולא ימות גם הוא כי אז יאריכו ימי האדם באריכות נפלא : <b>כי הנער בן מאה שנה ימות.</b> ר''ל אם ימות מי בן מאה שנים יאמרו עליו נער מת : <b>והחוטא.</b> הנחסר מן העולם כשיהיה בן מאה שנה לקללה תחשב כי עודו נער לפי מרבית חיי האנשים שיהיה אז וכפל ענין במ''ש : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>עול ימים.</b> קטן בימים והוא מלשון עולל וכן התשכח אשה עולה (לעיל מט) : <b>לא ימלא.</b> לא ישלים : <b>והחוטא.</b> ענין חסרון כמו משברים יתחטאו (איוב מא) : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>לא יהיה, </b> מפרש מ''ש שלא ישמע קול בכי על מת, כי בזמן הזה יצוייר שיבכו על מת קודם זמנו אבל אז <b>לא ימצא עוד עול ימים וזקן אשר לא ימלא את ימיו, </b> כי בזמן הזה ימצא זקן אשר לא ימלא את ימיו, והוא מי שמת ע''י אפיסת ליחות השרשי וכח הטבעי, שזה נקרא זקן, ויהיה בזה''ז זקן קודם זמנו מי שחלשו כחותיו בהיותו בן חמשים, והוא לא מלא את ימיו כי בטבע האדם שאם ימות מסבת הזקנה יאריך ימים עד תשע מאות שנה כמו שהיה בדורות הראשונים, ונמצא זה שמת שלא מסבה אחרת רק מסבת הזקנה שהוא אפיסת כח השרשי וליחותיו, לא מלא את ימיו בערך הזקנה, כי איש כזה שלא פגעהו מקרה אחרת שימות ע''י חולי וסבה אחרת כי מת מתוך זקנה, היה יכול לחיות עד תשע מאות שנה. וכן נמצא בזמן הזה עול ימים אשר לא מלא את ימיו, והוא אם מת בעודו נער שזה ימצא מפני שתי סבות, אם מפני חולי וכדומה, או מפני חטא, שגם זה לא מלא את ימיו לפי ערכו, כי מת קודם זמנו, וגם אם חטא נענש קודם זמנו, אבל לעתיד לא ימצא לא עול ימים אשר לא ימלא את ימיו ולא זקן אשר לא ימלא את ימיו, כי גם <b>הנער שימות</b> בנערותו יהיה לכל הפחות <b>בן מאה שנה</b> וזה יען <b>שהחוטא רק בן מאה שנה יקלל</b> שלא יהיה בן עונשים קודם שיהיה בן מאה שנה וקודם לזמן הזה לא יענישוהו בדיני שמים :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כא}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וּבָנ&#1445;וּ בָתִּ&#1430;ים וְיָשָׁ&#1425;בוּ וְנָטְע&#1443;וּ כְרָמִ&#1428;ים וְאָכְל&#1430;וּ פִּרְיָֽם:</span>
+</div><div class='passukFr'> On b&acirc;tira des maisons et on les habitera; on plantera des vignes et on en mangera les fruits.
+</div><div class='passukEn'>And they shall build houses, and inhabit them;
+And they shall plant vineyards, and eat the fruit of them.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ובנו בתים וישבו.</b> לא ימותו טרם יכלה הבנין עד לא ישבו בה וכן ונטעו כרמים וכו' : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>ובנו, </b> אחר שלא ימותו לפני זמנם, הבונים בתים ישבו בם הם בעצמם, והנוטעים כרמים הם עצמם יאכלו פרים :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לֹ&#1444;א יִבְנוּ&#1433; וְאַחֵ&#1443;ר יֵשֵׁ&#1428;ב לֹ&#1445;א יִטְּע&#1430;וּ וְאַחֵ&#1443;ר יֹאכֵ&#1425;ל כִּֽי-כִימֵ&#1444;י הָעֵץ&#1433; יְמֵ&#1443;י עַמִּ&#1428;י וּמַעֲשֵׂ&#1445;ה יְדֵיהֶ&#1430;ם יְבַלּ&#1445;וּ בְחִירָֽי:</span>
+</div><div class='passukFr'> On ne b&acirc;tira pas pour qu&rsquo;un autre en profite, on ne plantera pas pour qu&rsquo;un autre en jouisse; mais les jours de mon peuple seront comme les jours des arbres, et mes &eacute;lus useront jusqu&rsquo;au bout l&rsquo;&oelig;uvre de leurs mains.
+</div><div class='passukEn'>They shall not build, and another inhabit,
+They shall not plant, and another eat;
+For as the days of a tree shall be the days of My people,
+And Mine elect shall long enjoy the work of their hands.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>כימי העץ.</b> ת''י עץ החיים : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ואחר ישב.</b> על כי ימותו הם עד לא ישבו בה : <b>כי כימי העץ.</b> כימי משך זמן עמידת העץ המתקיים הרבה כאילן חרוב וכדומה כימי עץ הזה יהיה ימי עמי : <b>ומעשה וכו'.</b> כי יש מעשים שיעשה האדם והוא יזקין והם עדיין נראים חדשים כבנין והמכתב לכן אמר עמי בחירי יבלו מעשה ידיהם כי הם יראו בחורים וחזקים ומעשה ידיהם יזקינו וירקבו בימיהם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>יבלו.</b> ענין זוקן כמו יבלו בטוב ימיהם (שם כא) : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>לא יבנו ואחר ישב, </b> היורש או זרים, וגם <b>לא יטעו</b> נטיעה <b>ואחר יאכל, </b> הגם שהנטיעה מתקיימת יותר מן הבנין, <b>כי כימי העץ ימי עמי</b>. יאריכו ימים כימי העץ, ולכן <b>מעשה ידיהם יבלו בחירי, </b> שאם יטע נטיעה לא ימות הנוטע ועוד העץ קיים עד שאחר יאכל פריו, כי ימיו יאריכו כימי העץ שנטע :<small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לֹ&#1444;א יִֽיגְעוּ&#1433; לָרִ&#1428;יק וְלֹ&#1445;א יֵלְד&#1430;וּ לַבֶּהָלָ&#1425;ה כִּ&#1443;י זֶ&#1436;רַע בְּרוּכֵ&#1444;י יְהוָה&#1433; הֵ&#1428;מָּה וְצֶאֱצָאֵיהֶ&#1430;ם אִתָּֽם:</span>
+</div><div class='passukFr'> Ils ne se fatigueront plus en vain, et ils n&rsquo;enfanteront plus pour la ruine: ce sera la race des b&eacute;nis de l&rsquo;&Eacute;ternel, et leurs rejetons demeureront avec eux.
+</div><div class='passukEn'>They shall not labour in vain,
+Nor bring forth for terror;
+For they are the seed blessed of the Lord,
+And their offspring with them.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>לא יגעו לריק.</b> לא יהיה יגיעתם לריק ר''ל לא ימותו בניהם בחייהם : <b>לבהלה.</b> למות בחייהם להבהיל אותם וכפל הדבר במ''ש : <b>כי זרע.</b> כי זרעם המה זרע ברוכי ה' ולא ימותו בקוצר שנים : <b>וצאצאיהם אתם.</b> כל ימיהם יהיו צאצאיהם עמהם כי לא ימותו בחייהם וכפל הדבר במ''ש : <small>(מצודת דוד)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp;<b>לא, </b> מצד זה <b>לא יגעו לריק</b> ע''י שיטעו ואחר יאכל שזה יגיעה לריק, וכן <b>לא ילדו לבהלה</b> ע''י שימותו בניהם, ומפרש נגד לא יגעו לריק כי <b>זרע ברוכי ה', </b> עד שלכן יאריכו ימים ומעשה ידיהם יבלו, ונגד לא ילדו לבהלה אומר כי <b>צאצאיהם יהיו אתם</b> חיים וקיימים, (עד עתה פירש מ''ש לא ישמע קול בכי שהוא על המת קודם זמנו או על מיתת הבנים. עתה מתחיל לבאר מ''ש שלא ישמע קול צעקה לישועה) הטעם שלא יצעקו, כי. <small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְהָיָ&#1445;ה טֶֽרֶם-יִקְרָ&#1430;אוּ וַאֲנִ&#1443;י אֶעֱנֶ&#1425;ה ע&#1435;וֹד הֵ&#1445;ם מְדַבְּרִ&#1430;ים וַאֲנִ&#1445;י אֶשְׁמָֽע:</span>
+</div><div class='passukFr'> Avant qu&rsquo;ils m&rsquo;appellent, moi, je r&eacute;pondrai; ils parleront encore que d&eacute;j&agrave; je les aurai exauc&eacute;s.
+</div><div class='passukEn'>And it shall come to pass that, before they call, I will answer,
+And while they are yet speaking, I will hear.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>והיה טרם יקראו.</b> פעמים אענה להם למלאות שאלות לבבם עד לא יקראו להתפלל בפה פעמים כשעוד הם מדברים בתפלה אשמע אני לתת משאלותם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>אענה.</b> ענין תשובה : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp; <b>והיה טרם יקראו ואני אענה, </b> ולא יצטרכו לזעוק כלל, ולא זאת כי גם <b>עוד</b> (<b>טרם</b>) <b>הם מדברים</b> את צרכיהם בינם לבין עצמם, <b>ואני אשמע</b> ואמלא חפץ לבבם, עד שלא אמתין על הקריאה כלל, זאת שנית כי לא ישמע קול צעקה יען שלא יהיה מזיק בעולם כלל כי אף החיות הטורפות לא יזיקו וכ''ש בני אדם, וז''ש. <small>(מלבי"ם באור הענין)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כה}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">זְאֵ&#1448;ב וְטָלֶ&#1436;ה יִרְע&#1443;וּ כְאֶחָ&#1431;ד וְאַרְיֵה&#1433; כַּבָּקָ&#1443;ר יֹֽאכַל-תֶּ&#1428;בֶן וְנָחָ&#1430;שׁ עָפָ&#1443;ר לַחְמ&#1425;וֹ לֹֽא-יָרֵ&#1447;עוּ וְלֹֽא-יַשְׁחִ&#1435;יתוּ בְּכָל-הַ&#1445;ר קָדְשִׁ&#1430;י אָמַ&#1445;ר יְהוָֽה:</span> <b>(ס)</b>
+</div><div class='passukFr'> Le loup et l&rsquo;agneau pa&icirc;tront c&ocirc;te &agrave; c&ocirc;te, le lion comme le b&oelig;uf mangera de la paille et le serpent se nourrira de poussi&egrave;re; plus de m&eacute;faits, plus de violence sur toute ma sainte montagne: c&rsquo;est l&rsquo;&Eacute;ternel qui a parl&eacute;.&quot;
+</div><div class='passukEn'>The wolf and the lamb shall feed together,
+And the lion shall eat straw like the ox;
+And dust shall be the serpent's food.
+They shall not hurt nor destroy in all My holy mountain,
+Saith the Lord.
+
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>יאכל תבן.</b> ולא יצטרך להשחית בבהמה : <b>ונחש.</b> הרי עפר לחמו מצוי לו תדיר, ומדרש אגדה ואריה כבקר יאכל תבן לפי שמצינו שעשו נופל ביד בני יוסף שנאמר בית עשו לקש ובית יוסף להבה וגו' (עובדיה א) אבל ביד בני שאר השבטים שנמשלו לחיות לא מצינו לכך נאמר ואריה כבקר יאכל תבן אותם השבטים שנמשלו כאריה כגון יהודה ודן כיוסף שנמשל כשור יאכלו אותו שנמשל כתבן : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ירעו כאחד.</b> ולא יטרוף הזאב את הטלה כי אף החיות הטורפות לא יטרפו עוד כמ''ש וגר זאב וכו' (לעיל יא) : <b>כבקר.</b> כמו הבקר אוכל תבן כן יאכל האריה : <b>ונחש עפר לחמו.</b> הנה עפר יהיה מאכלו כתולדתו ונטבעו ולא יזיק למי : <b>לא ירעו.</b> לא יעשו רעה למי ולא ישחיתו את מי : <b>בכל הר קדשי.</b> הוא ארץ ישראל : <b>אמר ה'.</b> כן יאמר ה' : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>ירעו.</b> מל' מרעה : <b>לחמו.</b> מאכל : <b>ירעו.</b> מלשון רעה : <small>(מצודת ציון)</small></div><div class='malbim'><b><small>&nbsp;מלבי"ם - באור הענין&nbsp;</small></b>&nbsp; <b>זאב וטלה ירעו כאחד, </b> ולא יזיקנו, וגם יתהפך טבע הדורסים עד שהארי תבן יאכל ולא יאכל בשר כלל, וגם הנחש ישאר עפר לחמו כמו שהיה ולא יזיק. ומפרש נגד זאב וארי שהם הרעו לצרכם עתה לא ירעו. נגד הנחש שהזיקה רק להשחית, אומר, ולא ישחיתו בכל הר קדשי :<small>(מלבי"ם באור הענין)</small></div></div>
+
+</div><div id='prakimFoot' class='prakim'><span class='perekTitle'><a href='1.html'>1</a></span><span class='perekTitle'><a href='2.html'>2</a></span><span class='perekTitle'><a href='3.html'>3</a></span><span class='perekTitle'><a href='4.html'>4</a></span><span class='perekTitle'><a href='5.html'>5</a></span><span class='perekTitle'><a href='6.html'>6</a></span><span class='perekTitle'><a href='7.html'>7</a></span><span class='perekTitle'><a href='8.html'>8</a></span><span class='perekTitle'><a href='9.html'>9</a></span><span class='perekTitle'><a href='10.html'>10</a></span><span class='perekTitle'><a href='11.html'>11</a></span><span class='perekTitle'><a href='12.html'>12</a></span><span class='perekTitle'><a href='13.html'>13</a></span><span class='perekTitle'><a href='14.html'>14</a></span><span class='perekTitle'><a href='15.html'>15</a></span><span class='perekTitle'><a href='16.html'>16</a></span><span class='perekTitle'><a href='17.html'>17</a></span><span class='perekTitle'><a href='18.html'>18</a></span><span class='perekTitle'><a href='19.html'>19</a></span><span class='perekTitle'><a href='20.html'>20</a></span><span class='perekTitle'><a href='21.html'>21</a></span><span class='perekTitle'><a href='22.html'>22</a></span><span class='perekTitle'><a href='23.html'>23</a></span><span class='perekTitle'><a href='24.html'>24</a></span><span class='perekTitle'><a href='25.html'>25</a></span><span class='perekTitle'><a href='26.html'>26</a></span><span class='perekTitle'><a href='27.html'>27</a></span><span class='perekTitle'><a href='28.html'>28</a></span><span class='perekTitle'><a href='29.html'>29</a></span><span class='perekTitle'><a href='30.html'>30</a></span><span class='perekTitle'><a href='31.html'>31</a></span><span class='perekTitle'><a href='32.html'>32</a></span><span class='perekTitle'><a href='33.html'>33</a></span><span class='perekTitle'><a href='34.html'>34</a></span><span class='perekTitle'><a href='35.html'>35</a></span><span class='perekTitle'><a href='36.html'>36</a></span><span class='perekTitle'><a href='37.html'>37</a></span><span class='perekTitle'><a href='38.html'>38</a></span><span class='perekTitle'><a href='39.html'>39</a></span><span class='perekTitle'><a href='40.html'>40</a></span><span class='perekTitle'><a href='41.html'>41</a></span><span class='perekTitle'><a href='42.html'>42</a></span><span class='perekTitle'><a href='43.html'>43</a></span><span class='perekTitle'><a href='44.html'>44</a></span><span class='perekTitle'><a href='45.html'>45</a></span><span class='perekTitle'><a href='46.html'>46</a></span><span class='perekTitle'><a href='47.html'>47</a></span><span class='perekTitle'><a href='48.html'>48</a></span><span class='perekTitle'><a href='49.html'>49</a></span><span class='perekTitle'><a href='50.html'>50</a></span><span class='perekTitle'><a href='51.html'>51</a></span><span class='perekTitle'><a href='52.html'>52</a></span><span class='perekTitle'><a href='53.html'>53</a></span><span class='perekTitle'><a href='54.html'>54</a></span><span class='perekTitle'><a href='55.html'>55</a></span><span class='perekTitle'><a href='56.html'>56</a></span><span class='perekTitle'><a href='57.html'>57</a></span><span class='perekTitle'><a href='58.html'>58</a></span><span class='perekTitle'><a href='59.html'>59</a></span><span class='perekTitle'><a href='60.html'>60</a></span><span class='perekTitle'><a href='61.html'>61</a></span><span class='perekTitle'><a href='62.html'>62</a></span><span class='perekTitle'><a href='63.html'>63</a></span><span class='perekTitle'><a href='64.html'>64</a></span><span class='perekTitle'><a class='linkSelected' id='linkSelectedFoot' href='65.html'>65</a></span><span class='perekTitle'><a href='66.html'>66</a></span></div></div></div></body></html>

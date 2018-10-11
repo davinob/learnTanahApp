@@ -1,0 +1,364 @@
+<html><head>
+				<link rel='stylesheet' type='text/css' href='../css/stylesTorah.css'>
+			<script src='../js/myScript.js'></script>				
+			
+				</head>
+							<body class='theBody' onload='initClassesBasedOnCookies()'>
+						<div id='mySidenav' class='sidenav'>
+ 
+ 					<span class='trads'>
+					<span type='button' id='passukEn'  onClick="hideShow('passukEn',this)" class='button'>EN</span>
+					<span type='button' id='passukFr'  onClick="hideShow('passukFr',this)" class='button'>FR</span>					
+					</span>
+					<span class='pirushim'>
+					<span type='button' id='rashi' onClick="hideShow('rashi',this)" class='button'>רש"י</span><span type='button' id='mezudatDavid' onClick="hideShow('mezudatDavid',this)" class='button'>מצודת דוד</span><span type='button' id='mezudatZion' onClick="hideShow('mezudatZion',this)" class='button'>מצודת ציון</span><span type='button' id='ralbag' onClick="hideShow('ralbag',this)" class='button'>רלב"ג</span></span>
+  
+					</div>
+					<span id='buttonNav' style='font-size:35px;cursor:pointer; position:fixed' onclick='openNav()'>&#9776;</span>
+		
+						<div class='theContent' onclick='closeNav()'><div class='newSefer'><span class='inSeferTitle'><a href='../index.html'>כתובים</a></span><span class='inSeferTitle'><a href='1.html'>איוב</a></span><div id='prakimHead' class='prakim'><span class='perekTitle'><a href='1.html'>1</a></span><span class='perekTitle'><a href='2.html'>2</a></span><span class='perekTitle'><a href='3.html'>3</a></span><span class='perekTitle'><a href='4.html'>4</a></span><span class='perekTitle'><a href='5.html'>5</a></span><span class='perekTitle'><a href='6.html'>6</a></span><span class='perekTitle'><a href='7.html'>7</a></span><span class='perekTitle'><a href='8.html'>8</a></span><span class='perekTitle'><a href='9.html'>9</a></span><span class='perekTitle'><a href='10.html'>10</a></span><span class='perekTitle'><a href='11.html'>11</a></span><span class='perekTitle'><a href='12.html'>12</a></span><span class='perekTitle'><a href='13.html'>13</a></span><span class='perekTitle'><a href='14.html'>14</a></span><span class='perekTitle'><a href='15.html'>15</a></span><span class='perekTitle'><a href='16.html'>16</a></span><span class='perekTitle'><a href='17.html'>17</a></span><span class='perekTitle'><a href='18.html'>18</a></span><span class='perekTitle'><a href='19.html'>19</a></span><span class='perekTitle'><a href='20.html'>20</a></span><span class='perekTitle'><a href='21.html'>21</a></span><span class='perekTitle'><a href='22.html'>22</a></span><span class='perekTitle'><a href='23.html'>23</a></span><span class='perekTitle'><a href='24.html'>24</a></span><span class='perekTitle'><a href='25.html'>25</a></span><span class='perekTitle'><a href='26.html'>26</a></span><span class='perekTitle'><a href='27.html'>27</a></span><span class='perekTitle'><a href='28.html'>28</a></span><span class='perekTitle'><a href='29.html'>29</a></span><span class='perekTitle'><a href='30.html'>30</a></span><span class='perekTitle'><a href='31.html'>31</a></span><span class='perekTitle'><a href='32.html'>32</a></span><span class='perekTitle'><a href='33.html'>33</a></span><span class='perekTitle'><a id='linkSelectedHead' class='linkSelected' href='34.html'>34</a></span><span class='perekTitle'><a href='35.html'>35</a></span><span class='perekTitle'><a href='36.html'>36</a></span><span class='perekTitle'><a href='37.html'>37</a></span><span class='perekTitle'><a href='38.html'>38</a></span><span class='perekTitle'><a href='39.html'>39</a></span><span class='perekTitle'><a href='40.html'>40</a></span><span class='perekTitle'><a href='41.html'>41</a></span><span class='perekTitle'><a href='42.html'>42</a></span></div></div><div class='seferContent'>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{א}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיַּ&#1445;עַן אֱלִיה&#1431;וּא וַיֹּאמַֽר:</span>
+</div><div class='passukFr'> Elihou reprit et dit:
+</div><div class='passukEn'> Moreover Elihu answered and said:
+
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>(מענה אליהו) : </b><small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ויען.</b> לפי שבמענה הראשונה השיב לו בדבר הגלות הפשע אל האדם ועתה בא להשיב בדבר גמול השכר והעונש לזה נתן ריוח בין ענין לענין להתבונן יפה בכל דבר והפסיק מהראשונה והתחיל בשניה : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ביאור מלות המענה ויען אליהוא ויאמר : </b><small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">שִׁמְע&#1443;וּ חֲכָמִ&#1443;ים מִלָּ&#1425;י וְ&#1437;יֹדְעִ&#1431;ים הַאֲזִ&#1445;ינוּ לִֽי:</span>
+</div><div class='passukFr'> &Eacute;coutez, &ocirc; sages, mes discours, et vous, hommes instruits, pr&ecirc;tez-moi votre attention.
+</div><div class='passukEn'>Hear my words, ye wise men;
+And give ear unto me, ye that have knowledge.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>שמעו חכמים.</b> חזר פניו כלפי הרעים ואמר אתם חכמים שמעו מלי ואתם יודעים האזינו אמרי כי עמכם הבינה להבין מאמרי : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>ויודעים.</b> בעלי דעה : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כִּי-אֹ&#1453;זֶן מִלִּ&#1443;ין תִּבְחָ&#1425;ן וְ&#1437;חֵ&#1431;ךְ יִטְעַ&#1445;ם לֶאֱכֹֽל:</span>
+</div><div class='passukFr'> Car l&rsquo;oreille appr&eacute;cie les discours comme le palais d&eacute;guste la nourriture.
+</div><div class='passukEn'>For the ear trieth words,
+As the palate tasteth food. 
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;כי אוזן מלין תבחן. כאשר החיך יטעום האוכל : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כי אוזן.</b> כמו שהאוזן תבחן קולות הדברים של מי המה וכמו שהחך יטעם הראוי לאכול לדעת המר הוא או מתוק כן בעלי חכמה יבינו אמרי אמת וצדק : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">מִשְׁפָּ&#1445;ט נִבְחֲרָה-לָּ&#1425;נוּ נֵדְעָ&#1430;ה בֵינֵ&#1443;ינוּ מַה-טּֽוֹב:</span>
+</div><div class='passukFr'> Mettons-nous en qu&ecirc;te de ce qui est juste, examinons entre nous ce qui est bon.
+</div><div class='passukEn'>Let us choose for us that which is right;
+Let us know among ourselves what is good.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>משפט נבחרה.</b> אני ואתם נבחרה לנו משפט לברר ברור האמת ונדעה בינינו מה טוב להפריש הבלתי צודק מהצודק : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ה}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כִּֽי-אָ&#1453;מַר אִיּ&#1443;וֹב צָדַ&#1425;קְתִּי וְ&#1437;אֵ&#1431;ל הֵסִ&#1445;יר מִשְׁפָּטִֽי:</span>
+</div><div class='passukFr'> Car Job a dit: &quot;Je suis innocent, et Dieu m&rsquo;a refus&eacute; justice.
+</div><div class='passukEn'>For Job hath said: 'I am righteous,
+And God hath taken away my right;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>משפטי.</b> הוכחת דברים : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>צדקתי.</b> אני צדיק וזכאי : <b>הסיר משפטי.</b> הסיר ממני משפט הגמול הראוי : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">עַל-מִשְׁפָּטִ&#1445;י אֲכַזֵּ&#1425;ב אָנ&#1430;וּשׁ חִצִּ&#1443;י בְלִי-פָֽשַׁע:</span>
+</div><div class='passukFr'> En d&eacute;pit de mon bon droit, je passe pour menteur; cruel est le coup qui m&rsquo;a frapp&eacute;, sans que j&rsquo;aie failli!&quot;
+</div><div class='passukEn'>Notwithstanding my right I am accounted a liar;
+My wound is incurable, though I am without transgression.'
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>אכזב.</b> אכזיב שופטי שלא דנני אמת : <b>אנוש.</b> חולה מכתי כמו ויאנש (שמואל ב יב) : <b>חצי.</b> נגעי : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>על משפטי אכזב.</b> מלבד משפט גמולי אשר אני אומר שפסקה ממני הנה עוד אנוש חצי בלי פשע ר''ל לא די שחומס גמולי עד שאפילו מייסרני עוד בחנם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>אכזב.</b> ענין הפסקה כמו אשר לא יכזבו מימיו (ישעיה כח) : <b>אנוש.</b> כאוב ביותר כמו אנושה מכותיה (מיכה א) : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>אנוש חצי.</b> אנושה מכתי : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">מִי-גֶ&#1445;בֶר כְּאִיּ&#1425;וֹב יִֽשְׁתֶּה-לַּ&#1445;עַג כַּמָּֽיִם:</span>
+</div><div class='passukFr'> Y a-t-il un homme comme Job, buvant le blasph&egrave;me comme de l&rsquo;eau,
+</div><div class='passukEn'>What man is like Job,
+Who drinketh up scorning like water?
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>מי גבר כאיוב.</b> הנמצא אדם חשוב בחכמה כאיוב אשר ירבה כ''כ בדברי לעג כמו השותה מים אשר ירבה לשתות די ספוקו הואיל ואין הדרך לתת בעדו מחיר : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְאָרַ&#1443;ח לְ&#1453;חֶבְרָה עִם-פֹּ&#1443;עֲלֵי אָ&#1425;וֶן וְ&#1437;לָלֶ&#1431;כֶת עִם-אַנְשֵׁי-רֶֽשַׁע:</span>
+</div><div class='passukFr'> faisant cause commune avec les artisans d&rsquo;iniquit&eacute; et allant de pair avec les malfaiteurs?
+</div><div class='passukEn'>Who goeth in company with the workers of iniquity,
+And walketh with wicked men.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>וארח.</b> וילך אורח להתחבר עם פועלי און : <b>וללכת וגו'.</b> כפל הדבר במ''ש : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כִּֽי-אָ&#1453;מַר לֹ&#1443;א יִסְכָּן-גָּ&#1425;בֶר בִּ&#1437;רְצֹת&#1431;וֹ עִם-אֱלֹהִֽים:</span>
+</div><div class='passukFr'> Car il a dit: &quot;L&rsquo;homme ne gagne rien &agrave; &ecirc;tre en bons termes avec Dieu!&quot;
+</div><div class='passukEn'>For he hath said: 'It profiteth a man nothing
+That he should be in accord with God.'
+
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>לא יסכן גבר.</b> לא יהנה אדם אם מתמים דרכיו : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כי אמר.</b> מוסב למעלה שאמר מי גבר וגו' שיאמר כדברי איוב כי אמר לא יסכן וגו' ר''ל אין הנאה ותועלת בא לאדם במה שירצה ללכת עם האלהים בדרכו ובפקודיו : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>יסכן.</b> ענין הנאה ותועלת כמו הלאל יסכן גבר (לעיל כג) : <b>ברצותו.</b> מל' רצוי ורצון : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>יסכן.</b> יועיל : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{י}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לָכֵ&#1444;ן | אַ&#1445;נֲשֵׁ&#1445;י לֵבָ&#1431;ב שִׁמְע&#1451;וּ לִ&#1445;י חָלִ&#1430;לָה לָאֵ&#1445;ל מֵרֶ&#1431;שַׁע וְשַׁדַּ&#1445;י מֵעָֽוֶל:</span>
+</div><div class='passukFr'> C&rsquo;est pourquoi, gens d&rsquo;intelligence, &eacute;coutez-moi: loin de Dieu l&rsquo;iniquit&eacute; et du Tout-Puissant l&rsquo;injustice!
+</div><div class='passukEn'>Therefore hearken unto me, ye men of understanding:
+Far be it from God, that He should do wickedness;
+And from the Almighty, that He should commit iniquity.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>אנשי לבב.</b> ר''ל אנשי לבב חכמה : <b>חלילה לאל מרשע.</b> לעשוק גמול הראוי : <b>ושדי מעול.</b> לגמול טוב לרשע ורע לצדיק : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>חלילה.</b> חולין וגנאי : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יא}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כִּ&#1444;י פֹ&#1443;עַל אָ&#1453;דָם יְשַׁלֶּם-ל&#1425;וֹ וּֽכְאֹ&#1445;רַח אִ&#1437;&#1431;ישׁ יַמְצִאֶֽנּוּ:</span>
+</div><div class='passukFr'> Car il paie chacun selon ses &oelig;uvres et lui assigne le sort m&eacute;rit&eacute; par sa conduite.
+</div><div class='passukEn'>For the work of a man will He requite unto him,
+And cause every man to find according to his ways.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כי פועל אדם.</b> כפי פועל האדם כן ישלם לו אם טוב ואם רע וכפי אורח איש כן יזמין לו וכפל הדבר במ''ש : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>ימציאנו.</b> ענין הזמנה והושטה כמו וימציאו בני אהרן (ויקרא ט) : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">אַף-אָמְנָ&#1431;ם אֵ&#1445;ל לֹֽא-יַרְשִׁ&#1425;יעַ וְ&#1437;שַׁדַּ&#1431;י לֹֽא-יְעַוֵּ&#1445;ת מִשְׁפָּֽט:</span>
+</div><div class='passukFr'> Non, en v&eacute;rit&eacute;, Dieu ne commet pas de mal, le Tout-Puissant ne fausse pas la justice.
+</div><div class='passukEn'>Yea, of a surety, God will not do wickedly,
+Neither will the Almighty pervert justice.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>אף אמנם.</b> תחסר מלת כי וכאלו אמר אף כי ור''ל כ''ש שהאמת היא אשר אל לא ירשיע ר''ל לא ישלם גמול רשע למי אשר לא הרשיע והוא מקרא קצר ומובן מאליו : <b>לא יעות משפט.</b> אפילו המשפט לא יעות לעשוק גמול שכרו : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">מִֽי-פָקַ&#1443;ד עָלָ&#1443;יו אָ&#1425;רְצָה וּמִ&#1445;י שָׂ&#1437;&#1431;ם תֵּבֵ&#1445;ל כֻּלָּֽהּ:</span>
+</div><div class='passukFr'> Qui lui a confi&eacute; la direction de la terre? Qui a mis tout l&rsquo;univers entre ses mains?
+</div><div class='passukEn'>Who gave Him a charge over the earth?
+Or who hath disposed the whole world?
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>מי פקד עליו ארצה.</b> מי מושל בו לאמר למה כן עשית ולא צויתיך כן כי מי צוהו בממשלתו ולמה ימצא תואנות לבריות אינו צריך להשיב דבר למושל בו לאמר בשביל זאת הרעותי לו : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>מי פקד.</b> וכי מי צוה עליו לברוא את הארץ או מי ברא אותה מבלעדו והלא הוא בראה ומרצונו בראה וא''כ כל קיומה בא ממנו והכל בידו : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>פקד.</b> צוה כמו והוא פקד עלי (עזרא א) : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>מי פקד עליו ארצה.</b> מי שעליו גזר וסידר אלו הענייני' הנמצאי' בארץ אשר ביצירתם מן השלמות והפלגת החכמה מה שלא ישוער : <b>ומי שם תבל כולה.</b> ומי סדר אלו העניינים בכללם אשר בארץ : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">אִם-יָשִׂ&#1443;ים אֵלָ&#1443;יו לִבּ&#1425;וֹ רוּח&#1445;וֹ וְ&#1437;נִשְׁמָת&#1431;וֹ אֵלָ&#1445;יו יֶאֱסֹֽף:</span>
+</div><div class='passukFr'> S&rsquo;il n&rsquo;avait de pens&eacute;e que pour lui-m&ecirc;me, s&rsquo;il retirait &agrave; lui son esprit et son souffle,
+</div><div class='passukEn'>If He set His heart upon man,
+If He gather unto Himself his spirit and his breath;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>אם ישים אליו לבו.</b> על אדם להשחיתו למה יבא בעלילה עליו הרי מיד יאסוף אליו רוחו ונשמתו רוח ונשמה שלו שהיא (נפוחה בו) ואין מוחה בידו ויגוע כל בשר יחד : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>אם ישים.</b> אם היה משים לבו על העולם להפך הכל מיש לאין הלא יוכל הוא לאסוף אליו מהעולם הרוח והנשמה הנתון בו ממנו ר''ל היה מונע מן העולם ההשפעה הבאה ממנו והיתה שבה לאין : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>יאסוף.</b> יכניס : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{טו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יִגְוַ&#1443;ע כָּל-בָּשָׂ&#1443;ר יָ&#1425;חַד וְ&#1437;אָדָ&#1431;ם עַל-עָפָ&#1445;ר יָשֽׁוּב:</span>
+</div><div class='passukFr'> toutes les cr&eacute;atures p&eacute;riraient du coup, et l&rsquo;homme retournerait &agrave; la poussi&egrave;re.
+</div><div class='passukEn'>All flesh shall perish together,
+And man shall return unto dust.
+
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>יגוע.</b> ואז היה גוע כל בשר כולם כאחד ואף מין האדם היה שב אל העפר אשר לוקח ממנה וכאומר אם לא היה מעשיו במשפט כ''א מוצא תנואות וחושב לאויב וחפצו לאבד כמתנקם מה לו להרבות במיני היסורים הלא בידו לכלותו מהר מע''פ האדמה ואף את כל בשר יחד כי הכל שלו ומי א''כ ימחה בידו : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{טז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְאִם-בִּ&#1445;ינָה שִׁמְעָה-זֹּ&#1425;את הַ&#1437;אֲזִ&#1431;ינָה לְק&#1443;וֹל מִלָּֽי:</span>
+</div><div class='passukFr'> Or, si tu jouis de ton bon sens, &eacute;coute ceci, pr&ecirc;te l&rsquo;oreille au son de mes paroles:
+</div><div class='passukEn'>If now thou hast understanding, hear this;
+Hearken to the voice of my words.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ואם ביגה.</b> ואם אתה רוצה הבין שמעה זאת, בינה זו אינה שם דבר אלא ל' צווי כמו בינה הגיגי (תהלים ה) לפיכך שתים אלו טעמן למעלה בבי''ת וכל שאר בינה טעמן למטה בנו''ן : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ואם בינה.</b> אם יש לך בינה שמע זאת והבן אותה והאזינה לקול מלי מה שאדבר עוד : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">הַאַ&#1452;ף שׂוֹנֵ&#1443;א מִשְׁפָּ&#1443;ט יַחֲב&#1425;וֹשׁ וְאִם-צַדִּ&#1430;יק כַּבִּ&#1443;יר תַּרְשִֽׁיעַ:</span>
+</div><div class='passukFr'> Celui qui hait la justice pourrait-il r&eacute;gner? Oseras-tu incriminer l&rsquo;&Ecirc;tre infiniment juste?
+</div><div class='passukEn'>Shall even one that hateth right govern?
+And wilt thou condemn Him that is just and mighty&mdash;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>האף שונא משפט.</b> משפטו של שופ' צדק : <b>יחבוש.</b> המקום וא''ת אינו משפט כי לא כדין עשה אפשר זאת מי שהוא צדיק מאוד תרשיע : <b>כביר.</b> ל' מאוד : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>האף.</b> וכי אף גם זאת תאמר שהשונא המשפט הוא המושל כי תאמר אשר הממשלה נתונה ביד מערכות השמים ומקרה אחד לצדיק ולרשע באין משפט וכי נכון אשר בדברים כוזבים כאלה תרשיע את המקום אשר הוא באמת צדיק כביר ולא יעות משפט הגמול למסור הכל ביד המערכה : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>יחבוש.</b> ענין ממשלה ע''ש שהוא חובש במאסר את המחוייב וכן לא אהיה חובש (ישעיה ג) : <b>כביר.</b> חזק : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>יחבוש.</b> ימשול : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">הַאֲמֹ&#1443;ר לְמֶ&#1443;לֶךְ בְּלִיָּ&#1425;עַל רָ&#1437;שָׁ&#1431;ע אֶל-נְדִיבִֽים:</span>
+</div><div class='passukFr'> Est-il permis de dire au roi: &quot;sc&eacute;l&eacute;rat!&quot; et aux princes: &quot;criminels!&quot;
+</div><div class='passukEn'>Is it fit to say to a king: 'Thou art base'?
+Or to nobles: 'Ye are wicked'?&mdash;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>האמור למלך בליעל.</b> וכי הגון וראוי לאמר למלך בליעל ולאמר רשע אל נדיבים : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>האמור.</b> וכי ראוי לומר על המלך שהוא בליעל או לומר רשע על אחד מהנדיבים ומכ''ש לחשוב כזאת על המקום : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">אֲשֶׁ&#1444;ר לֹֽא-נָשָׂ&#1448;א | פְּנֵ&#1445;י שָׂרִ&#1431;ים וְלֹ&#1443;א נִכַּר-שׁ&#1430;וֹעַ לִפְנֵי-דָ&#1425;ל כִּֽי-מַעֲשֵׂ&#1430;ה יָדָ&#1443;יו כֻּלָּֽם:</span>
+</div><div class='passukFr'> Eh bien! Lui ne prend pas parti pour les grands, et ne favorise pas le riche contre le pauvre, car ils sont tous l&rsquo;&oelig;uvre de sa main.
+</div><div class='passukEn'>That respecteth not the persons of princes,
+Nor regardeth the rich more than the poor?
+For they all are the work of His hands.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>אשר לא נשא פני שרים.</b> כלומר למלך עולם אשר אין משוא פנים לפניו : <b>שוע.</b> שר כמו ולכילי לא יאמר שוע (ישעיה לב) : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>אשר לא נשא.</b> הלא הוא אשר לא נשא פני שרים לוותר להם על מעלם ולא ניכר לפניו מי הוא השוע ומי הוא הדל להיות חלוקים בדבר משפט הגמול כי כולם מעשה ידיו המה ואין הפרש ביניהם מול המקום : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>שוע.</b> נדיב כמו ולכילי לא יאמר שוע (שם לב) : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>שוע.</b> נדיב ועשיר : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כ}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">רֶ&#1444;גַע | יָמֻתוּ&#1454; וַחֲצ&#1450;וֹת לָ&#1445;יְלָה יְגֹעֲשׁ&#1443;וּ עָ&#1443;ם וְיַעֲבֹ&#1425;רוּ וְיָסִ&#1445;ירוּ אַ&#1437;בִּ&#1431;יר לֹ&#1443;א בְיָֽד:</span>
+</div><div class='passukFr'> En un clin d&rsquo;&oelig;il, ils meurent, et au milieu de la nuit, le peuple s&rsquo;agite et ils disparaissent; on supprime les puissants, sans qu&rsquo;une main se l&egrave;ve.
+</div><div class='passukEn'>In a moment they die, even at midnight;
+The people are shaken and pass away,
+And the mighty are taken away without hand.
+
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>רגע ימותו.</b> כשירצה : <b>וחצות לילה.</b> כמו שעשה למצרים : <b>יגועשו עם.</b> כלומר ברגע יעבורו : <b>ויסירו אביר.</b> כח שלהם : <b>לא ביד.</b> לא ישנו בידם ואין להם כח : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>רגע ימותו.</b> כאשר תבוא מיתה פתאומית כדבר וכיוצא בעבור גמול עונש הלא שניהם ימותו ברגע אחת זה כזה אם דל ואם שוע : <b>וחצות לילה.</b> לפעמים פתאום בחצות הלילה ינועו וינודו העם ויעברו מן העולם על כי חטאו לו והם עצמם הסירו את החוזק אשר בהם לא ביד זולת כ''א מהם ובהם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>יגועשו.</b> ענין התנודה והתנוע החזקה כמו וכנהרות יתגעשו (ירמיה מו) : <b>אביר.</b> כח ואומץ : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>יגועשו.</b> יתנודדו ויתנועעו : <b>ויעבורו.</b> ויעדרו מן העולם : <b>אביר.</b> תקיף : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כא}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כִּי-עֵ&#1453;ינָיו עַל-דַּרְכֵי-אִ&#1425;ישׁ וְֽכָל-צְעָדָ&#1445;יו יִרְאֶֽה:</span>
+</div><div class='passukFr'> C&rsquo;est que ses yeux sont ouverts sur les voies de l&rsquo;homme, il observe chacun de ses pas.
+</div><div class='passukEn'>For His eyes are upon the ways of a man,
+And He seeth all his goings.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כי עיניו.</b> כי המקום משגיח על כל דרכי איש וגו' וכאשר יחטאו לו עד מהרה ישלח דברו לאבדם מן העולם אם דל ואם שוע ואם רבים המה אף מבלי סבה קדומה : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">אֵֽין-חֹ&#1430;שֶׁךְ וְאֵ&#1443;ין צַלְמָ&#1425;וֶת לְהִסָּ&#1445;תֶר שָׁ&#1437;&#1431;ם פֹּ&#1443;עֲלֵי אָֽוֶן:</span>
+</div><div class='passukFr'> Point de t&eacute;n&egrave;bres, point d&rsquo;ombre si profonde o&ugrave; puissent se cacher les malfaiteurs.
+</div><div class='passukEn'>There is no darkness, nor shadow of death,
+Where the workers of iniquity may hide themselves.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>אין חשך.</b> אין החשך יחשיך ממנו להיות למסתור לפועלי עון לבל יראה מעשיהם אל מול פני ה' : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כִּ&#1444;י לֹ&#1443;א עַל-אִ&#1453;ישׁ יָשִׂ&#1443;ים ע&#1425;וֹד לַהֲלֹ&#1445;ךְ אֶל-אֵ&#1437;&#1431;ל בַּמִּשְׁפָּֽט:</span>
+</div><div class='passukFr'> Car Dieu n&rsquo;a pas besoin de surveiller longuement un homme, pour le faire compara&icirc;tre en justice.
+</div><div class='passukEn'>For He doth not appoint a time unto any man,
+When he should go before God in judgment.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>כי לא על איש ישים עוד.</b> כלומר אמרת לא אך ישים בי (לעיל כג) רק חטאי לבדי ואני משיבך לא ישים הקב''ה על בריותיו עלילות תוספת על פשעם, עוד ל' תוספת : <b>להלוך אל אל במשפט.</b> כשהוא בא על בריותיו להתווכח עמהם : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כי לא וגו'.</b> כי אין דרכו להשים על איש עונש נוסף על הראוי עד שיאמר אהלך אל אל במשפט כי הרבה העונש על הפשע ובעבור זה ישגיח על פרטי מעשה האדם לשלם גמול כערך המעשה : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>עוד.</b> ענין תוספ' וריבוי וכן ויבך על צואריו עוד (בראשית מו) : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ישים עוד.</b> יסדר ויגזור מה שיעשה בעתיד : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יָרֹ&#1443;עַ כַּבִּירִ&#1443;ים לֹא-חֵ&#1425;קֶר וַיַּעֲמֵ&#1430;ד אֲחֵרִ&#1443;ים תַּחְתָּֽם:</span>
+</div><div class='passukFr'> Il brise les puissants sans long examen et met d&rsquo;autres &agrave; leur place.
+</div><div class='passukEn'>He breaketh in pieces mighty men without inquisition,
+And setteth others in their stead.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ירוע.</b> ירוצץ כמו רוע התרועעה (ישעיה כד) : <b>ויעמד אחרים.</b> במקומם : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ירוע.</b> הנה ירוצץ חזקים אין חקר להם ומעמיד אחרים במקומם על ממשלתם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>ירוע.</b> ירוצץ כמו תרועם בשבט ברזל (תהלים ב) : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ירוע כבירים.</b> ישבור תקיפי' : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כה}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לָכֵ&#1431;ן יַ&#1453;כִּיר מַעְבָּֽדֵיהֶ&#1425;ם וְהָ&#1445;פַךְ לַ&#1437;&#1431;יְלָה וְיִדַּכָּֽאוּ:</span>
+</div><div class='passukFr'> C&rsquo;est parce qu&rsquo;il conna&icirc;t leurs &oelig;uvres, qu&rsquo;il les renverse de nuit et les &eacute;crase.
+</div><div class='passukEn'>Therefore He taketh knowledge of their works;
+And He overturneth them in the night, so that they are crushed.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>לכן יכיר מעבדיהם.</b> לפי שהוא מכיר מעבדיהם הטוב והרע ואין צורך לו להתווכח : <b>והפך לילה.</b> עת חשך וצרה להם וידכאו : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>לכן יכיר.</b> בעבור אשר יכיר מעשיהם ולזה הפך בלילה אחת להעמיד אחרים במקומם והמה נדכאו מן הארץ : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>מעבדיהם.</b> מעשיהם כי תרגום של מעשה הוא עובדא : <b>וידכאו.</b> נשברו ונכתתו : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>מעבדיהם.</b> מעשיהם : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">תַּֽחַת-רְשָׁעִ&#1445;ים סְפָקָ&#1431;ם בִּמְק&#1445;וֹם רֹאִֽים:</span>
+</div><div class='passukFr'> En qualit&eacute; d&rsquo;impies, il les frappe aux yeux de nombreux spectateurs,
+</div><div class='passukEn'>He striketh them as wicked men
+In the open sight of others;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>תחת רשעים.</b> במקומם : <b>ספקם.</b> לאנשי סדום : <b>במקום רואים.</b> לעין כל : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>תחת רשעים.</b> בעבור היותם רשעים לזה הכם ורצצם במקום ימצא שם רואים למען יקחו מוסר : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>תחת.</b> בעבור כמו עין תחת עין (שמות כא) : <b>ספקם.</b> ענין הכאה כמו ויספוק את כפיו (במדבר כד) : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ספקם.</b> הכה אותם : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">אֲשֶׁ&#1443;ר עַל-כֵּ&#1453;ן סָ&#1443;רוּ מֵֽאַחֲרָ&#1425;יו וְכָל-דְּ&#1437;רָכָ&#1431;יו לֹ&#1443;א הִשְׂכִּֽילוּ:</span>
+</div><div class='passukFr'> les punissant de s&rsquo;&ecirc;tre d&eacute;tourn&eacute;s de lui, d&rsquo;avoir m&eacute;connu toutes ses voies,
+</div><div class='passukEn'>Because they turned aside from following Him,
+And would not have regard to any of His ways;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>אשר על כן סרו מאחריו.</b> כמו (מדבר י) על כן ידעת חנותינו במדבר כמו מפני אשר סרו מאחריו והביאו לפניו ועליו צעקת דלים : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>אשר על כן.</b> אשר נאבדו על אשר סרו מאחרי ה' : <b>וכל דרכיו.</b> אף אחת מכל דרכיו לא השכילו וכן על כל דבר פשע (שמות כב) ומשפטו על אחת מכל דבר פשע : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לְהָבִ&#1443;יא עָ&#1453;לָיו צַֽעֲקַת-דָּ&#1425;ל וְצַעֲקַ&#1430;ת עֲנִיִּ&#1443;ים יִשְׁמָֽע:</span>
+</div><div class='passukFr'> d&rsquo;avoir fait monter jusqu&rsquo;&agrave; lui les cris du faible, et retentir &agrave; ses oreilles la protestation des mis&eacute;reux.
+</div><div class='passukEn'>So that they cause the cry of the poor to come unto Him, 
+And He heareth the cry of the afflicted.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>להביא עליו.</b> לזה האבידם מן העולם להביא על כל אחד מהם גמול צעקת הדל אשר עשקו וגמול צעקת העניים הרבים אשר ישמע כי עשק ליחיד ולרבים ובא צעקתם לפני המקום : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְה&#1444;וּא יַשְׁקִ&#1448;ט | וּמִ&#1445;י יַרְשִׁ&#1431;עַ וְיַסְתֵּ&#1443;ר פָּ&#1453;נִים וּמִ&#1443;י יְשׁוּרֶ&#1425;נּוּ וְעַל-גּ&#1430;וֹי וְעַל-אָדָ&#1443;ם יָֽחַד:</span>
+</div><div class='passukFr'> Et s&rsquo;il fait l&rsquo;apaisement, qui le lui reprochera? Quand il cache sa face, qui pourra le voir? Il domine et sur les nations et sur les individus,
+</div><div class='passukEn'>When He giveth quietness, who then can condemn?
+And when He hideth His face, who then can behold Him?
+Whether it be done unto a nation, or unto a man, alike;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>והוא ישקיט.</b> משקיט את הדלים מאותן העושקים ומי ירשיע עוד ובעוד שהסתיר פנים מי ישורנו : <b>ועל גוי ועל אדם יחד.</b> כיחידים כמרובים שוה לפניו להשקיט ולהסתיר פנים : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>והוא ישקיט.</b> כאשר יגזור המקום על מי לשבת שוקט ובוטח ומי הוא יחריד ויבלבל אותו וכאשר יסתיר פנים ממי לבל ישגיח בו לתת לו די מחסורו ומי א''כ יראנו ר''ל מי ישגיח בו למלאות מחסורו כי הכל מיד ה' ואין כח במערכת השמים לא לרחק ולא לקרב : <b>ועל גוי.</b> בין על אומה שלימה בין על אדם יחידי כי יכול הוא אף בכוללים ומשגיח אף בפרטים : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>ירשיע.</b> יחריד ויבלבל וכן ובכל אשר יפנה ירשיע (ש''א יד) : <b>ישורנו.</b> יראנו כמו אשורנו ולא קרוב (במדבר כד) : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ל}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">מִ&#1453;מְּלֹךְ אָדָ&#1445;ם חָנֵ&#1431;ף מִמֹּ&#1445;קְשֵׁי עָֽם:</span>
+</div><div class='passukFr'> ne voulant pas du r&egrave;gne des hommes pervers, de ceux qui sont un pi&egrave;ge pour les peuples.
+</div><div class='passukEn'>That the godless man reign not,
+That there be none to ensnare the people.
+
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>(וישקוט) ממלוך אדם חנף ממוקשי עם.</b> על דלים שמלך : <b>ממוקשי עם.</b> עון, ולאלוה כזה לא היה לך לומר בליעל ורשע : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ממלוך.</b> הוא המסיר ממלוכה אדם חנף מבלי היות מוקשי עם ר''ל למען לא יביא מוקשים על העם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>חנף.</b> רשע המחניף ליצרו ועושה פתויו : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לא}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כִּֽי-אֶל-אֵ&#1453;ל הֶאָמַ&#1445;ר נָשָׂ&#1431;אתִי לֹ&#1443;א אֶחְבֹּֽל:</span>
+</div><div class='passukFr'> Se peut-il qu&rsquo;on dise &agrave; Dieu: &quot;J&rsquo;ai expi&eacute; sans &ecirc;tre coupable.
+</div><div class='passukEn'>For hath any said unto God:
+'I have borne chastisement, though I offend not;
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>כי אל אל האמר.</b> להאמר אליו נכון וראוי מאת כל סובלי יסורים להאמר נשאתי ומקבל וסובל אני משפטיך ולא אחבול בעצמי ועוד צריך הנידן לומר : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כי אל אל האמר.</b> ר''ל על כי נראה שמעשיו בדין נכון הוא לומר אל האל הנה אשא ואסבול המכאוב ולא אשחית מעשה מעתה : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>נשאתי.</b> אשא ואסבול : <b>אחבול.</b> אשחית : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>נשאתי לא אחבול.</b> סלחתי לא אשחית : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">בִּלְעֲדֵ&#1443;י אֶ&#1453;חֱזֶה אַתָּ&#1443;ה הֹרֵ&#1425;נִי אִֽם-עָ&#1445;וֶל פָּ&#1437;עַ&#1431;לְתִּי לֹ&#1443;א אֹסִֽיף:</span>
+</div><div class='passukFr'> Ce qu&rsquo;il m&rsquo;est impossible de voir, apprends-le moi toi-m&ecirc;me; si j&rsquo;ai commis des injustices, je ne r&eacute;cidiverai pas?&quot;
+</div><div class='passukEn'>That which I see not teach Thou me;
+If I have done iniquity, I will do it no more'?
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>בלעדי אחזה.</b> לבד מה שאני יודע לראות ולהבין בדבריך אתה הורני ואם און פעלתי לא אוסיף : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>בלעדי אחזה.</b> ומלבד מה שאראה אני בעצמי להשכיל בדבריך למדני אתה את המעשה אשר אעשה ואם פעלתי עון מחסרון הידיעה לא אוסיף עוד לעשות כזאת כאשר תלמדני לדעת דרך זו אלך וכאומר הנה דרך הנכון לומר כן ולא להחזיק עצמו לצדיק ולבעט ביסורים : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>בלעדי.</b> הוא כמו מלבד וכן בלעדי רק אשר אכלו הנערים (בראשית יד) : <b>אחזה.</b> אראה כמו ואתה תחזה (שמות יח) : <b>הורני.</b> למדני : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">הַֽמֵעִמְּךָ&#1452; יְשַׁלְמֶ&#1448;נָּה כִּֽי-מָאַ&#1431;סְתָּ כִּי-אַתָּ&#1443;ה תִבְחַ&#1443;ר וְלֹא-אָ&#1425;נִי וּֽמַה-יָדַ&#1445;עְתָּ דַבֵּֽר:</span>
+</div><div class='passukFr'> Est-ce sous ton inspiration qu&rsquo;Il doit r&eacute;mun&eacute;rer, parce que tu exprimes ton d&eacute;dain ou que tu manifestes tes pr&eacute;f&eacute;rences, toi et non moi? Ce que tu sais, expose-le donc.
+</div><div class='passukEn'>Shall His recompense be as thou wilt? For thou loathest it,
+So that thou must choose, and not I;
+Therefore speak what thou knowest.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>המעמך ישלמנה כי מאסת וגו'.</b> כך אמר אליהו לאיוב המעמך היה לו להקב''ה להימלך בפירעון תשלומין ממך : <b>כי מאסת.</b> לאמר מאסתי לא לעולם אחיה (לעיל ג) יתר ידו ויבצעני (לעיל ו) סבור אתה שיגבה ממך לפי דעתך ורצונך ואתה תבחר התשלומין ולא אני במקום הקב''ה דבר אליהו בתמיה : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>המעמך.</b> וכי מעמך לבדך יושלם החקירה בדבר הנהגת משפט ה' וכי אתה לבדך תכריע כי מאסת אמרי הזולת וכפל עוד דברו ואמר וכי אתה תבחר אמיתת הדבר ולא אני הלא גם לי לבב כמוך ומה ידעת מן ההיקש והויכוח דבר ונשימה לב לבחון הכנים המה : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ישלמנה.</b> ישלימנה לעשות : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">אַנְשֵׁ&#1443;י לֵ&#1453;בָב יֹ&#1443;אמְרוּ לִ&#1425;י וְגֶ&#1445;בֶר חָ&#1437;כָ&#1431;ם שֹׁמֵ&#1445;עַֽ לִֽי:</span>
+</div><div class='passukFr'> Les gens sens&eacute;s me le diront, les hommes sages qui m&rsquo;&eacute;coutent:
+</div><div class='passukEn'>Men of understanding will say unto me,
+Yea, every wise man that heareth me:
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>אנשי לבב יאמרו לי.</b> כי איוב לא בדעת ידבר : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>אנשי לבב.</b> הן ידעתי שאנשי לבב יאמרו לי ר''ל יודו למאמרי וכל גבר חכם יהיה שומע לדברי ומהם לא יסור : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לה}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">אִ&#1453;יּוֹב לֹא-בְדַ&#1443;עַת יְדַבֵּ&#1425;ר וּ&#1437;דְבָרָ&#1431;יו לֹ&#1443;א בְהַשְׂכֵּֽיל:</span>
+</div><div class='passukFr'> &quot;Job ne discourt pas en connaissance de cause, ses paroles ne sont pas raisonnables.
+</div><div class='passukEn'>'Job speaketh without knowledge,
+And his words are without discernment.'
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>איוב.</b> אבל איוב לא בדעת ידבר ר''ל מקושי המכאוב אין דעתו שלימה ולזה דבריו המה לא בהשכל ולולי זאת היה גם הוא מודה לדברי : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">אָבִ&#1431;י יִבָּחֵ&#1443;ן אִיּ&#1443;וֹב עַד-נֶ&#1425;צַח עַל-תְּ&#1437;שֻׁבֹ&#1431;ת בְּאַנְשֵׁי-אָֽוֶן:</span>
+</div><div class='passukFr'> Mon souhait serait que Job f&ucirc;t &eacute;prouv&eacute; encore longtemps, &agrave; cause de ses r&eacute;ponses dignes d&rsquo;hommes iniques;
+</div><div class='passukEn'>Would that Job were tried unto the end,
+Because of his answering like wicked men.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>אבי יבחן.</b> אבי אתה הקב''ה אב לכל הלואי יבחן איוב עד נצח למען תהיה תשובה לאנשי און ואף לבני אדם דבר הכתוב כן כמו אבי דבר גדול וגו' (מלכים ב ה) (ד''א אבי כמו ותפר האביונה (קהלת יב) ל' רצון כך חברו מנחם וכן פתרונו אבי יבחן איוב עד נצח רצוני ומאויי שיבחן איוב עד נצח סא''א) : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>אבי.</b> הנה חפצי שעד עולם יהיה איוב בחון ביסורים לראות אם יחזור מדבריו ועם כל צעקתו לא יחדלו ממנו עד אשר ישוב לה' : <b>על תשובות.</b> בעבור שימצאו תשובות באנשי און בראותם שלא הלכו ממנו הייסורים כ''א בתשובה : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>אבי.</b> ענין תאוה ורצון כמו לא אבה יבמי (דברים כה) : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>אבי.</b> מגז' אבה והרצון בו רצוני או יהיה קריאה אל השם על : <b>תשובות באנשי און.</b> על שהוא משיב להם תשובות בענין אנשי און : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כִּ&#1445;י יֹ&#1432;סִ&#1444;יף עַֽל-חַטָּאת&#1443;וֹ פֶ&#1453;שַׁע בֵּינֵ&#1443;ינוּ יִסְפּ&#1425;וֹק וְיֶ&#1430;רֶב אֲמָרָ&#1443;יו לָאֵֽל:</span>
+</div><div class='passukFr'> car &agrave; son p&eacute;ch&eacute; il ajoute une faute plus grave: il pense triompher au milieu de nous et prodigue ses propos contre Dieu.&quot;
+</div><div class='passukEn'>For he addeth rebellion unto his sin,
+He clappeth his hands among us,
+And multiplieth his words against God.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>יספוק.</b> ל' רוב דברים והרמת קול : <b>בינינו יספוק.</b> הוא אומר מה לנו ולדבריו אף אמנם שגיתי אתי תלין (לעיל יט) ואינו יודע שאנו נענשים ומספיק לנו עונות על שאנו שומעים כך מפורש בויקרא רבה : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כי יוסיף.</b> כי על החטא אשר יחטא בלבו לכחש בהשגחה עוד יוסיף פשע אשר בינינו בפרסום רב יתלונן די ספוקו וירבה אמריו על האל ואם עכ''ז ילכו להם היסורים ינעול דלת לפני אנשי און ולא ישובו לה' כי יאמרו הכל בא במקרה וכאשר באו כן הלכו (העולה מהמענה ההיא אשר ישוב לומר שהמקום משלם לכ''א כגמולו ואינו מוצא תנואות לחבל מעשה ידיו משנאתו בם כי אם היה כן מה לו להרבות בתחבולות הלא הכל שלו ובידו לאבד הכל בקלות ואין מי ימחה בידו אבל עם הכל יעשה במשפט הדל יהיה או שוע המעט אם רב ואין כח במערכת השמים לבטל גזירת המקום לזאת מהראוי לשוב לה' ולא לבעט ביסורים אף יתאוה לבל ילכו היסורים מאיוב עד כי ישוב למען הורות תשובה) : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>יספוק.</b> די הספוק ור''ל הרבה מאד כמו במלאות ספקו (לעיל כ) : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>יספוק.</b> יספוק כפיו ויתרעם מהש''י : <b>ביאור דברי המענה.</b> השיב אליהוא על קצת דברים זכר שאמרם איוב ואמר שמעו חכמים מילי ויודעים האזינו לי כי אזן מלים תבחן כמו החיך יטעם האוכל או רצה בזה שהוא יטעון על איוב מהדברים המוחשים לא שיסתיר המוחש כמו שהיו עושים ריעי איוב נבחרה לנו המשפט והאמת לא נבחר דעת אחד על אח' אם לא מצד העיון והחוש או מצד אחד מהם אבל נשתדל לדעת אי זה מהדעות הוא יותר טוב, כי אמר איוב צדקתי ואל הסי' משפטי על משפטי שישפטני השם באלו המכאובות האם אכזב באמרי שצדקתי הנה על דרך האמת אנושה מכתי מבלי פשע, מי גבר חכם ושלם כאיוב יאמר דברי לעג כאלו, והנה בזה המאמר כאילו הלך להתחבר עם פועלי האון ואנשי רשע כי יאמר שלא יועיל לאדם ברצותו הדרך שהוא עם אלהים והוא הדרך הישר, ואולם אמר זה כי מי שילך בדרך הישרה יאמרו בו שהלך עם אלהים כאומרו את האלהים התהלך נח, לכן אנשי שכל שמעו לי חלילה לאל מעשות רשע ועול כי הוא ישלם לאדם פעלו ר''ל גמול פעלו על דרך וכשכיר יקוה פעלו וימציא לאדם בדרכיו ר''ל שישגיח בטובים וישמר' והרשעים יהיו נעזבים למקרה הזמן הרעים הנכונים לבא עליהם מצד המערכת, אמנם שהש''י לא יעשה רשע ולא יעות משפט הוא מבואר ממה שאומר מי הוא עליו שגזר וסדר כל אלו הנמצאות הנפלאות אשר בארץ בזה הסידור הנפלא מהיושר והחכמה מה שלא יתכן לאדם שישיג ממנו כי אם מעט ומי שסדר זולתו זה העולם כלו הלא באמת הוא לבדו בראו ובכחו עומד ונשמר תמיד, ואם היה חפץ רשע להביא רע בזה העולם שלא כרין היה אפשר שיאסוף אליו חיי זה העולם יחד ויפסידהו ויגוע יחד כל חי ואדם על עפר ישוב ואולם זה אינו אבל נמצא הש''י משגיח בו השגחה נפלאה להעמידו תמיד על מתכונתו ולזה יחוייב שלא ייוחס לש''י הרשע והעול ואם תרצה להבין שמע אמרי, הגם שונא משפט ימשול בזה העולם הנמצא בו המשפט והחסד בתכלית מה שאיפשר בבריאת הנמצאות אשר בו ובפרט בצמחים ובעלי חיים ואין ראוי ליחס רשע אל מי שהוא חזק הצדק אשר בהנהגתו זאת אשר סידר באנשי העולם מן היושר עד שלא ניכר בה שרים ולא ניכר בה בין נדיב ודל לפי שהם כולם מעשה ידיו, ולזה תמצא שבבא יומם ימותו ברגע ובכמו שיעור העתה אשר יחלק הלילה לשני חציין שאינו בזמן אלא כמו שהנקודה בקו ימצא שיתנועעו עם אחר ויעברו מן העולם ויאבדו בבא יומם ויסורו אלו המקרים אשר ימיתום האביר אשר ימשול בזה העם עמהם וכל אלו ימותו יחד מזולת שיחולו עליהם ידים אבל ברצון השם וגזרתו זה הרע בא להם מצד רשעם להעדר ההשגחה האלהית מפני זה מהם ובהסתירו השם פניו מהם יהיו מטרה למקרה הזמן כמו שאמר אחר זה ויסתר פנים ומי ישורנה ועל גוי ועל אדם יחד וכל זה הוא לפי שעיני השם על דרכי איש והוא רואה כל צעדיו ושיתכן שיהיו ממנו צדיקים ורשעים ולזה היה הרע הנופל במקרה מצד הסידור אשר מהמערכת כמו מכוון לענוש הרשעים כי הרבה מה שישתדל השם בענייני' אשר מצד ההכרח שיגיע מהם תועלת כמו שהתבאר בספר בעלי חיים, אין חשך ואין צלמות להסתר שם פועלי און מיד השם ית' על רשעם כי בלא ספק יגיעם עונש בעניינים החמריים לסור ההשגחה האלהית מהם, הנה לא על איש יגזור ויסדר מה שיעשה בעתיד אבל הכל בבחירתו כדי שיוכל כל איש ללכת אל אל במשפט וביושר ולא ימנעהו מזה מה שסידר מהמעשים והתכונות הנפשיות מצד המערכת כי זה הסידור כמו שאמרנו ימשול בו השכל, ישבור השם תקיפים רבים עושקי בני אדם לאין חקר ויעמיד אחרים כאשר ימצאו במקומם לעשות עמהם רע כמו הרע הנעשה לקודמי' וזה אמנם הוא מפני הסתר פנים, ומפני זה יכיר לאנשים פעולותיהם כי הם היו רעות בראותם העונש הבא להם עד שידכאו ויאבדו בזמן מועט כמו הרגע אשר יהפך בו הלילה ליום כי אין בין היום והלילה אמצעי, הנה כבר הכה אותם במדרגת אשר ראוי שיוכו בו הרשעים במקום רואים שיראו הרע המגיע לאלו הרעים ויראו כי הם בעצמם סבבו שיגיעו הרעות להם מפני סור' מאחרי השם ובלתי השכילם דרכיו עד שסרה השגחתו מהם, ובזה תועלת לטובים אשר היו עושקים אותם אלו הרעים והם הדלים והעניים אשר היו צועקים לשם מפני היותם עשוקים ואפשר שנאמר כי אליהוא יראה כי בכאן ב' סיבות להגעת הרע לרשעים האחד מצד העדר ההשגחה האלהית מהם אשר סבתם סורה ממנו ובלתי השכילם דרכיו ויבאו מפני זה להם הרעות המוגבלות מצד המערכת להם, והשנית ההשגחה האלהית אשר על הטובים כי יתכן שישגיח השכל הפועל על האיש הטוב שיסיר ממנו כל דבר יזיקהו ויכלה ממנו מפני זה אלו הרשעים ויכוון אל ההטבה לטובים בעצמות וזהו דעת תורתינו בלא ספק ר''ל שהרעות יבואו לרשעים לאחת משתי אלו הסיבות ולזה באו הרעות על המצרים בעבור ישראל, וזולת זה מה שנזכר בתורה שינהג זה המנהג ונזכר בתורה ג''כ הצד השני מהבאת העונש על הרשע ר''ל סור ההשגחה האלהית ממנו והיותו משולח ונעזב לרעות הנכונות לבא עליו אמר והסתרתי פני מהם והיה לאכול ואמר לי נקם ושלם לעת תמוט רגלם והש''י כאשר ישקיט האדם בשמרו אותו בהשגחתו עליו אמר מי הוא זה אשר ירשיעהו ויענישהו הנה אין כח ברע המוגבל מצד המערכת שיזיק לאדם בהיות השגחת השם בו והיא תהיה בו בהתאחדותו בשכל הפועל כפי היכולת או אם יסתיר השם פניו ויהיה האדם משולח ונעזב למקרי' מי יראה אותו וישגיח בו להצילו מהרע הנכון לבא עליו וזה הרע יקרה מצד הסתר פנים עד שיחול יחד על גוי ועל אדם המולך עליהם וסבת זה מלוך אדם חנף על זה העם והיות העם הזה רבו המוקשים והפגעים כאילו אמר שהעם לא יענש בעבור חטא המלך אם הם בצד שתהיה השגחת הש''י בהם ולא המלך בעבור חטא העם אבל תהיה הסיבה ברע אשר יקרם חטא שניהם יחד ואפשר שנאמר שיהיה הרצון באומרו ממלוך אדם חנף וגו' שכבר ישגיח מחוזק ההשגחה האלהית עד שלא ימלוך אדם חנף כי אם ממוקשי עם ולזה ישלח להם השם מנהיג שישחיתם ואילו היו טובים לא היה בו כח להשחיתם לפי שהש''י השומר אותם יהפוך לב המנהיג כאשר ירצו באומרו פלגי מים לב מלך ביד ה' אל כל אשר יחפוץ יטנו והנה הביאור הראשון יותר נכון מצד הענין ומצד הלשון כי לזה הביאור היה ראוי שיאמר מלוך אדם חנף ממוקשי עם ובהיות הענין כמו שאמרתי ר''ל שהש''י ישמור הדבקים בו מכל רע נכון לבא עליהם מצד המערכ' ושהרע יבא לצדיקים על צד ההשגחה לשומרם מרע מה הנכון לבוא עליהם מצד המערכת ושהרע יבא לצדיקים על צד התוכחות כשיתחילו לדרוך אל הרשע, הנה אל אל אשר לו היכולת לומר מחלתי לא אשחית ר''ל שכחו להסיר הרע הנכון לבוא מצד המערכת היה ראוי שתשוב ותאמר בלעדי אחזה בעצמי רשע אתה הורני ואם עול פעלתי לא אוסיף אם לא היית מכיר בעצמך רשע כמו שאתה אומר והשתדל להתקרב אליו בדרך שתהיה השגחתו בך ואז תנצל כי זה בהכרח לפי מה שאמרתי בא אליך אם מצד התוכחות לחטא מה התחלת בדריכתו אם מצד הסידור מהכוכבים להעדר ההשגחה ממך אם להשגחת הש''י עליך להצילך מרע יותר חזק היה נכון לבוא עליך, וזה האופן השלישי אין ראוי לך להתרעם ממנו ואם היה שיהיה רע הבא עליך על זה האופן ואם היה על אחד מהאופנים הקודמים הנה התשובה לך אל תועיל לך ותצילך משישלים אליך הרעה אשר החחיל להביאה אליך האם נכון שיצא ממך דבר יהיה סבה להשלי' לבא הרעה אליך כי מאסת חייך ולא השתדלת להתקרב אל הש''י כרי שיסיר הרע ממך אבל בחרת שימיתך או יהיה הרצון באומרו כי מאס מאסת לשוב אל השם ולהכנע לפניו הנה אתה תבחר זה הדרך ולא אני ומה תדע להשיב על דברי, אנשי שכל יאמרו לי ויאמר גבר חכם שומע לי, כי איוב לא ידבר בדעת דבריו אלה ודבריו לא בהשכל רצוני יבחן איוב באלה המכאובים עד נצח כדי שיהיו ממנו תשובות באנשי און ר''ל להשיב להם ראו מה קרה לאיוב על הטיח דברים כנגד הש''י או יהיה פירושו על תשובות באנשי און מפני שהיה משיב תשובות באנשי און ליחס מהם עול לש''י והיא ההצלחה הנראית לרשעים לפי מה שזכר, כי יוסיף תמיד על חטאתו פשע בינינו יספוק כפיו ויתרעם על הש''י וירבה אמריו לאל כאילו היה אנוש בערכו : והכלל העולה מהדברים הוא כי על מה שהיה איוב טוען שכבר הגיעוהו רעות נפלאות על לא חמס בכפיו ושפט מפני זה שהאדם משולח ונעזב אל הסידור אשר מצד המערכת ולזה היה מתרע' על השם יתברך איך סידר הענין בזה האופן בהעדר הסדר והיושר ולמה ברא האנשים הקשי יום אחר שאין להם המלט מהרע ונבחר להם ההעדר מהמציאות והמות מהחיים הנה ישיב אליהו שדברי איוב בטלים מצדדים הצד האחד שהוא היה אומר שאין חמס בכפיו והוא מבואר שכבר חטא במה שאמר שלא יועיל לאדם בהחהלכו בדרכי השם וכאילו התחבר בזה הדעת עם אנשי רשע ופועלי און כי הם יעשו מה שיעשו מהרשע והחמס להשענם שלא יגיעם נזק מהש''י על זה ואע''פ שכבר התנצל איוב מזה הענין והשיב שהוא לא ישבח מפני זה הרשע והעול כמו שזכר במענה חי אל הסיר משפטי הנה אין לו התנצלות במה שנכנס מהמות בדעתו זאת מצד קיצורו מחקור בזאת החקירה כפי מה שראוי והוא מבואר שהחטא אשר יהיה בדעות הוא יותר עצום מהחטא אשר יהיה בפעולות המדותיוח כי כל מה שיהיה הפועל למרי והמתואר בו יותר נכבד יהיה החטא בו יותר חזק ולפי שהחטא אשר יהיה בדעות יהיה המתואר בו השכל והחטא אשר יהיה בפעולות המדותיות יהיה המתואר בו החומר והכחות הנפשיות החמריות והנה השכל יוחר נכבד מהחומר ומשאר כחות הנפש הוא מבואר שהחטא אשר יהיה בדעות הוא יותר עצום מהחטא אשר יהיה בפעולות המדותיות כאילו תאמר הגנבה והגזל ומה שידמה לזה וכ''ש כשנתלו בדעת ההוא אשר היה הטעות השלמיות האנושיות בכללם והמדעי כמו הענין בזה הדרוש אשר טעה בו איוב זה האופן מהטעות ואמנם שכבר נתלה בו השלמות המדיני הוא מבואר ממה שקדם וזה שהאנשים לא ימנעו מעשות הרשע והעול אלא ליראתם שיגיעם עונש על זה ואמנם יתבאר שכבר נחלה בו שלימות המדעי משני צדדים הצד האחד במקרה והוא כשידעו האנשים שבהשלימם שכלם והוצאתם אותו מהכח אל הפועל ימלטו מאלו הרעות אשר מצד המערכת כמו שהתבאר מדברי אליהו ישתדלו להשלים שכלם והצד השני בעצם כי ההצלחה האינושית תהיה כשישכיל האדם השם יתברך כפי מה שאיפשר וזאת הגזרה מוסכם עליהם מהפילוסופים ובעלי התורה האלהי' והיא כמו מבוארת בנפשה למי שהתפלסף וידע ענין השכל ומהו מה שישכיל ולפי שהשגת הש''י האפשרי' לנו הגיע לנו בשנשיג מעשיו ואופן פעלו בהם ויותר מה שאיפשר שנשיג מהם הם אלו הדברים אשר בזה העולם השפל הנה כאשר תעלם ממנו הנהגתו אותם ונטעה בזאת ההנהגה זה האופן מהטעות שטעה איוב תמנע ממנו ההשגחה בשם ית' האיפשרית לנו ובהיות הענין כן הוא מבואר שדברי איוב בלתי צודקים במה שהיה אומר שצדק ואל הסיר משפטי והצד השני הוא שאליהו יבאר שהשם לא ישתדל בעשייח הרשע והעול כלל אבל ירחיקהו בכל האופנים ולזה אין ראוי שנאמר שהוא סידר בטובות אישי האדם ורעחם סידור בלתי בלתי שומר צדק ויושר כמו שהיה אומר איוב אמנם שהש''י איננו חפץ ברשע והעול זה יתבאר בחפוש ונציע לזה המופת הקדמה אחת מחוייב הוראתה והיא שכל הדברים הנמצאים פועל אותם הש''י ואחר שהוצעה זאת ההקדמה על שהוא אמתית בלא ספק ומחוייבת ההודאה בה לבעלי התורות האלהית ולבעלי העיון אמנם כי כשנחפש בכללות בסדור אשר סדר הש''י בזה המציאות מצאנו בו מהצד' והיושר וההטבה והחנינה מה שלא ישוער רצוני לומר כשחקרנו בשלמות הנמצא ביציר' מין ומין מהנמצאות עד שלא היה אפשר המצאם באופן יותר שלם רוצה לומר שאי אפשר שיהיה להם מהשלמות בעצמם יותר מהנמצא להם ואי אפשר ג''כ שישלימו קצתם קצת יותר מזה ממה שנמצא להם מהשלמתם קצתם קצת והעדרם קצתם בקצת ואל אלו שתי ההקדמות רמז אליהו באומרו מי פקד עליו ארצה ומי שם תבל כולה רצוני שהוא זכר שהש''י הוא הפועל סידור העולם וטען עם זה בזה הפסוק שזה הסידור יורנו שאין הש''י חפץ רשע והוא מה שהקדים ואמר אף אמנם אל לא ירשיע ושדי לא יעות משפט וביאר זה מזה הסידור אשר סדרו הש''י בזה העולם ובהיות הענין כן הוא מבואר מצד אלו הפעולות אשר פועל אותם הש''י שאיננו חפץ בעשיית הרשע והעול אבל כל השתדלותו הוא לעשות הצדק והיושר בכל הדברים הנמצאים וזה שאם היה חפץ בעשיית הרשע והעול לא היו פעולותיו על צד האופן שהם בו מהצדק והיושר כי לא יבא ממי שהוא חפץ רשע ועול צדק ויושר כי אם מעט ובמקרה ואין לאומר שיאמר שהוא פועל המינים והם אשר נמצא בהם בבריאתם הצדק והיושר ואיננו פועל האישי' לפי שהמיני' אינם דבר יותר מהאישי' אבל הם האישי' בעצמם ואולם באישים דבר נוסף על הטבע המיניי והם המשיגי' היולניי' אשר היו בהם פרטיים כמו שהתבאר במה שאחר הטבע וכאשר התיישב זה כולו הוא מבואר שאין הש''י חפץ רשע ועול ומה שנמצאהו בלתי שומר צדק ויושר בטובות אישי האדם ורעת' ראוי שנחקור איך איפשר זה מזולת שניחס לשם רשע ועול ואם לא נוכל להשיג זה ראוי שניחסהו אל קצורינו לא שנחליט המאמר מפני רוע הסידור הנמצא לפי מה שנחשוב בטובות אישי האדם ורעתם שהש''י סידר זה הענין באופן חסר כמו שהיה אומר איוב ואם אמר אומר שאיוב לא ייחס זה הענין אשר היה מתרעם עליו לש''י לרשע עול אבל ייחסהו ללאות וקיצור וזה לא יכטל מזה הצד הנה אליהו בטל ג''כ זה המאמר בכח טענתו זאת ואמר אמנם שהש''י לא ירשיע ולא יעות משפט מצד קצורו וליאותו מהמציא זה הסירור הנמצא בטובות אישי האדם ורעתם באופן יותר שלם זה מבואר לפי שהוא לבדו המציא זה המציאות בכללו וסידר אותו בזה הסידור הנפלא אשר הוא מורה על שתכלית העוצם והחכמה נמצא לפועלו ואם לא השיגהו קיצור וליאו' מהמציא מה שהמציא מהדברים הנפלאים תכלית הפלא בנמצא נמצא כ''ש שלא ישיגהו ליאו' וקיצור במה שהוא למטה מזה והוא הבאת הטוב לטובים והבאת הרע לרעים וכ''ש שלא ילאה להמנע מברוא האנשי' הקשי יום ולא יקצר מהשיג אם המות הוא נבחר מהחיים לכמו אלו האנשים אם לא והנה יבאר אליהו באופן שני שאין הש''י חפץ ברשע והעול והוא יניח תחלה בכח דבריו כאילו הוא מבואר בנפשו שאין הבאת הטוב בלא משפט עול כאילו תאמר הבאת הטוב לרשעים המסודר להם מצד המערכת לפי שהוא יראה שאין בזה עול כי זה הטוב יבא להם על צד ההשגחה הכוללת אשר הש''י משגיח באדם רצוני לומר מצד הסידור אשר מהגרמים השמימיים וזה יהיה להם מאשר האדם נולד בעת אשר היה בו מצד הכוכבים זה המצב לא מצד מה שהם אלו האנשים והוא מבואר שאין ראוי שימנע השם מהשגיח במין האנושי זה האופן מן ההשגחה מפני הרשעים אשר אפשר שיהיו בו ואולם היה עול ורשע אם היה מגיע להם טוב מצד מה שהם רשעים או מפני הטבע האישיי ואחר שהתישב זה הנה נבאר מדברי אליהוא שאין הש''י חפץ רשע וזה שאם היה חפץ רשע הנה יחוייב לפי דעת איוב שיהיה השתדלותו להביא רע בלא משפט לאלו הנמצאות השפלים באמצעות המערכת וזה כי הבא' הטוב בלא משפט בזה האופן איננו רשע ועול כמו שקדם והנה אם היה חפץ בהבא' הרע היה משחית זה המציאות השפל ברגע לפי מה שנמצא לש''י מעצ' הכח והיכולת ועוד שעמידה זה הנמצא קיומו הוא בשם ית' וכאשר לא יסבב הש''י בשמירתו יפסד תכף ואחר זה נשנה מקביל הנמשך ונאמר אבל זה המציאות השפל נפסד ונשחת יחד ויחוייב מזה מקביל הקודם והוא שאין הש''י חפץ בהשחתה וההרעה והוא מקביל הנמשך מההקש התנאי הקודם ויחויב ממנו מקביל הקודם והוא שאין הש''י חפץ רשע וזה המופת רמז אליו אליהו באומרו אם ישיב אליו לבו רוחו ונשמתו אליו יאסוף לבאר מה שהקדים ואמר אף אמנם אל לא ירשיע ואמר ואדם על עפר ישוב שאם היה דעת איוב שזה העול איננו נמצא רק באדם ולא יחוייב שיהיה חפץ להביא רע בלא משפט כי אם לאדם הוא מבואר שאם היה חפץ הש''י בהבאת הרע לאדם היה מפסיד המין האנושי ברגע ולפי שלא ביאר אליהוא בביאור שהבא' הטוב בלא משפט לרשעים מצד המערכת אינו עול נשאר זה הספ' לאיוב אחר דברי אליהוא ר''ל מדוע נמצא' ההצלחה לרשעים כמו שנבאר בביאורינו דעת איוב עם הש''י, והנה הרע אשר יגיע אל הנמצאים השפלים במקרה מהגרמים השמימיי' כבר יאמר אליהוא שאין ראוי שיוחס לש''י לרשע ועול לפי שבו תועלת לענוש לרשעים על רשעם ויקבלו בזה תוכחת שאר האנשים וימלטו ג''כ הטובים מיד הרעים באבדם וזכר עם זה אליהוא שכבר יביא השם רע לרשעים לזאת הסבה לבד ואם לא היה מחוייב להם מצד המערכת להציל הצדיקים מידם וזה כולו צדק ויושר : <small>(רלב"ג)</small></div></div>
+
+</div><div id='prakimFoot' class='prakim'><span class='perekTitle'><a href='1.html'>1</a></span><span class='perekTitle'><a href='2.html'>2</a></span><span class='perekTitle'><a href='3.html'>3</a></span><span class='perekTitle'><a href='4.html'>4</a></span><span class='perekTitle'><a href='5.html'>5</a></span><span class='perekTitle'><a href='6.html'>6</a></span><span class='perekTitle'><a href='7.html'>7</a></span><span class='perekTitle'><a href='8.html'>8</a></span><span class='perekTitle'><a href='9.html'>9</a></span><span class='perekTitle'><a href='10.html'>10</a></span><span class='perekTitle'><a href='11.html'>11</a></span><span class='perekTitle'><a href='12.html'>12</a></span><span class='perekTitle'><a href='13.html'>13</a></span><span class='perekTitle'><a href='14.html'>14</a></span><span class='perekTitle'><a href='15.html'>15</a></span><span class='perekTitle'><a href='16.html'>16</a></span><span class='perekTitle'><a href='17.html'>17</a></span><span class='perekTitle'><a href='18.html'>18</a></span><span class='perekTitle'><a href='19.html'>19</a></span><span class='perekTitle'><a href='20.html'>20</a></span><span class='perekTitle'><a href='21.html'>21</a></span><span class='perekTitle'><a href='22.html'>22</a></span><span class='perekTitle'><a href='23.html'>23</a></span><span class='perekTitle'><a href='24.html'>24</a></span><span class='perekTitle'><a href='25.html'>25</a></span><span class='perekTitle'><a href='26.html'>26</a></span><span class='perekTitle'><a href='27.html'>27</a></span><span class='perekTitle'><a href='28.html'>28</a></span><span class='perekTitle'><a href='29.html'>29</a></span><span class='perekTitle'><a href='30.html'>30</a></span><span class='perekTitle'><a href='31.html'>31</a></span><span class='perekTitle'><a href='32.html'>32</a></span><span class='perekTitle'><a href='33.html'>33</a></span><span class='perekTitle'><a class='linkSelected' id='linkSelectedFoot' href='34.html'>34</a></span><span class='perekTitle'><a href='35.html'>35</a></span><span class='perekTitle'><a href='36.html'>36</a></span><span class='perekTitle'><a href='37.html'>37</a></span><span class='perekTitle'><a href='38.html'>38</a></span><span class='perekTitle'><a href='39.html'>39</a></span><span class='perekTitle'><a href='40.html'>40</a></span><span class='perekTitle'><a href='41.html'>41</a></span><span class='perekTitle'><a href='42.html'>42</a></span></div></div></div></body></html>
