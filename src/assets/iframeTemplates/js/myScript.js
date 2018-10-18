@@ -97,16 +97,16 @@ function accordionOpenClose(id)
 					}
                     }
                     
-                    var myElement = document.getElementById('linkSelectedHead');
-                    var scrollBarMiddle=document.getElementById('prakimHead').offsetWidth/2;
-                    var leftPos = myElement.offsetLeft;
-
-                    document.getElementById('prakimHead').scrollLeft = leftPos-scrollBarMiddle;
-                    document.getElementById('prakimFoot').scrollLeft = leftPos-scrollBarMiddle;
-
-
-
-					makeDisappearAppearDivsBasedOnClass("theContent", true);
+					  makeDisappearAppearDivsBasedOnClass("theContent", true);
+					  
+					  var myElement = document.getElementById('linkSelectedHead');
+					  var scrollBarMiddle=document.getElementById('prakimHead').offsetWidth/2;
+					  var leftPos = myElement.offsetLeft;
+  
+					  document.getElementById('prakimHead').scrollLeft = leftPos-scrollBarMiddle;
+					  document.getElementById('prakimFoot').scrollLeft = leftPos-scrollBarMiddle;
+  
+  
 				}
 				
 			
