@@ -105,6 +105,8 @@ function accordionOpenClose(id)
                     document.getElementById('prakimFoot').scrollLeft = leftPos-scrollBarMiddle;
 
 
+
+					makeDisappearAppearDivsBasedOnClass("theContent", true);
 				}
 				
 			

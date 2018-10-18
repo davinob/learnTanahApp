@@ -2,7 +2,7 @@
 <widget id="learn.nach" version="0.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>נ"ך עם פירושים</name>
     <description>Learn Neviim and Ketuvim with Pirushim and translations</description>
-    <author email="davidyohi@gmail.com" href="DavidYohi">Yodaleta</author>
+     <author email="torahwithpirushim@gmail.com">Learn Torah</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
