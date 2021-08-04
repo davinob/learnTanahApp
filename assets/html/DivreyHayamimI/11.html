@@ -1,0 +1,377 @@
+<html><head>
+				<link rel='stylesheet' type='text/css' href='../css/stylesTorah.css'>
+			<script src='../js/myScript.js'></script>				
+			
+				</head>
+							<body class='theBody' onload='initClassesBasedOnCookies()'>
+						<div id='mySidenav' class='sidenav'>
+ 
+ 					<span class='trads'>
+					<span type='button' id='passukEn'  onClick="hideShow('passukEn',this)" class='button'>EN</span>
+					<span type='button' id='passukFr'  onClick="hideShow('passukFr',this)" class='button'>FR</span>					
+					</span>
+					<span class='pirushim'>
+					<span type='button' id='rashi' onClick="hideShow('rashi',this)" class='button'>רש"י</span><span type='button' id='mezudatDavid' onClick="hideShow('mezudatDavid',this)" class='button'>מצודת דוד</span><span type='button' id='mezudatZion' onClick="hideShow('mezudatZion',this)" class='button'>מצודת ציון</span><span type='button' id='ralbag' onClick="hideShow('ralbag',this)" class='button'>רלב"ג</span></span>
+  
+					</div>
+					<span id='buttonNav' style='font-size:35px;cursor:pointer; position:fixed' onclick='openNav()'>&#9776;</span>
+		
+						<div class='theContent' onclick='closeNav()'><div class='newSefer'><span class='inSeferTitle'><a href='../index.html'>כתובים</a></span><div id='prakimHead' class='prakim'><span class='perekTitle' id='perekTitle1'><a href='1.html'>1</a></span><span class='perekTitle' id='perekTitle2'><a href='2.html'>2</a></span><span class='perekTitle' id='perekTitle3'><a href='3.html'>3</a></span><span class='perekTitle' id='perekTitle4'><a href='4.html'>4</a></span><span class='perekTitle' id='perekTitle5'><a href='5.html'>5</a></span><span class='perekTitle' id='perekTitle6'><a href='6.html'>6</a></span><span class='perekTitle' id='perekTitle7'><a href='7.html'>7</a></span><span class='perekTitle' id='perekTitle8'><a href='8.html'>8</a></span><span class='perekTitle' id='perekTitle9'><a href='9.html'>9</a></span><span class='perekTitle' id='perekTitle10'><a href='10.html'>10</a></span><span class='perekTitle' id='perekTitle11'><a id='linkSelectedHead' class='linkSelected' href='11.html'>11</a></span><span class='perekTitle' id='perekTitle12'><a href='12.html'>12</a></span><span class='perekTitle' id='perekTitle13'><a href='13.html'>13</a></span><span class='perekTitle' id='perekTitle14'><a href='14.html'>14</a></span><span class='perekTitle' id='perekTitle15'><a href='15.html'>15</a></span><span class='perekTitle' id='perekTitle16'><a href='16.html'>16</a></span><span class='perekTitle' id='perekTitle17'><a href='17.html'>17</a></span><span class='perekTitle' id='perekTitle18'><a href='18.html'>18</a></span><span class='perekTitle' id='perekTitle19'><a href='19.html'>19</a></span><span class='perekTitle' id='perekTitle20'><a href='20.html'>20</a></span><span class='perekTitle' id='perekTitle21'><a href='21.html'>21</a></span><span class='perekTitle' id='perekTitle22'><a href='22.html'>22</a></span><span class='perekTitle' id='perekTitle23'><a href='23.html'>23</a></span><span class='perekTitle' id='perekTitle24'><a href='24.html'>24</a></span><span class='perekTitle' id='perekTitle25'><a href='25.html'>25</a></span><span class='perekTitle' id='perekTitle26'><a href='26.html'>26</a></span><span class='perekTitle' id='perekTitle27'><a href='27.html'>27</a></span><span class='perekTitle' id='perekTitle28'><a href='28.html'>28</a></span><span class='perekTitle' id='perekTitle29'><a href='29.html'>29</a></span></div></div><div class='seferContent'>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{א}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיִּקָּבְצ&#1447;וּ כָֽל-יִשְׂרָאֵ&#1435;ל אֶל-דָּוִ&#1430;יד חֶבְר&#1443;וֹנָה לֵאמֹ&#1425;ר הִנֵּ&#1435;ה עַצְמְךָ&#1445; וּֽבְשָׂרְךָ&#1430; אֲנָֽחְנוּ:</span>
+</div><div class='passukFr'> Tout Isra&euml;l s&rsquo;assembla et vint aupr&egrave;s de David &agrave; H&eacute;bron, pour lui dire&amp;nbsp;: &quot;Nous sommes ta chair et ton sang.
+</div><div class='passukEn'> Then all Israel gathered themselves to David unto Hebron, saying: 'Behold, we are thy bone and thy flesh. </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>חברונה.</b> אחר שמלך בחברון על יהודה : <b>עצמך ובשרך.</b> כמו כל בית יהודה כי בני איש אחד נחנו : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ויקבצו כל ישראל אל דוד חברונה וגו'.</b> עד ויתחזק שלמה בן דוד על מלכות (לקמן ב' א) ראינו להציע בכאן שאין כונתנו לשוב לבאר בזה הספר מה שכבר בארנוהו בספר שמואל ומלכים ולא לשוב ולמנות תועלותיהם אך מה שנתחדש בזה הספר לבד או שנשתנה בו הלשון או הענין נבאר ונסיר הספק אם תראה בו סתירה לפי מה שנזכר בספר שמואל או מלכים : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">גַּם-תְּמ&#1443;וֹל גַּם-שִׁלְשׁ&#1431;וֹם גַּ&#1434;ם בִּהְי&#1443;וֹת שָׁא&#1443;וּל מֶ&#1428;לֶךְ אַתָּ&#1435;ה הַמּוֹצִ&#1445;יא וְהַמֵּבִ&#1430;יא אֶת-יִשְׂרָאֵ&#1425;ל וַיֹּאמֶר&#1449; יְהוָ&#1448;ה אֱלֹהֶ&#1436;יךָ לְךָ&#1431; אַתָּ&#1448;ה תִרְעֶ&#1444;ה אֶת-עַמִּי&#1433; אֶת-יִשְׂרָאֵ&#1428;ל וְאַתָּה&#1433; תִּהְיֶ&#1443;ה נָגִ&#1428;יד עַ&#1430;ל עַמִּ&#1445;י יִשְׂרָאֵֽל:</span>
+</div><div class='passukFr'> D&eacute;j&agrave; hier, d&eacute;j&agrave; avant-hier, alors que Sa&uuml;l &eacute;tait roi, c&rsquo;est toi qui dirigeais toutes les exp&eacute;ditions d&rsquo;Isra&euml;l. C&rsquo;est toi, t&rsquo;avait dit l&rsquo;&Eacute;ternel, ton Dieu, qui gouverneras Isra&euml;l, mon peuple, toi qui seras son chef.&quot;
+</div><div class='passukEn'>In times past, even when Saul was king, it was thou that didst lead out and bring in Israel; and the Lord thy God said unto thee: Thou shalt feed My people Israel, and thou shalt be prince over My people Israel.' </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>אתה תרעה את עמי.</b> על זה אמר דוד ה' רועי לא אחסר (תהלים כ''ג) אתה אומר לי אתה תרעה מה אני יכול לרעות אין הדבר תלוי בי אלא ה' רועי לא אחסר וגם אני לא אחסר לכם ודוגמא בשמואל (ב' כ''א) אז נשבעו אנשי דוד לו לאמר לא תצא עוד אתנו במלחמה ולא תכבה את נר ישראל אמר להם דוד כי אתה נרי ה' וה' יגיה חשכי (שם כ''ב) : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>אתה המוציא.</b> כאילו אמרו לא יגדל אהבת בית יהודה עלינו על אשר מלכת בהם ראשונה כי גם עלינו משלת מאז : <b>את ישראל.</b> א''כ עליך לרעות את כל ישראל אלו כאלו בשוה : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>שלשום.</b> יום השלישי מהיום : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַ&#1440;יָּבֹאוּ כָּל-זִקְנֵ&#1448;י יִשְׂרָאֵ&#1444;ל אֶל-הַמֶּ&#1433;לֶךְ&#1433; חֶבְר&#1428;וֹנָה וַיִּכְרֹת&#1449; לָהֶ&#1448;ם דָּוִ&#1445;יד בְּרִ&#1435;ית בְּחֶבְר&#1430;וֹן לִפְנֵ&#1443;י יְהוָ&#1425;ה וַיִּמְשְׁח&#1448;וּ אֶת-דָּוִ&#1444;יד לְמֶ&#1433;לֶךְ&#1433; עַל-יִשְׂרָאֵ&#1428;ל כִּדְבַ&#1445;ר יְהוָ&#1430;ה בְּיַד-שְׁמוּאֵֽל:</span> <b>(ס)</b>
+</div><div class='passukFr'> Tous les Anciens d&rsquo;Isra&euml;l vinrent donc trouver le roi &agrave; H&eacute;bron&amp;nbsp;; le roi David fit un pacte avec eux &agrave; H&eacute;bron devant l&rsquo;&Eacute;ternel, et ils le sacr&egrave;rent comme roi d&rsquo;Isra&euml;l, selon la parole de l&rsquo;&Eacute;ternel &agrave; Samuel.
+</div><div class='passukEn'>So all the elders of Israel came to the king to Hebron; and David made a covenant with them in Hebron before the Lord; and they anointed David king over Israel, according to the word of the Lord by the hand of Samuel.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ויכרות להם דוד ברית.</b> כאותו ברית שכרת יהוידע דכתיב (מלכים ב' י''א) ויכרות יהוידע את הברית בין ה' ובין המלך ובין העם להיות לעם לה' פתרון להיות לה' עבדים וגם בין המלך ובין העם להיות לו לעבדים כמשפט המלך וגם המלך לעשות כחוק לעבדיו ללחום מלחמותם : <b>לפני ה'.</b> והלא לא היה המשכן בחברון אלא מהו לפני ה' כל מקום שעושין תנאי או כורתין ברית המקום שם הוא דוגמא ביפתח לפני ה' במצפה (שופטים י''א) ודוגמא ומעלה מעל בה' וכיחש בעמיתו (ויקרא ה') כדמפרש בתורת כהנים : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כל זקני ישראל.</b> אשר הכח בידם להמליכו : <b>ויכרות וכו'.</b> להיות להם לאויב כמו לבית יהודה : <b>לפני ה'.</b> לפני ארון ה' כי הביאוהו שמה לפי שעה : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיֵּ&#1448;לֶךְ דָּוִ&#1447;יד וְכָל-יִשְׂרָאֵ&#1435;ל יְרוּשָׁלַ&#1430;ִם הִ&#1443;יא יְב&#1425;וּס וְשָׁם&#1433; הַיְבוּסִ&#1428;י יֹשְׁבֵ&#1430;י הָאָֽרֶץ:</span>
+</div><div class='passukFr'> David et tous les Isra&eacute;lites march&egrave;rent sur J&eacute;rusalem, qui s&rsquo;appelait J&eacute;bus. L&agrave; &eacute;taient les J&eacute;bus&eacute;ens, qui occupaient le pays.
+</div><div class='passukEn'>And David and all Israel went to Jerusalem&mdash;the same is Jebus&mdash;and the Jebusites, the inhabitants of the land, were there. </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>וילך דוד וגו'.</b> הלך מיד למלחמה כשהמליכוהו כל ישראל שלא יאמרו ישראל כל המלחמות שעשה דוד בימי שאול נוצח מזלו של שאול היה ועתה דואג להלחם לכך הלך מיד למלחמה : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ירושלים.</b> אל ירושלים להלחם בה : <b>ושם היבוסי.</b> כי בני יהודה ובני בנימין לא הורישום מאז : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ה}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיֹּ&#1448;אמְר&#1436;וּ יֹשְׁבֵ&#1444;י יְבוּס&#1433; לְדָוִ&#1428;יד לֹ&#1445;א תָב&#1430;וֹא הֵ&#1425;נָּה וַיִּלְכֹּ&#1444;ד דָּוִיד&#1433; אֶת-מְצֻדַ&#1443;ת צִיּ&#1428;וֹן הִ&#1430;יא עִ&#1445;יר דָּוִֽיד:</span>
+</div><div class='passukFr'> Mais ceux-ci dirent &agrave; David&amp;nbsp;: &quot;Tu n&rsquo;entreras pas ici.&quot; Toutefois, David s&rsquo;empara de la forteresse de Sion, qui est la Cit&eacute; de David.
+</div><div class='passukEn'>And the inhabitants of Jebus said to David: 'Thou shalt not come in hither.' Nevertheless David took the stronghold of Zion; the same is the city of David. </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ויאמרו ישבי יבוס לדוד לא תבא הנה.</b> אינו מפרש כאן למה ובשמואל (ב' ה') מפרש ויאמר לדוד לא תבא הנה כי אם הסירך העורים והפסחים ראו שלא יוכלו לעמוד לפני דוד ונתנו עורים ופסחים לפני שער העיר לאמר לא יבא דוד הנה כי אם ילחם עם העורים הללו כי ידעו כי בזוי הוא למלך להלחם עם העורים ומתוך כך ישוב ולא ילחם עמהם ודוד אמר בלבו אמת הוא כי לא נכון והגון לי להלחם עם עורים ועם פסחים אך כל מי שיכה היבוסי היאך שיגע בצנור וימשכם וישליכם משם את העורים על כן יאמרו עור ופסח לא יבא אל הבית אל בית דוד שיהא לו גנאי פן יאמרו עם אלו נלחם דוד : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>לא תבוא הנה.</b> ר''ל לא תוכל לכבשה בעבור חזקה : <b>מצודת ציון.</b> שם מבצר חזק סמוך למקום יבוס : <b>היא עיר דוד.</b> לאח''ז נקראה שמה עיר דוד : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>מצודת.</b> ענין מבצר חזק כמו ישבו במצדות (ירמיה נ''א) : <b>במצד.</b> היא מצורת ציון : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ויאמרו יושבי יבוס לדוד לא תבוא הנה.</b> כבר באר בספר שמואל (ב' ה' הו' וגו') שהסבה בזה היא שאם לא יסיר את העורים ואת הפסחים לא יוכל לבוא שם. וכבר בארנו בבאורנו לספר שמואל הסבה בזה שכבר היו שם תמונות עורים ופסחים עם דמות מקלות גדולים מברזל בידם והמים העוברים בצנור מניעים המקלות ההם תמיד באופן שלא יוכל להכנס אדם שם. ולזה היה הדרך בהשבתתם הנגיעה בצנור אשר באים בו המים להניע זאת התנועה והנה קצר בספר שמואל מלהזכיר מה יתן דוד לכל מכה יבוסי בראשונה ויגע בצנור. ובזה המקום באר שהוא יהיה לראש ולשר ושכבר עלה בראשונה יואב להכות היבוסי. ולזה היה לראש. ר''ל שהיה שר צבא : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיֹּ&#1443;אמֶר דָּוִ&#1428;יד כָּל-מַכֵּ&#1444;ה יְבוּסִי&#1433; בָּרִ&#1443;אשׁוֹנָ&#1428;ה יִהְיֶ&#1445;ה לְרֹ&#1430;אשׁ וּלְשָׂ&#1425;ר וַיַּ&#1447;עַל בָּרִאשׁוֹנָ&#1435;ה יוֹאָ&#1445;ב בֶּן-צְרוּיָ&#1430;ה וַיְהִ&#1445;י לְרֹֽאשׁ:</span>
+</div><div class='passukFr'> David avait dit&amp;nbsp;: &quot;Celui qui battra les J&eacute;bus&eacute;ens en premier deviendra chef et prince.&quot; Ce fut Joab, fils de Cerouya, qui monta le premier, et il devint chef.
+</div><div class='passukEn'>And David said: 'Whosoever smiteth the Jebusites first shall be chief and captain.' And Joab the son of Zeruiah went up first, and was made chief. </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>בראשונה.</b> לעלות במלחמה תחלה להכות בם : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיֵּ&#1445;שֶׁב דָּוִ&#1430;יד בַּמְצָ&#1425;ד עַל-כֵּ&#1445;ן קָרְאוּ-ל&#1430;וֹ עִ&#1445;יר דָּוִֽיד:</span>
+</div><div class='passukFr'> David s&rsquo;&eacute;tablit dans la forteresse, qu&rsquo;on nomma pour cette raison Cit&eacute; de David.
+</div><div class='passukEn'>And David dwelt in the stronghold; therefore they called it the city of David. </div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>וישב דוד במצד.</b> רצה לומר במצודה והוא המגדל החזק שהיה בה (ח) מן המלוא ועד הסביב. הנה המלוא היה המקום שהיה רחוב סביב עיר ציון להאסף שם העם ורצה שמן המלוא ולפנים בנה דוד עירו סביב אל המצודה אשר היה יושב בה : <b>ויואב יחיה את שאר העיר.</b> זה לא נזכר בספר שמואל והרצון בו שכבר חיה את שאר העיר שהיו יושבים בו היבוסים. אך אשר במצודת ציון המית לבדם. והנה השאר היו בברית את ישראל והיו להם למס. ולזה תמצא כי היבוסי היה יושב בירושלים אצל סוף ימי דוד : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיִּ&#1444;בֶן הָעִיר&#1433; מִסָּבִ&#1428;יב מִן-הַמִּלּ&#1430;וֹא וְעַד-הַסָּבִ&#1425;יב וְיוֹאָ&#1429;ב יְחַיֶּ&#1430;ה אֶת-שְׁאָ&#1445;ר הָעִֽיר:</span>
+</div><div class='passukFr'> Il ajouta des constructions &agrave; la ronde, sur le pourtour du Millo. Quant &agrave; Joab, il restaura le reste de la ville.
+</div><div class='passukEn'>And he built the city round about, from Millo even round about; and Joab repaired the rest of the city. </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ויואב יחיה את שאר העיר.</b> הוא בנה והחזיק לבנות בדקי החומה דוגמא בעזרא היחיו את האבנים מערמות העפר (נחמיה ג') : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>מן המלוא.</b> סמוך להחומה הניח מקום פנוי להיות מוכן להאסף שם מרבית אנשים וכן קראו מלוא (ירמיה ד) ומן המלוא ולפנים בנה בתים סביב : <b>ועד הסביב.</b> כפל הדבר לומר שאת הכל בנה : <b>יחיה.</b> היה מחזק בדקי שאר העיר בחומות ומגדלים : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>יחיה.</b> יאמר בדרך השאלה על תקון בדק הבנין כמו היחיו את האבנים (נחמיה ג') : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיֵּ&#1445;לֶךְ דָּוִ&#1430;יד הָל&#1443;וֹךְ וְגָד&#1425;וֹל וַיהוָ&#1445;ה צְבָא&#1430;וֹת עִמּֽוֹ:</span> <b>(פ)</b>
+</div><div class='passukFr'> David alla grandissant de plus en plus, assist&eacute; par l&rsquo;&Eacute;ternel-Cebaot.
+</div><div class='passukEn'>And David waxed greater and greater; for the Lord of hosts was with him.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>הלוך וגדול.</b> בכל עת נתגדל יותר : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{י}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְאֵ&#1448;לֶּה רָאשֵׁ&#1444;י הַגִּבּוֹרִים&#1433; אֲשֶׁ&#1443;ר לְדָוִ&#1428;יד הַמִּתְחַזְּקִ&#1448;ים עִמּ&#1447;וֹ בְמַלְכוּת&#1435;וֹ עִם-כָּל-יִשְׂרָאֵ&#1430;ל לְהַמְלִיכ&#1425;וֹ כִּדְבַ&#1445;ר יְהוָ&#1430;ה עַל-יִשְׂרָאֵֽל:</span> <b>(ס)</b>
+</div><div class='passukFr'> Voici les chefs des vaillants guerriers de David, qui l&rsquo;aid&egrave;rent, avec tout Isra&euml;l, &agrave; conqu&eacute;rir le tr&ocirc;ne et le firent r&eacute;gner selon la parole de l&rsquo;&Eacute;ternel, adress&eacute;e &agrave; Isra&euml;l.
+</div><div class='passukEn'>Now these are the chief of the mighty men whom David had, who held strongly with him in his kingdom, together with all Israel, to make him king, according to the word of the Lord concerning Israel. </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>במלכותו.</b> בדבר המלכות היו מתחזקים עמו לדבר על לב ישראל להמליכו כמו שדבר ה' על ישראל שהוא ימלוך עליהם : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>המתחזקי' עמו במלכותו עם כל ישראל.</b> ידמה שזה היה בימי איש בשת כי מפני גבורתם התחילו להלחם מלחמות דוד והצליחו כיד אלהיו טובה עליו וקצתם היו עמו בהיותו בורח מפני שאול להיותם משערים כי הוא ימלוך על ישראל : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יא}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְאֵ&#1435;לֶּה מִסְפַּ&#1445;ר הַגִּבֹּרִ&#1430;ים אֲשֶׁ&#1443;ר לְדָוִ&#1425;יד יָשָׁבְעָ&#1443;ם בֶּן-חַכְמוֹנִ&#1431;י רֹ&#1434;אשׁ (השלושים) הַשָּׁ&#1443;לִישִׁ&#1428;ים הֽוּא-עוֹרֵ&#1447;ר אֶת-חֲנִית&#1435;וֹ עַל-שְׁלֹשׁ-מֵא&#1445;וֹת חָלָ&#1430;ל בְּפַ&#1445;עַם אֶחָֽת:</span>
+</div><div class='passukFr'> Et voici la liste des vaillants guerriers de David&amp;nbsp;: Yachobam, fils de Hakhmoni, chef de la garde. C&rsquo;est lui qui, en une seule rencontre, brandit la lance, faisant trois cents cadavres.
+</div><div class='passukEn'>And this is the number of the mighty men whom David had: Jashobeam, the son of a Hachmonite, the chief of the captains; he lifted up his spear against three hundred and slew them at one time.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ראש השלישים.</b> ראש הגבורים כמו ושלשים על כלו (שמות י''ד) : <b>עורר את חניתו.</b> כאשר הוא נלחם במלחמה לא היה חוזר במלחמה עד שיהרג בחניתו ג' מאות חלל. בן חכמוני. (בשמואל ב' כ''ג) כתוב תחכמוני הוא אביו ויפה כח האב מכח הבן שכתוב בו (שם) על שמונה מאות גבורים חלל בפעם אחת : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ואלה וכו'.</b> אשר התחזקו עמו : <b>ישבעם.</b> הוא יושב בשבת האמור בש''ב כי פתרון אחד להם : <b>בן חכמוני.</b> הוא תחכמוני האמור בשמואל ב' ופתרון אחד להם וכאשר איש ירושלים יקרא בן ירושלים וירושלמי : <b>הוא עורר וכו'.</b> ר''ל אחר שהרג שלש מאות חלל בפעם אחת סמוך לה הי' עורר את חניתו להלחם בם כאלו עתה התחיל להלחם (ובש''ב משבחו באהבת החכמה עם הגבורה לומר אחר שהרג שמונה מאות חלל חזר לשבת בישיבת החכמה) : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>השלישים.</b> ענינו שרים וגבורים כמו מבחר שלישיו (שמות ט''ו) : <b>עורר.</b> מלשון התעוררות ותנועה : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ישבעם בן חכמוני.</b> הנה בספר מלכים (צ''ל ש''ב כ''ג ח') קראו יושב בשבת תחכמוני. והרצון כמו שאמר פה הוא כי לרוב גבורתו ישוב כאלו הוא עם ומפני חכמתו גם כן. ולזה קראו בן חכמוני כי הוא היה מתנהג בגבורתו בחכמה. והנה בספר שמואל קראו עדינו העצני ושם אמר על שמונה מאות חלל בפעם אחת. ובזה המקום אמר הוא עורר את חניתו על שלש מאות חלל בפעם אחת ואין ראוי שנתיר זה הספק בשנאמר שפעם אחת עורר את חניתו על שמונה מאות חלל ופעם אחרת קרה לו שעורר את חניתו על שלש מאות חלל. וזה מפני שהוא היה מספק גבורתו וראוי שיספר תכלית מה שהיה יכול עליו. ולזה היה ראוי שיתארהו שהוא היה עורר את חניתו על שמונה מאות חלל בפעם אחת. וזה ממה שאינו צריך באור למעיין בדברינו. והנה בחיי הספק בזה חזק אצלי. והנראה לי בהתר זה הספק הוא שבכל כלי מלחמתו קרה לו שהרג שמונה מאות בפעם אחת ואולם בחניתו לבדו קרה לו שהמית שלש מאות. ולזה תמצא שלא אמר בספר שמואל עורר את חניתו. אבל אמר על שמונה מאות חלל בפעם אחת : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְאַחֲרָ&#1435;יו אֶלְעָזָ&#1445;ר בֶּן-דּוֹד&#1430;וֹ הָאֲחוֹחִ&#1425;י ה&#1430;וּא בִּשְׁלוֹשָׁ&#1445;ה הַגִּבֹּרִֽים:</span>
+</div><div class='passukFr'> Apr&egrave;s lui, El&eacute;azar, fils de Dodo, l&rsquo;Ahohite, l&rsquo;un des trois h&eacute;ros,
+</div><div class='passukEn'>And after him was Eleazar the son of Dodo, the Ahohite, who was one of the three mighty men. </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>הוא בשלושה הגבורים.</b> הוא בכלל ג' הגבורים כי הוא אחד מהם ושלשה אלו גבורים יותר משאר ל' ושלשה שנזכר בסמוך וכאן אינו מזכיר כי אם שנים ישבעם ואלעזר ובשמואל ב' כ''ג מזכיר אף השלישי דכתיב ואחריו שמא בן אגא הררי (שם א') : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ואחריו.</b> במעלה : <b>הוא בשלושה הגבורים.</b> הוא היה אחד מהשלשה גבורים האמורים בש''ב שהיו עם דוד בחרפם פלשתים וכו' ולקצר סמך על מה שנאמר שם : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ואחריו אלעזר בן דודו האחוחי.</b> הנה קצר בזה המקום מלספר הגבורה שעשה להשענו על מה שנזכר מזה בספר שמואל וזכר הגבורה שעשה שמה בן אגא הררי ולא זכרו. אבל זכר הגבורה ההיא בלשון רבים. ולזה ידמה שכבר היה שם עם שמה אלעזר וידמה שבזה הענין נכללו שתי הגבורות הנזכרות שם לאלעזר ולשמה. אבל שמה עמד בתוך החלקה להציל החלקה והכה הפלשתים אשר שם ואלעזר הכה הפלשתים הנאספים שם למלחמה. ובזה האופן עזרו שניהם בהצלת החלקה : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">הֽוּא-הָיָ&#1448;ה עִם-דָּוִ&#1436;יד בַּפַּ&#1443;ס דַּמִּ&#1431;ים וְהַפְּלִשְׁתִּים&#1433; נֶאֱסְפוּ-שָׁ&#1443;ם לַמִּלְחָמָ&#1428;ה וַתְּהִ&#1435;י חֶלְקַ&#1445;ת הַשָּׂדֶ&#1430;ה מְלֵאָ&#1443;ה שְׂעוֹרִ&#1425;ים וְהָעָ&#1445;ם נָ&#1430;סוּ מִפְּנֵ&#1445;י פְלִשְׁתִּֽים:</span>
+</div><div class='passukFr'> assista David &agrave; Pass-Dammim. L&agrave; s&rsquo;&eacute;taient assembl&eacute;s les Philistins pour la bataille. Il s&rsquo;y trouvait une pi&egrave;ce de terre pleine d&rsquo;orge, et le peuple fuyait devant les Philistins.
+</div><div class='passukEn'>He was with David at Pas-dammim, and there the Philistines were gathered together to battle, where was a plot of ground full of barley; and the people fled from before the Philistines. </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>בפס דמים.</b> שם מקום ובשמואל באפס דמים : <b>והפלשתים נאספו שם למלחמה.</b> שנזדרזו להנקם מישראל ומאותם גבורים שחרפו כמפורש בשמואל (ב' כג) בחרפם בפלשתים : <b>מלאה שעורים.</b> ורצו פלשתים לקוצרה ולהציתה באש : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>מלאה שעורים.</b> ובש''ב נאמר עדשים כי באמת לא זו היא המלחמה כי שם נאמר ששמה הצילה : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>בפס דמים.</b> שם מקום : <b>חלקת השדה.</b> אחוזת השדה : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיִּֽתְיַצְּב&#1444;וּ בְתוֹךְ-הַחֶלְקָה&#1433; וַיַּצִּיל&#1428;וּהָ וַיַּכּ&#1430;וּ אֶת-פְּלִשְׁתִּ&#1425;ים וַיּ&#1445;וֹשַׁע יְהוָ&#1430;ה תְּשׁוּעָ&#1445;ה גְדוֹלָֽה:</span>
+</div><div class='passukFr'> Mais lui prit position au milieu du champ, le d&eacute;fendit et battit les Philistins&amp;nbsp;; le Seigneur op&eacute;ra ainsi une grande d&eacute;livrance.
+</div><div class='passukEn'>But they stood in the midst of the plot, and defended it, and slew the Philistines; and the Lord saved them by a great victory.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ויצילוה.</b> הוא ואנשיו, לבל ישרפוה פלשתים : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{טו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיֵּרְד&#1441;וּ שְֽׁלוֹשָׁה&#1449; מִן-הַשְּׁלוֹשִׁ&#1448;ים רֹ&#1444;אשׁ עַל-הַצֻּר&#1433; אֶל-דָּוִ&#1428;יד אֶל-מְעָרַ&#1430;ת עֲדֻלָּ&#1425;ם וּמַחֲנֵ&#1443;ה פְלִשְׁתִּ&#1428;ים חֹנָ&#1430;ה בְּעֵ&#1445;מֶק רְפָאִֽים:</span>
+</div><div class='passukFr'> Trois des trente chefs descendirent sur le roc aupr&egrave;s de David, du c&ocirc;t&eacute; de la caverne d&rsquo;Adoullam&amp;nbsp;; un corps de Philistins se trouvait camp&eacute; dans la vall&eacute;e de Repha&iuml;m.
+</div><div class='passukEn'>And three of the thirty chiefs went down to the rock to David, unto the cave of Adullam; and the host of the Philistines were encamped in the valley of Rephaim. </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>וירדו שלושה מן השלושים.</b> שלשה אלו היו ראש לכל השלושים : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>מן השלושים ראש.</b> כ''א מהשלשה היה ראש מהשלשים הגבורים הנזכרים בש''ב ונזכרים גם המה למטה אבל הוסיף עוד עליהם : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{טז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְדָוִ&#1430;יד אָ&#1443;ז בַּמְּצוּדָ&#1425;ה וּנְצִ&#1443;יב פְּלִשְׁתִּ&#1428;ים אָ&#1430;ז בְּבֵ&#1445;ית לָֽחֶם:</span>
+</div><div class='passukFr'> David &eacute;tait alors dans la forteresse, et les Philistins avaient une garnison &agrave; Bethl&eacute;em.
+</div><div class='passukEn'>And David was then in the stronghold, and the garrison of the Philistines was then in Beth-lehem. </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ונציב פלשתים אז בבית לחם.</b> שכבר בית לחם לקחו והעמידו בה נציב שופט זה בתחלת מלכותו שעדיין פלשתים היו מושלים בם שכך מצינו שלפני בא דוד היו מושלים על ישראל בימי שמשון ושמואל דכתיב (בשמואל א' ד') התחזקו והיו לאנשים פלשתים פן תעבדו לעברים וגו' : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>במצודה.</b> הוא הצור אשר במערת עדולם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>ונציב.</b> ענין פקיד וממונה : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ונציב פלשתים.</b> בשמואל כתוכ וחית פלשתים. וזה לאות כי הרצון בו מחנה פלשתים. ונציב פלשתים הוא המושל אשר שמו שם פלשתים והיה בלתי אפשר ללכת לבור בית לחם אשר בשער אם לא ילכו שם דרך עמק רפאים שהיה שם מחנה פלשתים : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">(ויתאו) וַיִּתְאָ&#1445;יו דָּוִ&#1430;יד וַיֹּאמַ&#1425;ר מִ&#1434;י יַשְׁקֵ&#1443;נִי מַ&#1428;יִם מִבּ&#1445;וֹר בֵּֽית-לֶ&#1430;חֶם אֲשֶׁ&#1445;ר בַּשָּֽׁעַר:</span>
+</div><div class='passukFr'> David eut un d&eacute;sir et dit&amp;nbsp;: &quot;Ah&amp;nbsp;! si on pouvait me faire boire de l&rsquo;eau de la citerne qui est &agrave; la porte de Bethl&eacute;em&amp;nbsp;!&quot;
+</div><div class='passukEn'>And David longed, and said: 'Oh that one would give me water to drink of the well of Beth-lehem, which is by the gate! ' </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>מי ישקני מים מבור בית לחם.</b> זה הי' מקומו של דוד דכתיב ודוד בן ישי מבית הלחמי (שמואל א' יח) ולפי שהיה דוד תדיר מלומד ורגיל באותן מים נתאו' להם וכל מים וכל אויר שאד' רגיל בהם יפין לו ושאין רגיל בהם ניזוק ודוגמא בריש יוסיפון מלכ' אחת שחלת' על שנישאת חוצה מארץ מולדתה ואמרו הרופאים אין לה רפואה עד שתרחץ ותהנה ממימי מקומה וכן עשו לה : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>מי ישקני מים.</b> לא שצוה להביא המים אלא כאומר מי יתן והיה נמצא לי מי בור בית לחם : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>ויתאו.</b> מל' תאוה וחשק : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיִּבְקְע&#1448;וּ הַשְּׁלֹשָׁ&#1436;ה בְּמַחֲנֵ&#1443;ה פְלִשְׁתִּ&#1431;ים וַיִּֽשְׁאֲבוּ-מַ&#1433;יִם&#1433; מִבּ&#1444;וֹר בֵּֽית-לֶ&#1433;חֶם&#1433; אֲשֶׁ&#1443;ר בַּשַּׁ&#1428;עַר וַיִּשְׂא&#1430;וּ וַיָּבִ&#1443;אוּ אֶל-דָּוִ&#1425;יד וְלֹֽא-אָבָ&#1444;ה דָוִיד&#1433; לִשְׁתּוֹתָ&#1428;ם וַיְנַסֵּ&#1445;ךְ אֹתָ&#1430;ם לַיהוָֽה:</span>
+</div><div class='passukFr'> Les trois guerriers s&rsquo;ouvrirent un passage par le camp des Philistins, puis&egrave;rent de l&rsquo;eau &agrave; la citerne qui est &agrave; la porte de Bethl&eacute;em et l&rsquo;apport&egrave;rent &agrave; David&amp;nbsp;; mais celui-ci ne voulut pas la boire et en fit une libation &agrave; l&rsquo;&Eacute;ternel,
+</div><div class='passukEn'>And the three broke through the host of the Philistines, and drew water out of the well of Beth-lehem, that was by the gate, and took it, and brought it to David; but David would not drink thereof, but poured it out unto the Lord, </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ויבקעו השלשה במחנה פלשתים.</b> בל''א (דורך ברעכן די שאר''א) : <b>וישאבו.</b> כשהפלשתים עומדים בפני הבור באו ג' גבורי ישראל ובקעו ביניהם ושאבו על כרחם : <b>וינסך אותם לה'.</b> בר קפרא אומר חג הסוכות היה ונסכן על המזבח : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ויבקעו.</b> כאשר שמעו שהתאו' לה הלכו מעצמם לעשות נחת רוח לדוד ועברו דרך המחנה וכאלו בקעוה לעשות בה דרך ללכת : <b>וינסך.</b> שפכם ארצה לשם ה' : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיֹּ&#1441;אמֶר חָלִילָה&#1449; לִּ&#1448;י מֵאֱלֹהַ&#1436;י מֵעֲשׂ&#1443;וֹת זֹ&#1431;את הֲדַ&#1443;ם הָאֲנָשִׁים&#1449; הָאֵ&#1448;לֶּה אֶשְׁתֶּ&#1444;ה בְנַפְשׁוֹתָם&#1433; כִּ&#1443;י בְנַפְשׁוֹתָ&#1443;ם הֱבִיא&#1428;וּם וְלֹ&#1445;א אָבָ&#1430;ה לִשְׁתּוֹתָ&#1425;ם אֵ&#1443;לֶּה עָשׂ&#1428;וּ שְׁלֹ&#1430;שֶׁת הַגִּבּוֹרִֽים:</span>
+</div><div class='passukFr'> en disant&amp;nbsp;: &quot;Mon Dieu me pr&eacute;serve de faire pareille chose&amp;nbsp;! Boirais-je le sang de ces hommes qui ont risqu&eacute; leur vie, car ils l&rsquo;ont apport&eacute;e au p&eacute;ril de leur vie&amp;nbsp;!&quot; Il refusa donc de boire. Voil&agrave; ce que firent ces trois guerriers.
+</div><div class='passukEn'>and said: 'My God forbid it me, that I should do this; shall I drink the blood of these men that have put their lives in jeopardy? for with the jeopardy of their lives they brought it.' Therefore he would not drink it. These things did the three mighty men.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>כי בנפשותם הביאום.</b> שמסרו עצמם להריגה על המים : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ויאמר.</b> נתן טעם על שלא שתה מהם ואמר חלילה וכו' ר''ל חולין הוא לי לשתותם מחמת יראת ה' : <b>הדם וכו'.</b> וכי אשתה דם האנשים אשר הלכו בסכנת נפשותם כי הלא בסכנת נפשותם הביאום א''כ המים לדם יחשב : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כ}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְאַבְשַׁ&#1443;י אֲחִֽי-יוֹאָ&#1431;ב ה&#1434;וּא הָיָה&#1433; רֹ&#1443;אשׁ הַשְּׁלוֹשָׁ&#1428;ה וְהוּא&#1433; עוֹרֵ&#1443;ר אֶת-חֲנִית&#1428;וֹ עַל-שְׁלֹ&#1445;שׁ מֵא&#1430;וֹת חָלָ&#1425;ל (ולא)-וְלוֹ-שֵׁ&#1430;ם בַּשְּׁלוֹשָֽׁה:</span>
+</div><div class='passukFr'> Puis Abcha&iuml;, fr&egrave;re de Joab, le chef des trois&amp;nbsp;: il brandit un jour sa lance sur trois cents ennemis qu&rsquo;il immola, et se fit un nom parmi les Trois.
+</div><div class='passukEn'>And Abishai, the brother of Joab, he was chief of the three; for he lifted up his spear against three hundred and slew them, and had a name among the three. </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ואבשי אחי יואב הוא היה ראש השלושה.</b> לאותם שלשה שבקעו במחנה פלשתים ושאבו המים ומה שאינו מזכיר את יואב עם הגבורים לפי שאין כבודו למנותו עם אלו כי הוא היה שר צבא ראש לכולם : <b>ולו שם בשלשה.</b> אותו השם היה לו שגבורתו היתה כנגד כל גבורות כולם וטעות הוא : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ראש השלשה.</b> הוא היה הראש מהשלשה שבקעו המחנה להביא המים : <b>והוא עורר וכו'.</b> על וכו'. ר''ל על ההריגה בסמוך לה הוא עורר את חניתו להלחם עמהם כאלו עתה התחיל להלחם : <b>ולו שם בשלושה.</b> ר''ל שהיה מפורסם לגבור בין שלשת הגבורים הראשונים והם ישבעם ואלעזר ושמה הנזכר בש''ב ור''ל גם הם עם כל גבורתם החשיבו גם את אבשי לגבור : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כא}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">מִן-הַשְּׁלוֹשָׁ&#1444;ה בַשְּׁנַ&#1433;יִם&#1433; נִכְבָּ&#1428;ד וַיְהִ&#1445;י לָהֶ&#1430;ם לְשָׂ&#1425;ר וְעַד-הַשְּׁלוֹשָׁ&#1430;ה לֹֽא-בָֽא:</span> <b>(ס)</b>
+</div><div class='passukFr'> Il fut plus estim&eacute; que les Trente, de la deuxi&egrave;me s&eacute;rie, car il devint leur chef, cependant il n&rsquo;arriva pas jusqu&rsquo;aux Trois.
+</div><div class='passukEn'>Of the three in the second rank he was the most honourable, and was made their captain; howbeit he attained not to the first three.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>מן השלושה בשנים.</b> הוא נכבד ולא כאותן שלשה כנגד השנים היתה גבורתו ולכלל גבורות השלשה לא בא (וזהו) ועד השלשה לא בא : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>מן השלשה בשנים.</b> ר''ל מבין שלשה שואבי המים בהשנים שהיו עמו היה הוא הנכבד מהם ולזה היה להם לשר : <b>ועד השלשה.</b> אבל לא בא למעלת השלשה הראשונים : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>מן השלשה בשנים נכבד ויהי להם לשר.</b> ובספר שמואל כתוב מן השלשה הכי נכבד ויהי להם לשר והכל אחד כי הוא היה מהשלשה והיה לכבד מהשנים הנשארים ולהם היה לשר והם השלשה שהיו על השלשים. אך עד השלשה גבורים הנזכרים בראשונה לא בא כמו שבארנו בס' שמואל : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">בְּנָיָ&#1448;ה בֶן-יְהוֹיָדָ&#1447;ע בֶּן-אִֽישׁ-חַ&#1435;יִל רַב-פְּעָלִ&#1430;ים מִֽן-קַבְצְאֵ&#1425;ל ה&#1443;וּא הִכָּ&#1431;ה אֵ&#1443;ת שְׁנֵ&#1444;י אֲרִיאֵל&#1433; מוֹאָ&#1428;ב וְ&#1440;הוּא יָרַ&#1438;ד וְהִכָּ&#1447;ה אֶֽת-הָאֲרִ&#1435;י בְּת&#1445;וֹךְ הַבּ&#1430;וֹר בְּי&#1445;וֹם הַשָּֽׁלֶג:</span>
+</div><div class='passukFr'> Puis Bena&iuml;a, fils de Jo&iuml;ada, d&rsquo;un vaillant aux nombreux exploits, originaire de Kabce&euml;l&amp;nbsp;; ce fut lui qui triompha des deux Ar&iuml;el de Moab&amp;nbsp;; ce fut lui aussi qui descendit et tua un lion dans une fosse par un jour de neige.
+</div><div class='passukEn'>Beniah the son of Jehoiada, the son of a valiant man of Kabzeel, who had done mighty deeds, he smote the two altar-hearths of Moab; he went down also and slew a lion in the midst of a pit in time of snow. </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>בן איש חיל.</b> דוגמא בן בליעל ובשמואל (ב' כ''ג) כתיב בן איש חי כי כן מנהג בני האדם כשרואים אדם זריז אומרים זה כולו חי : <b>אריאל.</b> גבורים בעלי כח ארי גבור וגם אל לשון אילי הארץ (יחזקאל י''ז). רב פעלים. פעולות של גבורות הרבה עשה : <b>והוא ירד והכה את הארי בתוך הבור ביום השלג.</b> ולא חשש מן הצינה והקור, ויש אומרים ביום השלג כל השנה כולה אין הארי מסוכן יותר מיום השלג כשבא אדם נגדו זורק השלג ברגלו בין עיני האדם עד שלא יכול לראות והורגו ואני שמעתי כך על זאת : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>רב פעלים.</b> פעל הרבה גבורות : <b>שני אריאל מואב.</b> ת''י תרין רברבי מואב וע''ש גבורתו קראם אריאל שהיא מלה מורכבת מן ארי ומן אל שהוא ענין חוזק כמו ביד אל גוים (יחזקאל ל''א) : <b>בתוך הבור.</b> עם כי המקום דחוק להתחזק בו : <b>ביום השלג.</b> עם היות כי טבע הארי להתחזק בו ביותר בזמן הקור ומטבע האדם להמנע ממנו הפעולות החיוניות בתגבורת הקור עכ''ז התגבר עליו והכהו נפש : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְהֽוּא-הִכָּה&#1449; אֶת-הָאִ&#1448;ישׁ הַמִּצְרִ&#1436;י אִ&#1445;ישׁ מִדָּ&#1443;ה | חָמֵ&#1443;שׁ בָּאַמָּ&#1431;ה וּבְיַ&#1448;ד הַמִּצְרִ&#1444;י חֲנִית&#1433; כִּמְנ&#1443;וֹר אֹרְגִ&#1428;ים וַיֵּ&#1445;רֶד אֵלָ&#1430;יו בַּשָּׁ&#1425;בֶט וַיִּגְזֹ&#1444;ל אֶֽת-הַחֲנִית&#1433; מִיַּ&#1443;ד הַמִּצְרִ&#1428;י וַיַּהַרְגֵ&#1430;הוּ בַּחֲנִיתֽוֹ:</span>
+</div><div class='passukFr'> Il tua aussi un &Eacute;gyptien, homme de grande taille, haut de cinq coud&eacute;es, et, dans la main de l&rsquo;&Eacute;gyptien, il y avait une lance, grande comme une ensouple de tisserand&amp;nbsp;; il descendit vers lui avec un b&acirc;ton, arracha la lance de la main de l&rsquo;&Eacute;gyptien et le tua avec sa lance.
+</div><div class='passukEn'>And he slew an Egyptian, a man of great stature, five cubits high; and in the Egyptian's hand was a spear like a weaver's beam; and he went down to him with a staff, and plucked the spear out of the Egyptian's hand, and slew him with his own spear. </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>איש מדה.</b> שאר בני אדם אין צריך למדוד כי אם מאומד יכול לידע ודוגמא אשר ראינו בתוכה אנשי מדות (במדבר יג) : <b>כמנור אורגים.</b> עץ שכורכים עליו הבגד : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>איש מדה.</b> רצה לומר בעל מדה גדולה וכן אנשי מדות (במדבר י''ג) : <b>כמנור אורגים.</b> בית יד החנית היתה כמנור אורגים : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>כמנור אורגים.</b> הוא העץ העגול אשר האורג כורך עליו השתי ובמשנה נקרא כובד (שבת ק''ג) : <b>בשבט.</b> בשרביט : <small>(מצודת ציון)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">אֵ&#1443;לֶּה עָשָׂ&#1428;ה בְּנָיָ&#1430;הוּ בֶּן-יְהוֹיָדָ&#1425;ע וְלוֹ-שֵׁ&#1430;ם בִּשְׁלוֹשָׁ&#1445;ה הַגִּבֹּרִֽים:</span>
+</div><div class='passukFr'> Voil&agrave; ce que fit Bena&iuml;ahou, fils de Jo&iuml;ada, renomm&eacute; parmi les trois h&eacute;ros.
+</div><div class='passukEn'>These things did Benaiah the son of Jehoiada, and had a name among the three mighty men. </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>אלה.</b> הפועלים ההם : <b>ולו שם.</b> ר''ל שהיה מפורסם לגבור בין שלשה הגבורים שואבי המים שהיו ראשי השלשים ור''ל שעם כל גבורתם החשיבו גם אותו לגבור אבל שלשה הגבורים הראשונים לא החשיבו אותו למאומה לגודל הגבורה אשר היה בהם : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כה}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">מִן-הַשְּׁלוֹשִׁ&#1431;ים הִנּ&#1444;וֹ נִכְבָּד&#1433; ה&#1428;וּא וְאֶל-הַשְּׁלוֹשָׁ&#1430;ה לֹא-בָ&#1425;א וַיְשִׂימֵ&#1445;הוּ דָוִ&#1430;יד עַל-מִשְׁמַעְתּֽוֹ:</span> <b>(ס)</b>
+</div><div class='passukFr'> Il fut plus estim&eacute; que les Trente, mais il n&rsquo;arriva pas jusqu&rsquo;aux Trois. David l&rsquo;admit dans son conseil.
+</div><div class='passukEn'>Behold, he was more honourable than the thirty, but he attained not to the first three; and David set him over his guard.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>מן השלושים הנו נכבד הוא ואל השלשה.</b> לכלל גבורת השלשה לא בא לאותן ג' שמזכיר למעלה ולכן כתיב לא באלף : <b>על משמעתו.</b> ל' מנוי וכן ובני עמון משמעתם (ישעיה י''א) : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>מן השלשים.</b> האמורים בש''ב ונזכרים הם למטה : <b>הנו נכבד הוא.</b> הנו הוא היה נכבד מהם ולזה לא חשבוהו עמהם אבל לא בא למעלת שלשה שואבי המים ראשי השלשים ולזה לא חשבוהו גם עמהם : <b>על משמעתו.</b> להיות עמו לשמוע ולעשות כל אשר יצוה : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כו}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">וְגִבּוֹרֵ&#1430;י הַחֲיָלִ&#1425;ים עֲשָׂה אֵל&#1433; אֲחִ&#1443;י <b>(ס)</b> יוֹאָ&#1428;ב אֶלְחָנָ&#1445;ן בֶּן דּוֹד&#1430;וֹ מִבֵּ&#1445;ית לָֽחֶם:</span> <b>(ס)</b>
+</div><div class='passukFr'> Puis d&rsquo;autres h&eacute;ro&iuml;ques guerriers&amp;nbsp;: Assahel, fr&egrave;re de Joab&amp;nbsp;; Elhan&acirc;n, fils de Dodo, de Bethl&eacute;em&amp;nbsp;;
+</div><div class='passukEn'>Also the mighty men of valour: Asahel the brother of Joab, Elhanan the son of Dodo of Beth-lehem; </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>וגבורי החילים.</b> אך לא כאותן של מעלה : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>וגבורי החילים.</b> ואלה הם שאר גבורי החילים עשהאל וכו' ובש''ב לא חשב כ''א החשובים שבהם הנזכרים כאן ראשונים עד אוריה החתי אולם קצתם קראם בשם האחר שהיה להם : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>וגבורי החילים עשהאל אחי יואב וגו'.</b> הנה כבר נזכרו בשמות אחרים בספר שמואל קצת הגבורים הנזכרים פה ונזכרו בזה המקום גבורים אחרים לא נזכרו בספר שמואל והם נזכרים כלם אחר אוריה החתי : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כז}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">שַׁמּוֹת&#1433; הַהֲרוֹרִ&#1428;י <b>(ס)</b> חֶ&#1430;לֶץ הַפְּלוֹנִֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Chammot, le Harorite, H&ecirc;le&ccedil;, le Pelonite&amp;nbsp;;
+</div><div class='passukEn'>Shammoth the Harorite, Helez the Pelonite; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כח}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">עִירָ&#1444;א בֶן עִקֵּשׁ&#1433; הַתְּקוֹעִ&#1428;י <b>(ס)</b> אֲבִיעֶ&#1430;זֶר הָעֲנְּתוֹתִֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Ira, fils d&rsquo;Ikkech, de Tekoa&amp;nbsp;; Abi&eacute;zer, d&rsquo;Anatot&amp;nbsp;;
+</div><div class='passukEn'>Ira the son of Ikkesh the Tekoite, Abiezer the Anathothite; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כט}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">סִבְּכַי&#1433; הַחֻ&#1443;שָׁתִ&#1428;י <b>(ס)</b> עִילַ&#1430;י הָאֲחוֹחִֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Sibbekha&iuml;, le Houchatite&amp;nbsp;; Ila&iuml;, l&rsquo;Ahohite&amp;nbsp;;
+</div><div class='passukEn'>Sibbecai the Hushathite, Ilai the Ahohite; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ל}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">מַהְרַי&#1433; הַנְּטֹ&#1443;פָתִ&#1428;י <b>(ס)</b> חֵ&#1445;לֶד בֶּֽן בַּֽעֲנָ&#1430;ה הַנְּטוֹפָתִֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Mahara&iuml;, de Netofa&amp;nbsp;; H&ecirc;led, fils de Baana, de Netofa&amp;nbsp;;
+</div><div class='passukEn'>Mahrai the Netophathite, Heled the son of Baanah the Netophathite; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לא}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">אִיתַ&#1443;י בֶּן רִיבַ&#1431;י מִגִּבְעַת&#1433; בְּנֵ&#1443;י בִנְיָמִ&#1428;ן <b>(ס)</b> בְּנָיָ&#1430;ה הַפִּרְעָתֹנִֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Ita&iuml;, fils de Riba&iuml;, de Ghibea des Benjaminites&amp;nbsp;; Bena&iuml;a, de Pirat&ocirc;n
+</div><div class='passukEn'>Ithai the son of Ribai of Gibeah of the children of Benjamin, Benaiah the Pirathonite; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לב}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">חוּרַי&#1433; מִנַּ&#1443;חֲלֵי גָ&#1428;עַשׁ <b>(ס)</b> אֲבִיאֵ&#1430;ל הָעַרְבָתִֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Houra&iuml;, de Nahal&ecirc;-Gaach&amp;nbsp;; Abi&euml;l, l&rsquo;Arbatite&amp;nbsp;;
+</div><div class='passukEn'>Hurai of Nahale-gaash, Abiel the Arbathite; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לג}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">עַזְמָ&#1433;וֶת&#1433; הַבַּ&#1443;חֲרוּמִ&#1428;י <b>(ס)</b> אֶלְיַחְבָּ&#1430;א הַשַּׁעַלְבֹנִֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Azmaveth, le Baharoumite&amp;nbsp;; Elyahba, le Chaalbonite&amp;nbsp;;
+</div><div class='passukEn'>Azmaveth the Baharumite, Eliahba the Shaalbonite; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לד}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">בְּנֵ&#1431;י הָשֵׁם&#1433; הַגִּ&#1443;זוֹנִ&#1428;י <b>(ס)</b> יוֹנָתָ&#1445;ן בֶּן שָׁגֵ&#1430;ה הַהֲרָרִֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> des fils de Hach&ecirc;m le Ghizonite&amp;nbsp;; Jonathan, fils de Chagh&ecirc;, le Hararite&amp;nbsp;;
+</div><div class='passukEn'>the sons of Hashem the Gizonite, Jonathan the son of Shageh the Hararite; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לה}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">אֲחִיאָ&#1447;ם בֶּן שָׂכָ&#1435;ר הַהֲרָרִ&#1430;י <b>(ס)</b> אֱלִיפַ&#1445;ל בֶּן אֽוּר:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Ah&iuml;&acirc;m, fils de Sakhar, le Hararite&amp;nbsp;; Elifal, fils d&rsquo;Our&amp;nbsp;;
+</div><div class='passukEn'>Ahiam the son of Sacar the Hararite, Eliphal the son of Ur; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">חֵ&#1434;פֶר הַמְּכֵ&#1443;רָתִ&#1428;י אֲחִיָּ&#1430;ה הַפְּלֹנִֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> H&ecirc;fer, le Mekh&eacute;ratite&amp;nbsp;; Ahiya, le Pelonite&amp;nbsp;;
+</div><div class='passukEn'>Hepher the Mecherathite, Ahijah the Pelonite; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לז}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">חֶצְרוֹ&#1433; הַֽכַּרְמְלִ&#1428;י <b>(ס)</b> נַעֲרַ&#1430;י בֶּן אֶזְבָּֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> He&ccedil;ro, le Carm&eacute;lite&amp;nbsp;; Naara&iuml;, fils d&rsquo;Ezba&iuml;&amp;nbsp;;
+</div><div class='passukEn'>Hezro the Carmelite, Naarai the son of Ezbai; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לח}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">יוֹאֵל&#1433; אֲחִ&#1443;י נָתָ&#1428;ן <b>(ס)</b> מִבְחָ&#1430;ר בֶּן הַגְרִֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Jo&euml;l, fr&egrave;re de Nathan&amp;nbsp;; Mibhar, fils du Hagrite&amp;nbsp;;
+</div><div class='passukEn'>Joel the brother of Nathan, Mibhar the son of Hagri; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{לט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">צֶ&#1430;לֶק הָעַמּוֹנִ&#1425;י נַחְרַי&#1433; הַבֵּ&#1443;רֹתִ&#1428;י נֹשֵׂ&#1429;א כְּלֵ&#1430;י יוֹאָ&#1445;ב בֶּן-צְרוּיָֽה:</span> <b>(ס)</b>
+</div><div class='passukFr'> C&eacute;lek, l&rsquo;Ammonite&amp;nbsp;; Nahra&iuml;, le B&ecirc;rotite, &eacute;cuyer de Joab, fils de Cerouya&amp;nbsp;;
+</div><div class='passukEn'>Zelek the Ammonite, Nahrai the Berothite, the armour-bearer of Joab the son of Zeruiah; </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>נושא כלי יואב.</b> חוזר הוא על נכרי שהוא היה נושא כלי תשמישי יואב : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{מ}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">עִירָא&#1433; הַיִּתְרִ&#1428;י <b>(ס)</b> גָּרֵ&#1430;ב הַיִּתְרִֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Ira, le Yithrite&amp;nbsp;; Gar&ecirc;b, le Yithrite&amp;nbsp;;
+</div><div class='passukEn'>Ira the Ithrite, Gareb the Ithrite; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{מא}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">אֽוּרִיָּה&#1433; הַחִתִּ&#1428;י <b>(ס)</b> זָבָ&#1430;ד בֶּן אַחְלָֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Urie, le H&eacute;th&eacute;en&amp;nbsp;; Zabad, fils d&rsquo;Ahla&iuml;&amp;nbsp;;
+</div><div class='passukEn'>Uriah the Hittite, Zabad the son of Ahlai; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{מב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">עֲדִינָ&#1448;א בֶן-שִׁיזָ&#1436;א הָרֽאוּבֵנִ&#1431;י רֹ&#1435;אשׁ לָרֽאוּבֵנִ&#1430;י וְעָלָ&#1445;יו שְׁלוֹשִֽׁים:</span> <b>(ס)</b>
+</div><div class='passukFr'> Adina, fils de Chiza, le Rub&eacute;nite, chef rub&eacute;nite, commandant &agrave; trente&amp;nbsp;;
+</div><div class='passukEn'>Adina the son of Shiza the Reubenite, a chief of the Reubenites, and thirty with him; </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ועליו.</b> ר''ל הסמוכים עליו ונמשכים אחריו : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ועליו שלשים.</b> ר''ל ואצלו שלשים. וידמה שלא זכרם כלם כי הנזכרים אחר זה אינם כי אם ארבעה עשר : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{מג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">חָנָן&#1433; בֶּֽן-מַעֲכָ&#1428;ה וְיוֹשָׁפָ&#1430;ט הַמִּתְנִֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Han&acirc;n, fils de Maakha&amp;nbsp;; Josaphat, le Mitnite&amp;nbsp;;
+</div><div class='passukEn'>Hanan the son of Maacah, and Joshaphat the Mithnite; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{מד}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">עֻזִיָּ&#1430;א הָעֲשְׁתְּרָתִ&#1425;י <b>(ס)</b> שָׁמָע&#1433; (ויעואל) וִֽיעִיאֵ&#1428;ל בְּנֵ&#1430;י חוֹתָ&#1445;ם הָעֲרֹעֵרִֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Ouzzia, l&rsquo;Achteratite&amp;nbsp;; Chama et Ye&iuml;&ecirc;l, fils de Hotam, d&rsquo;Aro&euml;r&amp;nbsp;;
+</div><div class='passukEn'>Uzzia the Ashterathite, Shama and Jeiel the sons of Hotham the Aroerite; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{מה}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">יְדִֽיעֲאֵל&#1433; בֶּן-שִׁמְרִ&#1428;י וְיֹחָ&#1445;א אָחִ&#1430;יו הַתִּיצִֽי:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Yed&iuml;a&ecirc;l, fils de Chimri&amp;nbsp;; Yoha, son fr&egrave;re, le Ti&ccedil;ite&amp;nbsp;;
+</div><div class='passukEn'>Jediael the son of Shimri, and Joha his brother, the Tizite; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{מו}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">אֱלִיאֵל&#1433; הַֽמַּחֲוִ&#1428;ים וִירִיבַ&#1445;י וְיוֹשַׁוְיָ&#1430;ה בְּנֵ&#1443;י אֶלְנָ&#1425;עַם <b>(ס)</b> וְיִתְמָ&#1430;ה הַמּוֹאָבִֽי:</span>
+</span>
+</div><div class='passukFr'> Eli&euml;l, de Mahav&iuml;m&amp;nbsp;; Yeriba&iuml; et Yochavia, fils d&rsquo;Elnaam&amp;nbsp;; Yitma, le Moabite&amp;nbsp;;
+</div><div class='passukEn'>Eliel the Mahavite, and Jeribai, and Joshaviah, the sons of Elnaam, and Ithmah the Moabite; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{מז}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">אֱלִיאֵ&#1443;ל וְעוֹבֵ&#1428;ד <b>(ס)</b> וְיַעֲשִׂיאֵ&#1430;ל הַמְּצֹבָיָֽה:</span> <b>(פ)</b>
+</span>
+</div><div class='passukFr'> Eli&euml;l, Obed et Yaass&iuml;&ecirc;l, de Me&ccedil;oba&iuml;a.
+</div><div class='passukEn'>Eliel, and Obed, and Jaasiel the Mezobaite.
+</div></div>
+
+</div><div id='prakimFoot' class='prakim'><span class='perekTitle' id='perekTitleFoot1'><a href='1.html'>1</a></span><span class='perekTitle' id='perekTitleFoot2'><a href='2.html'>2</a></span><span class='perekTitle' id='perekTitleFoot3'><a href='3.html'>3</a></span><span class='perekTitle' id='perekTitleFoot4'><a href='4.html'>4</a></span><span class='perekTitle' id='perekTitleFoot5'><a href='5.html'>5</a></span><span class='perekTitle' id='perekTitleFoot6'><a href='6.html'>6</a></span><span class='perekTitle' id='perekTitleFoot7'><a href='7.html'>7</a></span><span class='perekTitle' id='perekTitleFoot8'><a href='8.html'>8</a></span><span class='perekTitle' id='perekTitleFoot9'><a href='9.html'>9</a></span><span class='perekTitle' id='perekTitleFoot10'><a href='10.html'>10</a></span><span class='perekTitle' id='perekTitleFoot11'><a id='linkSelectedHead' class='linkSelected' href='11.html'>11</a></span><span class='perekTitle' id='perekTitleFoot12'><a href='12.html'>12</a></span><span class='perekTitle' id='perekTitleFoot13'><a href='13.html'>13</a></span><span class='perekTitle' id='perekTitleFoot14'><a href='14.html'>14</a></span><span class='perekTitle' id='perekTitleFoot15'><a href='15.html'>15</a></span><span class='perekTitle' id='perekTitleFoot16'><a href='16.html'>16</a></span><span class='perekTitle' id='perekTitleFoot17'><a href='17.html'>17</a></span><span class='perekTitle' id='perekTitleFoot18'><a href='18.html'>18</a></span><span class='perekTitle' id='perekTitleFoot19'><a href='19.html'>19</a></span><span class='perekTitle' id='perekTitleFoot20'><a href='20.html'>20</a></span><span class='perekTitle' id='perekTitleFoot21'><a href='21.html'>21</a></span><span class='perekTitle' id='perekTitleFoot22'><a href='22.html'>22</a></span><span class='perekTitle' id='perekTitleFoot23'><a href='23.html'>23</a></span><span class='perekTitle' id='perekTitleFoot24'><a href='24.html'>24</a></span><span class='perekTitle' id='perekTitleFoot25'><a href='25.html'>25</a></span><span class='perekTitle' id='perekTitleFoot26'><a href='26.html'>26</a></span><span class='perekTitle' id='perekTitleFoot27'><a href='27.html'>27</a></span><span class='perekTitle' id='perekTitleFoot28'><a href='28.html'>28</a></span><span class='perekTitle' id='perekTitleFoot29'><a href='29.html'>29</a></span></div></div></div></body></html>

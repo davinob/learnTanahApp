@@ -1,0 +1,234 @@
+<html><head>
+				<link rel='stylesheet' type='text/css' href='../css/stylesTorah.css'>
+			<script src='../js/myScript.js'></script>				
+			
+				</head>
+							<body class='theBody' onload='initClassesBasedOnCookies()'>
+						<div id='mySidenav' class='sidenav'>
+ 
+ 					<span class='trads'>
+					<span type='button' id='passukEn'  onClick="hideShow('passukEn',this)" class='button'>EN</span>
+					<span type='button' id='passukFr'  onClick="hideShow('passukFr',this)" class='button'>FR</span>					
+					</span>
+					<span class='pirushim'>
+					<span type='button' id='rashi' onClick="hideShow('rashi',this)" class='button'>רש"י</span><span type='button' id='mezudatDavid' onClick="hideShow('mezudatDavid',this)" class='button'>מצודת דוד</span><span type='button' id='mezudatZion' onClick="hideShow('mezudatZion',this)" class='button'>מצודת ציון</span><span type='button' id='ralbag' onClick="hideShow('ralbag',this)" class='button'>רלב"ג</span></span>
+  
+					</div>
+					<span id='buttonNav' style='font-size:35px;cursor:pointer; position:fixed' onclick='openNav()'>&#9776;</span>
+		
+						<div class='theContent' onclick='closeNav()'><div class='newSefer'><span class='inSeferTitle'><a href='../index.html'>כתובים</a></span><div id='prakimHead' class='prakim'><span class='perekTitle' id='perekTitle1'><a href='1.html'>1</a></span><span class='perekTitle' id='perekTitle2'><a href='2.html'>2</a></span><span class='perekTitle' id='perekTitle3'><a href='3.html'>3</a></span><span class='perekTitle' id='perekTitle4'><a href='4.html'>4</a></span><span class='perekTitle' id='perekTitle5'><a href='5.html'>5</a></span><span class='perekTitle' id='perekTitle6'><a href='6.html'>6</a></span><span class='perekTitle' id='perekTitle7'><a href='7.html'>7</a></span><span class='perekTitle' id='perekTitle8'><a href='8.html'>8</a></span><span class='perekTitle' id='perekTitle9'><a href='9.html'>9</a></span><span class='perekTitle' id='perekTitle10'><a href='10.html'>10</a></span><span class='perekTitle' id='perekTitle11'><a href='11.html'>11</a></span><span class='perekTitle' id='perekTitle12'><a href='12.html'>12</a></span><span class='perekTitle' id='perekTitle13'><a href='13.html'>13</a></span><span class='perekTitle' id='perekTitle14'><a href='14.html'>14</a></span><span class='perekTitle' id='perekTitle15'><a id='linkSelectedHead' class='linkSelected' href='15.html'>15</a></span><span class='perekTitle' id='perekTitle16'><a href='16.html'>16</a></span><span class='perekTitle' id='perekTitle17'><a href='17.html'>17</a></span><span class='perekTitle' id='perekTitle18'><a href='18.html'>18</a></span><span class='perekTitle' id='perekTitle19'><a href='19.html'>19</a></span><span class='perekTitle' id='perekTitle20'><a href='20.html'>20</a></span><span class='perekTitle' id='perekTitle21'><a href='21.html'>21</a></span><span class='perekTitle' id='perekTitle22'><a href='22.html'>22</a></span><span class='perekTitle' id='perekTitle23'><a href='23.html'>23</a></span><span class='perekTitle' id='perekTitle24'><a href='24.html'>24</a></span><span class='perekTitle' id='perekTitle25'><a href='25.html'>25</a></span><span class='perekTitle' id='perekTitle26'><a href='26.html'>26</a></span><span class='perekTitle' id='perekTitle27'><a href='27.html'>27</a></span><span class='perekTitle' id='perekTitle28'><a href='28.html'>28</a></span><span class='perekTitle' id='perekTitle29'><a href='29.html'>29</a></span></div></div><div class='seferContent'>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{א}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיַּֽעַשׂ-ל&#1445;וֹ בָתִּ&#1430;ים בְּעִ&#1443;יר דָּוִ&#1425;יד וַיָּ&#1444;כֶן מָקוֹם&#1433; לַֽאֲר&#1443;וֹן הָֽאֱלֹהִ&#1428;ים וַיֶּט-ל&#1430;וֹ אֹֽהֶל:</span>
+</div><div class='passukFr'> Il se construisit des maisons dans la Cit&eacute; de David, appropria un emplacement pour l&rsquo;arche de Dieu et lui dressa une tente.
+</div><div class='passukEn'>  And [David] made him houses in the city of David; and he prepared a place for the ark of God, and pitched for it a tent. </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ויכן וכו'.</b> הכין מקום על הארון ופירש עליו אוהל : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>.</b> : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ויכן מקום לארון האלהים ויט לו אהל.</b> הוא האהל שהכין לתת שם את ארון האלהים : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">אָ&#1434;ז אָמַ&#1443;ר דָּוִ&#1428;יד לֹ&#1444;א לָשֵׂאת&#1433; אֶת-אֲר&#1443;וֹן הָֽאֱלֹהִ&#1428;ים כִּ&#1430;י אִם-הַלְוִיִּ&#1425;ם כִּי-בָ&#1443;ם | בָּחַ&#1443;ר יְהוָ&#1431;ה לָשֵׂ&#1438;את אֶת-אֲר&#1447;וֹן יְהוָ&#1435;ה וּֽלְשָׁרְת&#1430;וֹ עַד-עוֹלָֽם:</span> <b>(פ)</b>
+</div><div class='passukFr'> Alors David d&eacute;cida que l&rsquo;arche de Dieu ne serait port&eacute;e que par les L&eacute;vites, car c&rsquo;&eacute;taient eux que l&rsquo;&Eacute;ternel avait choisis pour le transport de l&rsquo;arche de Dieu et pour son culte &agrave; tout jamais.
+</div><div class='passukEn'>Then David said: 'None ought to carry the ark of God but the Levites; for them hath the Lord chosen to carry the ark of the Lord, and to minister unto Him for ever.' </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>כי אם הלוים כי בם בחר.</b> כלומר בלוים בחר ולא בעגלה שלפי שהרכבנוהו בעגלה נענש עוזה וזהו שאמר למטה כי למבראשונה לא אתם פרץ ה' אלהינו בנו כי לא דרשנוהו כמשפט שהרכבנוהו בעגלה : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>אז.</b> כשמת עזא על אשר שלח ידו בארון : <b>כי בם בחר ה'.</b> ולא יבוא בידם המכשול שנכשל בו עזא : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>לא לשאת את ארון האלהים כי אם הלוים.</b> זה כתוב בתורה בעבודת בני קהת כי עבודת הקדש עליהם בכתף ישאו : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיַּקְהֵ&#1445;ל דָּוִ&#1435;יד אֶת-כָּל-יִשְׂרָאֵ&#1430;ל אֶל-יְרֽוּשָׁלָ&#1425;ִם לְהַעֲלוֹת&#1433; אֶת-אֲר&#1443;וֹן יְהוָ&#1428;ה אֶל-מְקוֹמ&#1430;וֹ אֲשֶׁר-הֵכִ&#1445;ין לֽוֹ:</span>
+</div><div class='passukFr'> Ensuite David convoqua tout Isra&euml;l &agrave; J&eacute;rusalem pour transf&eacute;rer l&rsquo;arche de l&rsquo;&Eacute;ternel sur l&rsquo;emplacement qu&rsquo;il lui avait pr&eacute;par&eacute;.
+</div><div class='passukEn'>And David assembled all Israel at Jerusalem, to bring up the ark of the Lord unto its place, which he had prepared for it. </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>להעלות.</b> מבית עובד אדום : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיֶּאֱסֹ&#1445;ף דָּוִ&#1435;יד אֶת-בְּנֵ&#1445;י אַֽהֲרֹ&#1430;ן וְאֶת-הַלְוִיִּֽם:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Il assembla les Aaronides et les L&eacute;vites, &agrave; savoir&amp;nbsp;:
+</div><div class='passukEn'>And David gathered together the sons of Aaron, and the Levites; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ה}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לִבְנֵ&#1430;י קְהָ&#1425;ת אוּרִיאֵ&#1443;ל הַשָּׂ&#1428;ר וְאֶחָ&#1430;יו מֵאָ&#1445;ה וְעֶשְׂרִֽים:</span> <b>(ס)</b>
+</div><div class='passukFr'> Des Keh&acirc;tites&amp;nbsp;: Ouri&euml;l, le chef, et ses fr&egrave;res, au nombre de cent vingt.
+</div><div class='passukEn'>of the sons of Kohath: Uriel the chief, and his brethren a hundred and twenty; </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>לבני קהת.</b> היו הבאים אוריאל השר וחביריו : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לִבְנֵ&#1430;י מְרָרִ&#1425;י עֲשָׂיָ&#1443;ה הַשָּׂ&#1428;ר וְאֶחָ&#1430;יו מָאתַ&#1445;יִם וְעֶשְׂרִֽים:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Des Merarites&amp;nbsp;: Assa&iuml;a, le chef et ses fr&egrave;res, au nombre de deux cent vingt.
+</div><div class='passukEn'>of the sons of Merari: Asaiah the chief, and his brethren two hundred and twenty; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לִבְנֵ&#1430;י גֵּרְשׁ&#1425;וֹם יוֹאֵ&#1443;ל הַשָּׂ&#1428;ר וְאֶחָ&#1430;יו מֵאָ&#1445;ה וּשְׁלֹשִֽׁים:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Des Gherchomites&amp;nbsp;: Jo&euml;l, le chef&amp;nbsp;; et ses fr&egrave;res, au nombre de cent trente.
+</div><div class='passukEn'>of the sons of Gershom: Joel the chief, and his brethren a hundred and thirty; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לִבְנֵ&#1430;י אֱלִֽיצָפָ&#1425;ן שְׁמַֽעְיָ&#1445;ה הַשָּׂ&#1430;ר וְאֶחָ&#1445;יו מָאתָֽיִם:</span> <b>(ס)</b>
+</div><div class='passukFr'> Des Eli&ccedil;afanites&amp;nbsp;: Chema&iuml;a, le chef, et ses fr&egrave;res, au nombre de deux cents.
+</div><div class='passukEn'>of the sons of Elizaphan: Shemaiah the chief, and his brethren two hundred; </div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>לבני אליצפן.</b> הוא מבני קהת ונקרא שמו אלצפן בפרשת וארא וגם חברון ועזיאל הם מבני קהת. והנה היו רבים מבני קהת כי הם לבדם ישאו הארון : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{ט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לִבְנֵ&#1430;י חֶבְר&#1425;וֹן אֱלִיאֵ&#1445;ל הַשָּׂ&#1430;ר וְאֶחָ&#1445;יו שְׁמוֹנִֽים:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Des H&eacute;bronites&amp;nbsp;: Eli&euml;l, le chef, et ses fr&egrave;res, au nombre de quatre-vingts.
+</div><div class='passukEn'>of the sons of Hebron: Eliel the chief, and his brethren  fourscore; </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{י}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">לִבְנֵ&#1430;י עֻזִּיאֵ&#1425;ל עַמִּינָדָ&#1443;ב הַשָּׂ&#1428;ר וְאֶחָ&#1429;יו מֵאָ&#1430;ה וּשְׁנֵ&#1445;ים עָשָֽׂר:</span>
+</span>
+</div><div class='passukFr'> Des Ouzzi&eacute;lites&amp;nbsp;: Amminadab, le chef, et ses fr&egrave;res au nombre de cent douze.
+</div><div class='passukEn'>of the sons of Uzziel: Amminadab the chief, and his brethren a hundred and twelve. </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יא}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיִּקְרָ&#1443;א דָוִ&#1428;יד לְצָד&#1445;וֹק וּלְאֶבְיָתָ&#1430;ר הַכֹּֽהֲנִ&#1425;ים וְלַלְוִיִּ&#1431;ם לְאֽוּרִיאֵ&#1444;ל עֲשָׂיָה&#1433; וְיוֹאֵ&#1443;ל שְׁמַֽעְיָ&#1428;ה וֶאֱלִיאֵ&#1430;ל וְעַמִּינָדָֽב:</span> <b>(ס)</b>
+</span>
+</div><div class='passukFr'> Puis David manda les pr&ecirc;tres &Ccedil;adok et Ebiatar, et les L&eacute;vites Ouri&euml;l, Assa&iuml;a, Jo&euml;l, Chema&iuml;a, Eli&euml;l et Amminadab,
+</div><div class='passukEn'>And David called for Zadok and Abiathar the priests, and for the Levites, for Uriel, Asaiah, and Joel, Shemaiah, and Eliel, and Amminadab, </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיֹּ&#1443;אמֶר לָהֶ&#1428;ם אַתֶּ&#1435;ם רָאשֵׁ&#1445;י הָאָב&#1430;וֹת לַלְוִיִּ&#1425;ם הִֽתְקַדְּשׁוּ&#1433; אַתֶּ&#1443;ם וַאֲחֵיכֶ&#1428;ם וְהַֽעֲלִיתֶ&#1431;ם אֵ&#1443;ת אֲר&#1444;וֹן יְהוָה&#1433; אֱלֹהֵ&#1443;י יִשְׂרָאֵ&#1428;ל אֶל-הֲכִינ&#1430;וֹתִי לֽוֹ:</span>
+</div><div class='passukFr'> et il leur dit&amp;nbsp;: &quot;Comme vous &ecirc;tes les chefs des familles l&eacute;vitiques, sanctifiez-vous, vous et vos fr&egrave;res, et transportez l&rsquo;arche de l&rsquo;&Eacute;ternel, Dieu d&rsquo;Isra&euml;l, &agrave; l&rsquo;endroit que j&rsquo;ai am&eacute;nag&eacute; pour elle.
+</div><div class='passukEn'>and said unto them: 'Ye are the heads of the fathers' houses of the Levites; sanctify yourselves, both ye and your brethren, that ye may bring up the ark of the Lord, the God of Israel, unto the place that I have prepared for it. </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>אתם ראשי וכו'.</b> ועליכם הדבר : <b>התקדשו.</b> הטהרו : <b>אל הכינותי.</b> אל מקום אשר הכינותי לו : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>אל הכינותי לו.</b> ר''ל אל המקום אשר הכנותי לו : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">כִּ&#1435;י לְמַבָּרִ&#1445;אשׁוֹנָ&#1430;ה לֹ&#1443;א אַתֶּ&#1425;ם פָּרַ&#1448;ץ יְהוָ&#1444;ה אֱלֹהֵ&#1433;ינוּ&#1433; בָּ&#1428;נוּ כִּי-לֹ&#1445;א דְרַשְׁנֻ&#1430;הוּ כַּמִּשְׁפָּֽט:</span>
+</div><div class='passukFr'> Car c&rsquo;est &agrave; cause de votre absence, la premi&egrave;re fois, que l&rsquo;&Eacute;ternel, notre Dieu, a op&eacute;r&eacute; des br&egrave;ches parmi nous, qui ne nous &eacute;tions pas enquis de lui selon les r&egrave;gles.&quot;
+</div><div class='passukEn'>For because ye [bore it] not at the first, the Lord our God made a breach upon us, for that we sought Him not according to the ordinance.' </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>כי למבראשונה.</b> בהעלאה הראשונה מקרית יערים : <b>לא אתם.</b> לא הייתם אתם המעלים ולזה נתגלגל הדבר שפרץ ה' בעוזא כי לא דרשנוהו כמשפט התורה שאמר' שבני לוי ישאו את הארון ובעבור זה באה התקלה : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>כי למבראשונה לא אתם פרץ ה' אלהינו בנו.</b> ר''ל מפני כי בראשונה לא נשאתם אתם ארון ה' פרץ אלהינו בנו והוא מה שמת עזא כי אחז בארון לפי שלא דרשנוהו כמשפט כי משפט התורה הוא שישאו הלוים את הארון בכתף : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיִּֽתְקַדְּשׁ&#1428;וּ הַכֹּהֲנִ&#1430;ים וְהַלְוִיִּ&#1425;ם לְהַעֲל&#1429;וֹת אֶת-אֲר&#1445;וֹן יְהוָ&#1430;ה אֱלֹהֵ&#1445;י יִשְׂרָאֵֽל:</span>
+</span>
+</div><div class='passukFr'> Les pr&ecirc;tres et les L&eacute;vites se sanctifi&egrave;rent pour le transfert de l&rsquo;arche de l&rsquo;&Eacute;ternel, Dieu d&rsquo;Isra&euml;l.
+</div><div class='passukEn'>So the priests and the Levites sanctified themselves to bring up the ark of the Lord, the God of Israel. </div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{טו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיִּשְׂא&#1443;וּ בְנֵֽי-הַלְוִיִּ&#1431;ם אֵ&#1434;ת אֲר&#1443;וֹן הָֽאֱלֹהִ&#1428;ים כַּאֲשֶׁ&#1435;ר צִוָּ&#1445;ה מֹשֶׁ&#1430;ה כִּדְבַ&#1443;ר יְהוָ&#1425;ה בִּכְתֵפָ&#1445;ם בַּמֹּט&#1430;וֹת עֲלֵיהֶֽם:</span> <b>(פ)</b>
+</div><div class='passukFr'> Les L&eacute;vites port&egrave;rent l&rsquo;arche de Dieu, comme l&rsquo;avait prescrit Mo&iuml;se sur l&rsquo;ordre de l&rsquo;&Eacute;ternel, &agrave; savoir sur l&rsquo;&eacute;paule, au moyen de barres.
+</div><div class='passukEn'>And the children of the Levites bore the ark of God upon their shoulders with the bars thereon, as Moses commanded according to the word of the Lord.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>כדבר ה' בכתפם.</b> לשאת אותו ולא ממש בכתפם כי אם במוטות עליהם : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>בכתפם.</b> לא בעגלה ע''י הבקר כי אם בכתפם בהבגדים אשר שמו עליהם : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>במוטות עליהם.</b> הנה היו מוטות על כתפם יונחו בם בדי הארון ונשא בם : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{טז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיֹּ&#1443;אמֶר דָּוִיד&#1454; לְשָׂרֵ&#1443;י הַלְוִיִּם&#1426; לְהַֽעֲמִ&#1431;יד אֶת-אֲחֵיהֶם&#1433; הַמְשֹׁ&#1443;רְרִ&#1428;ים בִּכְלֵי-שִׁ&#1435;יר נְבָלִ&#1445;ים וְכִנֹּר&#1430;וֹת וּמְצִלְתָּ&#1425;יִם מַשְׁמִיעִ&#1445;ים לְהָרִֽים-בְּק&#1430;וֹל לְשִׂמְחָֽה:</span> <b>(פ)</b>
+</div><div class='passukFr'> David dit aux chefs des L&eacute;vites de mettre en place leurs fr&egrave;res les chantres, muni  d&rsquo;instruments de musique, luths, harpes et cymbales, pour entonner [des cantiques], en donnant de toute leur voix en signe de r&eacute;jouissance.
+</div><div class='passukEn'>And David spoke to the chief of the Levites to appoint their brethren the singers, with instruments of music, psalteries and harps and cymbals, sounding aloud and lifting up the voice with joy. </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ומצלתים משמיעים.</b> המשמיעים קול גדול וכן נאמר בצלצלי שמע (תהלים ק''ן) : <b>לשמחה.</b> לעורר השמחה בעת העלות הארון : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ומצלתים.</b> (צנב''ש בלע''ז). והם רקועים מנחשת יקשקשו זה בזה כשיכו בתוף אשר הם קבועים בה : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יז}</span></b>&nbsp;</span>
+<span >
+ <span style="font-family:Ezra SIL SR;">וַיַּעֲמִ&#1443;ידוּ הַלְוִיִּ&#1431;ם אֵ&#1434;ת הֵימָ&#1443;ן בֶּן יוֹאֵ&#1428;ל וּמִ&#1448;ן אֶחָ&#1428;יו אָסָ&#1430;ף בֶּן בֶּֽרֶכְיָ&#1425;הוּ <b>(ס)</b> וּמִן בְּנֵ&#1444;י מְרָרִי&#1433; אֲחֵיהֶ&#1428;ם אֵיתָ&#1430;ן בֶּן קֽוּשָׁיָֽהוּ:</span>
+</div><div class='passukFr'> En cons&eacute;quence, les L&eacute;vites mirent en place H&ecirc;m&acirc;n, fils de Jo&euml;l, et, parmi ses parents, Assaph, fils de B&eacute;r&eacute;khiahou&amp;nbsp;; des Merarites, leurs fr&egrave;res, Et&acirc;n, fils de Kouchayahou&amp;nbsp;;
+</div><div class='passukEn'>So the Levites appointed Heman the son of Joel; and of his brethren, Asaph the son of Berechiah; and of the sons of Merari their brethren, Ethan the son of Kushaiah; </div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>הימן אסף ואיתן.</b> הם המשוררים הנזכרים במה שקדם. והנה היה הימן מבני קהת ואסף מבני גרשום והיו משוררים במצלתים נחשת להשמיע הקול למרחוק כמו שנזכר אחר זה : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְעִמָּהֶ&#1430;ם אֲחֵיהֶ&#1443;ם הַמִּשְׁנִ&#1425;ים זְכַרְיָ&#1441;הוּ בֵּ&#1441;ן וְיַֽעֲזִיאֵ&#1441;ל וּשְׁמִֽירָמ&#1441;וֹת וִיחִיאֵ&#1443;ל | וְעֻנִּ&#1441;י אֱלִיאָ&#1441;ב וּבְנָיָ&#1441;הוּ וּמַֽעֲשֵׂיָ&#1441;הוּ וּמַתִּתְיָהוּ&#1449; וֶאֱלִ&#1448;יפְלֵ&#1436;הוּ וּמִקְנֵיָ&#1448;הוּ וְעֹבֵ&#1445;ד אֱדֹ&#1435;ם וִֽיעִיאֵ&#1430;ל הַשֹּׁעֲרִֽים:</span>
+</div><div class='passukFr'> avec eux, au second rang, leurs fr&egrave;res&amp;nbsp;: Zekhariahou, B&ecirc;n, Yaazi&ecirc;l, Chemiramot, Yehi&euml;l, Ounni, El&iuml;ab, Bena&iuml;ahou, Maas&ecirc;yahou, Mattitiahou, Elifl&ecirc;hou, Mikn&ecirc;yahou, Obed-Edom et Ye&iuml;&ecirc;l, portiers.
+</div><div class='passukEn'>and with them their brethren of the second degree, Zechariah, Ben, and Jaaziel, and Shemiramoth, and Jehiel, and Unni, Eliab, and Benaiah, and Maaseiah, and Mattithiah, and Eliphalehu, and Mikneiah, and Obed-edom, and Jeiel, the doorkeepers. </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ועמהם אחיהם המשנים.</b> משנה להם לשוערים : <b>זכריהו בן.</b> כך שמו וכל אלו משוררים ושוערים היו בדרך שהביאו את הארון והמשוררים והשוערים שהעמיד דוד לאחר שנתנו הארון אל האהל אשר נטה לו דוד ובמשכן שילה היו שוערים ובדרך לא היו שוערים לפי שלא הוצרכו כל כך שוערים לפיכך נעשו משוררים חוץ משנים ברכי' ואלקנה וכל זה היה בדרך אבל בנוח הארון היו משוררים שוערים : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>המשנים.</b> שניים להם במעלה : <b>זכריהו בן.</b> כן שמו : <b>השוערים.</b> שהיו שוערים מאז כשהיה הארון בשילה ובנוב ובגבעון : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ועמהם אחיהם המשנים.</b> ר''ל השנים להם והם השוערים : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{יט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְהַמְשֹׁ&#1443;רְרִ&#1428;ים הֵימָ&#1445;ן אָסָ&#1430;ף וְאֵיתָ&#1425;ן בִּמְצִלְתַּ&#1445;יִם נְחֹ&#1430;שֶׁת לְהַשְׁמִֽיעַ:</span>
+</div><div class='passukFr'> Les chantres H&ecirc;m&acirc;n, Assaph et Et&acirc;n s&rsquo;accompagnaient de cymbales de cuivre,
+</div><div class='passukEn'>So the singers, Heman, Asaph, and Ethan [, were appointed], with cymbals of brass to sound aloud; </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>והמשוררים הימן אסף ואיתן וגו'.</b> להשמיע קול הם היו ממונים על אותו כלי שיר : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>במצלתים.</b> ר''ל המה הקישו במצלתים של נחושת להשמיע קול גדול : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כ}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וּזְכַרְיָ&#1448;ה וַעֲזִיאֵ&#1436;ל וּשְׁמִֽירָמ&#1444;וֹת וִֽיחִיאֵל&#1433; וְעֻנִּ&#1443;י וֶֽאֱלִיאָ&#1428;ב וּמַעֲשֵׂיָ&#1430;הוּ וּבְנָיָ&#1425;הוּ בִּנְבָלִ&#1430;ים עַל-עֲלָמֽוֹת:</span>
+</div><div class='passukFr'> Zekhariahou, Azi&euml;l, Chemiramot, Yehi&euml;l, Ounni, El&iuml;ab, Maas&ecirc;yahou et Bena&iuml;ahou, de luths &agrave; la mani&egrave;re d&rsquo;Alamoth,
+</div><div class='passukEn'>and Zechariah, and Aziel, and Shemiramoth, and Jehiel, and Unni, and Eliab, and Maaseiah, and Benaiah, with psalteries set to Alamoth; </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>וזכריה ועזיאל וגו'.</b> אלו שנאמרו בפסוק למעלה שהיו שוערים החזירו כאן לעשות משוררים : <b>על עלמות.</b> על אותן כלי שיר שמנגנין בהם אותן מזמורים למנצח על עלמות וגו' : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>על עלמות.</b> ועל עלמות וגם הוא שם כ''ז ונזכר בתהלים : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>בנבלים על עלמות.</b> אחשוב שהם (אורגנא''ש בלע''ז). והנה הנבלים הם כדמות נודות יבוא מהם הרוח לקנים החלולים אשר בהם ויוציאו השיריות הנעימות. והנה קראם עלמות להיותם נסתרות ונעלמות : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כא}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וּמַתִּתְיָ&#1443;הוּ וֶאֱלִֽיפְלֵ&#1431;הוּ וּמִקְנֵיָ&#1433;הוּ&#1433; וְעֹבֵ&#1443;ד אֱדֹ&#1428;ם וִֽיעִיאֵ&#1430;ל וַעֲזַזְיָ&#1425;הוּ בְּכִנֹּר&#1445;וֹת עַל-הַשְּׁמִינִ&#1430;ית לְנַצֵּֽחַ:</span>
+</div><div class='passukFr'> Mattitiahou, Elifl&ecirc;hou, Mikn&ecirc;yahou, Obed-Edom, Ye&iuml;&ecirc;l et Azaziahou de harpes &agrave; huit cordes pour conduire le ch&oelig;ur.
+</div><div class='passukEn'>and Mattithiah, and Eliphalehu, and Mikneiahu, and Obed-edom, and Jeiel, and Azaziah, with harps on the Sheminith, to lead. </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ומתתיהו ואליפלהו וגו'.</b> על השמינית לנצח. אותו כלי שיר שמנגנין עליו אותן מזמורים למנצח על השמינית : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>על השמינית.</b> בכינור שיש בו שמנה נימין : <b>לנצח.</b> המנגנים יקראו מנצחים על כי דרכם לנצח זה את זה בהרמת הקול ובהכרעת הנעימה : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>בכנרות על השמינית.</b> אחשוב שהוא כלי זמר יש בו שמנה יתרים הנקרא (גיטאר''א לטינ''א בלע''ז) ומזה המין הנקרא (לאו''ט בלע''ז) והוא עוגב בלשון הקדש כי יש לו בדמות עגבו' : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כב}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וּכְנַנְיָ&#1445;הוּ שַֽׂר-הַלְוִיִּ&#1430;ם בְּמַשָּׂ&#1425;א יָסֹר&#1433; בַּמַּשָּׂ&#1428;א כִּ&#1445;י מֵבִ&#1430;ין הֽוּא:</span>
+</div><div class='passukFr'> Kenaniahou, chef l&eacute;vitique, pr&eacute;pos&eacute; aux transports, commandait le transport, car il s&rsquo;y entendait.
+</div><div class='passukEn'>And Chenaniah, chief of the Levites, was over the song; he was master in the song, because he was skilful. </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>וכנניהו שר הלוים במשא.</b> במה היה שר במשא בנשאות השיר : <b>יסר במשא.</b> מייסר ומוכיח אותם על המשא בנגון נעימות שיר אם להרים קול אם להשפיל : <b>כי מבין הוא.</b> במשא בנשיאות הנגון ולשון מבין נופל על למוד השיר ודוגמא ויהי מספרם עם אחיהם מלמדי שיר לה' כל המבין וגומר וכתוב ויפילו גורלות וגו' מבין עם תלמיד : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>במשא.</b> בדבר הרמת הקול : <b>יסור במשא.</b> היה שר וגדול בענין הרמת הקול וכפל דברו : <b>כי מבין הוא.</b> בדבר הזה להרים הקול ולהכריע במקום הראוי : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>במשא.</b> מל' נשיאה והרמה : <b>יסור.</b> כמו ישור בשי''ן והוא מל' שר : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>וכנניהו שר הלוים במשא.</b> ר''ל הוא היה השר והנגיד בשיר אשר בדבור להודות בו השם יתברך ולהללו. והנה היתה סבת היותו שר במשא כי מבין הוא וזה השיר אין ראוי שיאמר כי אם מפי המבינים : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כג}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וּבֶֽרֶכְיָה&#1433; וְאֶלְקָנָ&#1428;ה שֹׁעֲרִ&#1430;ים לָאָרֽוֹן:</span>
+</div><div class='passukFr'> B&eacute;r&eacute;khia et Elkana &eacute;taient portiers pour garder l&rsquo;arche.
+</div><div class='passukEn'>And Berechiah and Elkanah were doorkeepers for the ark. </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>שערים לארון.</b> מאז היו שוערים באהל הארון ועתה שבו להיות משוררים : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>וברכיה ואלקנה שוערים לארין.</b> ר''ל כי לכבוד ה' יתברך שמם דוד שומרי' שער האהל ששם שמו הארון בעיר דוד. והנה : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כד}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וּשְׁבַנְיָ&#1441;הוּ וְיֽוֹשָׁפָ&#1441;ט וּנְתַנְאֵ&#1441;ל וַעֲמָשַׂ&#1441;י וּ&#1440;זְכַרְיָהוּ וּבְנָיָ&#1444;הוּ וֶֽאֱלִיעֶ&#1433;זֶר&#1433; הַכֹּ&#1443;הֲנִ&#1428;ים (מחצצרים) מַחְצְרִים&#1433; בַּחֲצֹ&#1443;צְר&#1428;וֹת לִפְנֵ&#1430;י אֲר&#1443;וֹן הָֽאֱלֹהִ&#1425;ים וְעֹבֵ&#1444;ד אֱדֹם&#1433; וִֽיחִיָּ&#1428;ה שֹׁעֲרִ&#1430;ים לָאָרֽוֹן:</span>
+</div><div class='passukFr'> Les pr&ecirc;tres Chebaniahou, Yochafat, Nethan&ecirc;l, Amassa&iuml;, Zekhariahou, Bena&iuml;ahou et Eli&eacute;zer jouaient de la trompette devant l&rsquo;arche de Dieu. Obed-Edom et Yehiya &eacute;taient portiers pour garder l&rsquo;arche.
+</div><div class='passukEn'>And Shebaniah, and Joshaphat, and Nethanel, and Amasai, and Zechariah, and Benaiah, and Eliezer, the priests, did blow with the trumpets before the ark of God; and Obed-edom and Jehiah were doorkeepers for the ark.
+</div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>מחצרים.</b> היו מנגנים בחצוצרות ולתוספת ביאור אמר בחצוצרות וכן ותשרש שרשיה (תהלים ע') : <b>ועבד אדם.</b> אולי הוא הוא אחר ולא זהו האמור למעלה : <b>שערים לארון.</b> גם המה היו מאז שוערים ושבו עתה להיות משוררים : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>הכהני'.</b> היו מחצצדים בחצוצרות וזה היה מהשלמת השמחה והנה התקיעה בחצוצרות לא תהיה כי אם על ידי הכהנים כמו שנתבאר בתודה ואולם השיר בכלי זמר ובפה יהיה על יד הלוים : <b>ועובד אדום ויהיה שוערים לארון.</b> ר''ל כי בעת היות הארון בבית עובד אדום היו אלו שוערים : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כה}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיְהִ&#1445;י דָוִ&#1435;יד וְזִקְנֵ&#1445;י יִשְׂרָאֵ&#1430;ל וְשָׂרֵ&#1443;י הָאֲלָפִ&#1425;ים הַהֹֽלְכִ&#1431;ים לְֽהַעֲל&#1438;וֹת אֶת-אֲר&#1447;וֹן בְּרִית-יְהוָ&#1435;ה מִן-בֵּ&#1445;ית עֹבֵֽד-אֱדֹ&#1430;ם בְּשִׂמְחָֽה:</span> <b>(פ)</b>
+</div><div class='passukFr'> David, les anciens d&rsquo;Isra&euml;l et les chefs de mille, qui marchaient en cort&egrave;ge pour transporter l&rsquo;arche de l&rsquo;alliance de l&rsquo;&Eacute;ternel depuis la maison d&rsquo;Obed-Edom, &eacute;taient dans la joie.
+</div><div class='passukEn'>So David, and the elders of Israel, and the captains over thousands, went to bring up the ark of the covenant of the Lord out of the house of Obed-edom with joy. </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>בשמחה.</b> חוזר על תחלת המקרא לומר ויהי דוד וכו' בשמחה : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כו}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַֽיְהִי&#1433; בֶּעְזֹ&#1443;ר הָֽאֱלֹהִ&#1428;ים אֶ&#1448;ת-הַלְוִיִּ&#1428;ם נֹשְׂאֵ&#1430;י אֲר&#1443;וֹן בְּרִית-יְהוָ&#1425;ה וַיִּזְבְּח&#1445;וּ שִׁבְעָֽה-פָרִ&#1430;ים וְשִׁבְעָ&#1445;ה אֵילִֽים:</span>
+</div><div class='passukFr'> Comme Dieu assistait les L&eacute;vites porteurs de l&rsquo;arche d&rsquo;alliance de l&rsquo;&Eacute;ternel, on immola sept taureaux et sept b&eacute;liers.
+</div><div class='passukEn'>And it came to pass, when God helped the Levites that bore the ark of the covenant of the Lord, that they sacrificed seven bullocks and seven rams. </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ויהי בעזר האלהים.</b> רבותינו אמרו מכאן שהארון נושא את עצמו : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>בעזר.</b> ר''ל בעבור שעזרם האלהים ולא נכשלו בנשאם לזה זבחו הקרבנות הללו מלבד השור ומריא שזבחו אחר כל ששת הצעדים האמורים בש''ב : <small>(מצודת דוד)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ויהי בעזור האלהים את הלוים נשאי ארון ברית ה'.</b> אמר תמורת זה בספר שמואל (ב' ו' י''ג) ויהי כי צעדו נשאי ארון ה' ששם צעדים כי אז נתבאר שעזרם ה' יתברך כשלא קרה להם מקרה רע בזה. ושם אמר ויזבח שור ומריא ובזה המקום אמר שבעה פרים ושבעה אילים והכל אחד אלא שכבר באר זה יותר בזה המקום : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כז}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְדָוִ&#1438;יד מְכֻרְבָּ&#1443;ל | בִּמְעִ&#1443;יל בּ&#1431;וּץ וְכָל-הַלְוִיִּם&#1433; הַנֹּשְׂאִ&#1443;ים אֶת-הָאָר&#1428;וֹן וְהַמְשֹׁ&#1443;רְרִ&#1428;ים וּכְנַנְיָ&#1435;ה הַשַּׂ&#1445;ר הַמַּשָּׂ&#1430;א הַמְשֹֽׁרְרִ&#1425;ים וְעַל-דָּוִ&#1430;יד אֵפ&#1445;וֹד בָּֽד:</span>
+</div><div class='passukFr'> David &eacute;tait rev&ecirc;tu d&rsquo;un surplis de byssus, ainsi que tous les L&eacute;vites qui portaient l&rsquo;arche, les chantres et Kenania, chef des transports (les chantres). David &eacute;tait par&eacute;, en outre, d&rsquo;un &eacute;phod de lin.
+</div><div class='passukEn'>And David was clothed with a robe of fine linen, and all the Levites that bore the ark, and the singers, and Chenaniah the master of the singers in the song; and David had upon him an ephod of linen. </div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ודוד מכרבל.</b> כמו בדניאל בכרבלתהון דוגמא כרבלתא דתרנגולא : <b>וכל הלוים.</b> כמו כן מכורבלים במעיל בוץ ולפי שהיה דוד משורר כמו לוים לבש גם הוא לבושיהם שלבשו גם הם וראיה להבדיל כך היה מנהג מלכים ושרים של עובדי כוכבים ומזלות שאוכלים עם כהניהם כחוקם היו לובשים לבושי כהניהם : <b>ועל דויד אפוד בד.</b> כאותו אפוד של אהרן שהיה כמין שני לבדין אחד לפנים ואחד לאחור ומגיע עד מתניו והיה האזור ארוג ממנו וחגרו בו : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>מכרבל.</b> היה מעוטף במעיל של בוץ וכן כל הלוים וכו' : <b>השר המשא המשררים.</b> השר בהרמת הקול על המשוררים : <b>אפוד בד.</b> מין לבוש עשויה כעין האפוד של כ''ג והיא מיוחדת להמתבודדים בעבודת ה' וכן נאמר בשמואל שהיה חגור אפוד בד עם כי היה לוי : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>מכורבל.</b> מעוטף והוא מל' ארמי ודוגמתו פטשיהון וכרבלתהון (דניאל ג) ור''ל עטופיהון : <b>במעיל.</b> שם מלבוש העליון כעין המעיל של כה''ג : <b>בוץ.</b> פשתן : <small>(מצודת ציון)</small></div><div class='ralbag'><b><small>&nbsp;רלב"ג&nbsp;</small></b>&nbsp;<b>ודוד מכרבל במעיל בוץ.</b> ר''ל שהיה על ראשו דמות כובע מפה והיה דבק למעיל בד שהיה לבוש כחוק המתנאה לכבוד ה' יתברך : <b>והכנניה השר המשא.</b> ר''ל השר שר המשא : <b>ועל דוד אפוד בד.</b> ר''ל שדוד היה חגור אפוד בד. ולא השלים בזה המקום זכירת דברי מיכל לדוד ודברי דוד לה להשענו על מה שנזכר מזה בספר שמואל : <small>(רלב"ג)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כח}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וְכָל-יִשְׂרָאֵ&#1431;ל מַעֲלִים&#1433; אֶת-אֲר&#1443;וֹן בְּרִית-יְהוָ&#1428;ה בִּתְרוּעָה&#1433; וּבְק&#1443;וֹל שׁוֹפָ&#1428;ר וּבַחֲצֹצְר&#1430;וֹת וּבִמְצִלְתָּ&#1425;יִם מַשְׁמִעִ&#1429;ים בִּנְבָלִ&#1430;ים וְכִנֹּרֽוֹת:</span>
+</div><div class='passukFr'> Tout Isra&euml;l faisait cort&egrave;ge au transfert de l&rsquo;arche d&rsquo;alliance de l&rsquo;&Eacute;ternel, avec des cris de joie, au son du Chofar, des trompettes et des cymbales, ou jouant de la lyre et de la harpe.
+</div><div class='passukEn'>Thus all Israel brought up the ark of the covenant of the Lord with shouting, and with sound of the horn, and with trumpets, and with cymbals, sounding aloud with psalteries and harps. </div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ובקול שופר.</b> הוא הקול פשוט : <small>(מצודת דוד)</small></div></div>
+
+<div class='newPassuk'><div class='passukIvrit'>
+<b><span style="color:RGB(47,109,187);">{כט}</span></b>&nbsp;</span>
+<span >
+<span style="font-family:Ezra SIL SR;">וַיְהִ&#1431;י אֲרוֹן&#1433; בְּרִ&#1443;ית יְהוָ&#1428;ה בָּ&#1430;א עַד-עִ&#1443;יר דָּוִ&#1425;יד וּמִיכַ&#1448;ל בַּת-שָׁא&#1436;וּל נִשְׁקְפָ&#1443;ה | בְּעַ&#1443;ד הַחַלּ&#1431;וֹן וַתֵּ&#1448;רֶא אֶת-הַמֶּ&#1444;לֶךְ דָּוִיד&#1433; מְרַקֵּ&#1443;ד וּמְשַׂחֵ&#1428;ק וַתִּ&#1445;בֶז ל&#1430;וֹ בְּלִבָּֽהּ:</span> <b>(פ)</b>
+</div><div class='passukFr'> C&rsquo;est ainsi que l&rsquo;arche d&rsquo;alliance de l&rsquo;&Eacute;ternel arriva &agrave; la Cit&eacute; de David. Mikhal, fille de Sa&uuml;l, regardait alors par la fen&ecirc;tre. Voyant le roi David sautant et dansant, elle en con&ccedil;ut du d&eacute;dain pour lui.
+</div><div class='passukEn'>And it came to pass, as the ark of the covenant of the Lord came to the city of David, that Michal the daughter of Saul looked out at the window, and saw king David dancing and making merry; and she despised him in her heart.
+</div><div class='rashi'><b><small>&nbsp;רש"י&nbsp;</small></b>&nbsp;<b>ומיכל בת שאול וגו'.</b> לפי שספר דברי הימים בשביל כבוד דוד הוא לפיכך אין כתוב כאן מה אמרה מיכל לדוד כמו שכתוב בשמואל מה נכבד היום מלך ישראל אשר נגלה היום לעיני אמהות עבדיו כהגלות נגלות אחד הריקים כי זילותא של דוד היה שאמרה לו אשה כן : <small>(רש"י)</small></div><div class='mezudatDavid'><b><small>&nbsp;מצודת דוד&nbsp;</small></b></span>&nbsp;<b>ארון ברית.</b> הארון שמונחים בו הלוחות הנתונים בברית : <b>ותבז.</b> בזתה אותו בלבה בחשבה שאין מהראוי למלך להקל בכבודו כ''כ ועם שהוא לכבוד ארון ה' : <small>(מצודת דוד)</small></div><div class='mezudatZion'><b><small>&nbsp;מצודת ציון&nbsp;</small></b></span>&nbsp;<b>נשקפה.</b> ענין ראיה והבטה : <b>בעד החלון.</b> דרך החלון : <b>מרקד.</b> ענין דלוג וקפיצה של שמחה : <b>ומשחק.</b> ענין שמחה : <small>(מצודת ציון)</small></div></div>
+
+</div><div id='prakimFoot' class='prakim'><span class='perekTitle' id='perekTitleFoot1'><a href='1.html'>1</a></span><span class='perekTitle' id='perekTitleFoot2'><a href='2.html'>2</a></span><span class='perekTitle' id='perekTitleFoot3'><a href='3.html'>3</a></span><span class='perekTitle' id='perekTitleFoot4'><a href='4.html'>4</a></span><span class='perekTitle' id='perekTitleFoot5'><a href='5.html'>5</a></span><span class='perekTitle' id='perekTitleFoot6'><a href='6.html'>6</a></span><span class='perekTitle' id='perekTitleFoot7'><a href='7.html'>7</a></span><span class='perekTitle' id='perekTitleFoot8'><a href='8.html'>8</a></span><span class='perekTitle' id='perekTitleFoot9'><a href='9.html'>9</a></span><span class='perekTitle' id='perekTitleFoot10'><a href='10.html'>10</a></span><span class='perekTitle' id='perekTitleFoot11'><a href='11.html'>11</a></span><span class='perekTitle' id='perekTitleFoot12'><a href='12.html'>12</a></span><span class='perekTitle' id='perekTitleFoot13'><a href='13.html'>13</a></span><span class='perekTitle' id='perekTitleFoot14'><a href='14.html'>14</a></span><span class='perekTitle' id='perekTitleFoot15'><a id='linkSelectedHead' class='linkSelected' href='15.html'>15</a></span><span class='perekTitle' id='perekTitleFoot16'><a href='16.html'>16</a></span><span class='perekTitle' id='perekTitleFoot17'><a href='17.html'>17</a></span><span class='perekTitle' id='perekTitleFoot18'><a href='18.html'>18</a></span><span class='perekTitle' id='perekTitleFoot19'><a href='19.html'>19</a></span><span class='perekTitle' id='perekTitleFoot20'><a href='20.html'>20</a></span><span class='perekTitle' id='perekTitleFoot21'><a href='21.html'>21</a></span><span class='perekTitle' id='perekTitleFoot22'><a href='22.html'>22</a></span><span class='perekTitle' id='perekTitleFoot23'><a href='23.html'>23</a></span><span class='perekTitle' id='perekTitleFoot24'><a href='24.html'>24</a></span><span class='perekTitle' id='perekTitleFoot25'><a href='25.html'>25</a></span><span class='perekTitle' id='perekTitleFoot26'><a href='26.html'>26</a></span><span class='perekTitle' id='perekTitleFoot27'><a href='27.html'>27</a></span><span class='perekTitle' id='perekTitleFoot28'><a href='28.html'>28</a></span><span class='perekTitle' id='perekTitleFoot29'><a href='29.html'>29</a></span></div></div></div></body></html>
