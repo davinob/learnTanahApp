@@ -61,9 +61,9 @@ function initZoomControls() {
 	var bar = document.createElement('div');
 	bar.id = 'zoomControls';
 	bar.innerHTML =
-		"<button onclick='zoomOut()'>A-</button>" +
-		"<button onclick='zoomReset()' style='font-size:12px'>100%</button>" +
-		"<button onclick='zoomIn()'>A+</button>";
+		"<button onclick='zoomOut()'>\u2212</button>" +
+		"<button onclick='zoomReset()'>\u27F2</button>" +
+		"<button onclick='zoomIn()'>+</button>";
 	document.body.appendChild(bar);
 
 	var toast = document.createElement('div');
@@ -123,7 +123,7 @@ function saveLastVisited() {
 }
 
 function openNav() {
-	document.getElementById("mySidenav").style.width = "55%";
+	document.getElementById("mySidenav").style.width = "33%";
 	document.getElementById("mySidenav").style.border = "1px solid #31567f";
 	document.getElementById("buttonNav").style.display = "none";
 }
@@ -155,10 +155,10 @@ function initClassesBasedOnCookies() {
 	activeClasses = localStorage.getItem('actives');
 	if (activeClasses == null) {
 		activeClasses = {
-			onkelos: true, yonatan: true, passukEn: true, passukFr: false,
-			rashi: true, siftey: true, ibnEzra: true, ramban: true,
-			sforno: true, baalHaturim: true, orHaHaim: true, kliYakar: true,
-			malbim: true, ralbag: true, mezudatDavid: true, mezudatZion: true
+			onkelos: false, yonatan: false, passukEn: false, passukFr: false,
+			rashi: true, siftey: false, ibnEzra: false, ramban: false,
+			sforno: false, baalHaturim: false, orHaHaim: false, kliYakar: false,
+			malbim: false, ralbag: false, mezudatDavid: false, mezudatZion: false
 		};
 		localStorage.setItem('actives', JSON.stringify(activeClasses));
 	} else {
@@ -326,7 +326,6 @@ function initSearchUI() {
 
 	panel.innerHTML =
 		"<div class='sRow'>" +
-		"<a class='sBack' href='../index.html'>תנ\"ך &larr;</a>" +
 		"<input type='text' id='searchInput' placeholder='חיפוש בדף...' dir='auto' />" +
 		"<button class='sBtn' onclick='doSearch()'>&#x1F50D;</button>" +
 		"<button class='sClose' onclick='closeSearchPanel()'>&times;</button>" +
@@ -347,9 +346,26 @@ function initSearchUI() {
 
 	document.body.appendChild(panel);
 
-	document.getElementById('searchInput').addEventListener('keydown', function (e) {
+	var searchInputEl = document.getElementById('searchInput');
+	searchInputEl.addEventListener('keydown', function (e) {
 		if (e.key === 'Enter') doSearch();
 	});
+	var _searchDebounce = null;
+	searchInputEl.addEventListener('input', function () {
+		clearTimeout(_searchDebounce);
+		_searchDebounce = setTimeout(doSearch, 250);
+	});
+}
+
+function updateContentPadding() {
+	var p = document.getElementById('searchPanel');
+	var c = document.querySelector('.theContent');
+	if (!p || !c) return;
+	if (p.style.display === 'block') {
+		setTimeout(function() { c.style.paddingTop = (p.offsetHeight + 50) + 'px'; }, 50);
+	} else {
+		c.style.paddingTop = '';
+	}
 }
 
 function toggleSearchPanel() {
@@ -360,6 +376,7 @@ function toggleSearchPanel() {
 	} else {
 		p.style.display = 'block';
 		document.getElementById('searchInput').focus();
+		updateContentPadding();
 	}
 }
 
@@ -370,11 +387,14 @@ function closeSearchPanel() {
 	clearSearchState();
 	var nav = document.getElementById('searchAliyotNav');
 	if (nav) nav.style.display = 'none';
+	var c = document.querySelector('.theContent');
+	if (c) c.style.paddingTop = '';
 }
 
 function toggleSourceFiltersPanel() {
 	var f = document.getElementById('sourceFilters');
 	if (f) f.classList.toggle('open');
+	updateContentPadding();
 }
 
 function toggleSourceFilter(el) {
@@ -999,6 +1019,7 @@ function restoreSearchOnParshaPage() {
 			panel.style.display = 'block';
 			input.value = state.term;
 			doSearch();
+			updateContentPadding();
 		}
 	}, 500);
 }
@@ -1125,13 +1146,19 @@ function renderAliyotNav(folder, currentNum, parashaResults) {
 	for (var n in parashaResults) {
 		if (parashaResults[n] > 0) nums.push(parseInt(n));
 	}
-	if (nums.length === 0) return;
-	nums.sort(function (a, b) { return a - b; });
 
 	var heb = bookHebrew[folder] || folder;
 	var bar = document.createElement('div');
 	bar.id = 'searchAliyotNav';
 	bar.style.display = 'flex';
+
+	if (nums.length === 0) {
+		bar.innerHTML = "<span class='sanLabel' style='width:100%;text-align:center;padding:4px 0;'>לא נמצא בספר זה</span>";
+		document.body.appendChild(bar);
+		adjustSearchPanelTop();
+		return;
+	}
+	nums.sort(function (a, b) { return a - b; });
 
 	var html = "<span class='sanLabel'>" + heb + ":</span>";
 	nums.forEach(function (num) {
@@ -1153,8 +1180,7 @@ function showSearchAliyotNav() {
 		if (!globalCounts) return;
 		var current = getCurrentParashaAndNum();
 		if (!current || !current.num) return;
-		var bookData = globalCounts[current.folder];
-		if (!bookData) return;
+		var bookData = globalCounts[current.folder] || {};
 		renderAliyotNav(current.folder, current.num, bookData);
 		return;
 	}
@@ -1166,9 +1192,8 @@ function showSearchAliyotNav() {
 		renderAliyotNav(current.folder, current.num, cached.results);
 	} else {
 		var globalCounts = getSearchResultsCounts();
-		if (globalCounts && globalCounts[current.folder]) {
-			renderAliyotNav(current.folder, current.num, globalCounts[current.folder]);
-		}
+		var bookData = (globalCounts && globalCounts[current.folder]) ? globalCounts[current.folder] : {};
+		renderAliyotNav(current.folder, current.num, bookData);
 	}
 }
 
