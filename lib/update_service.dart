@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
+import 'package:crypto/crypto.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
@@ -340,20 +341,33 @@ class UpdateService {
     var downloaded = 0;
     var failed = 0;
 
+    final successfulFiles = <String>[];
+
     for (var relativePath in files) {
       final info = manifest[relativePath];
       final fullGitPath = info['path'] as String;
+      final cacheBuster = DateTime.now().millisecondsSinceEpoch;
       final rawUrl =
-          'https://raw.githubusercontent.com/${UpdateConfig.owner}/${UpdateConfig.repo}/${UpdateConfig.branch}/$fullGitPath';
+          'https://raw.githubusercontent.com/${UpdateConfig.owner}/${UpdateConfig.repo}/${UpdateConfig.branch}/$fullGitPath?cb=$cacheBuster';
       try {
         final response = await http
-            .get(Uri.parse(rawUrl))
+            .get(Uri.parse(rawUrl), headers: {'Cache-Control': 'no-cache, no-store'})
             .timeout(const Duration(seconds: 15));
         if (response.statusCode == 200) {
+          final expectedSha = info['sha'] as String?;
+          if (expectedSha != null) {
+            final actualSha = _gitBlobSha(response.bodyBytes);
+            if (actualSha != expectedSha) {
+              print('[UpdateService] SHA mismatch for $relativePath: got $actualSha, expected $expectedSha (CDN stale, will retry)');
+              failed++;
+              continue;
+            }
+          }
           final localFile = File('${_localHtmlPath!}/$relativePath');
           await localFile.parent.create(recursive: true);
           await localFile.writeAsBytes(response.bodyBytes);
           downloaded++;
+          successfulFiles.add(relativePath);
         } else {
           failed++;
           print('[UpdateService] HTTP ${response.statusCode} for $relativePath');
@@ -368,13 +382,18 @@ class UpdateService {
 
     final manifestFile = File('${_localHtmlPath!}/manifest.json');
     final existingManifest = await _loadLocalManifest();
-    for (var relativePath in files) {
+    for (var relativePath in successfulFiles) {
       if (manifest.containsKey(relativePath)) {
         existingManifest[relativePath] = manifest[relativePath];
       }
     }
     existingManifest['_manifestVersion'] = _manifestVersion;
     await manifestFile.writeAsString(json.encode(existingManifest));
+  }
+
+  String _gitBlobSha(List<int> bytes) {
+    final header = utf8.encode('blob ${bytes.length}\x00');
+    return sha1.convert([...header, ...bytes]).toString();
   }
 
   Future<void> clearLocalContent() async {
