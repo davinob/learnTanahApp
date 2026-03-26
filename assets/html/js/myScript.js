@@ -486,10 +486,31 @@ function revealForSearch(el) {
 	}
 }
 
+function parseSearchQuery(rawQuery) {
+	var exactMatch = false;
+	var query = rawQuery.trim();
+	var quoted = query.match(/^"(.+)"$/);
+	if (quoted) {
+		query = quoted[1].trim();
+		exactMatch = true;
+	}
+	return { query: query, exact: exactMatch };
+}
+
+function isWordBoundary(text, idx) {
+	if (idx < 0 || idx >= text.length) return true;
+	var ch = text.charAt(idx);
+	if (/[\s\u00A0:;.,!?\-\u2013\u2014()\[\]{}"'\/\\|<>]/.test(ch)) return true;
+	if (/[\u0590-\u05FF]/.test(ch)) return false;
+	if (/[a-zA-Z0-9\u00C0-\u024F]/.test(ch)) return false;
+	return true;
+}
+
 function doSearch() {
 	clearSearchHighlights();
-	var query = document.getElementById('searchInput').value.trim();
-	if (!query) return;
+	var rawQuery = document.getElementById('searchInput').value;
+	var parsed = parseSearchQuery(rawQuery);
+	if (!parsed.query) return;
 
 	var activeSources = [];
 	var chipEls = document.querySelectorAll('#sourceFilters .sf.selected');
@@ -501,12 +522,13 @@ function doSearch() {
 		return;
 	}
 
-	var normalizedQuery = stripDiacritics(query).toLowerCase();
+	var normalizedQuery = stripDiacritics(parsed.query).toLowerCase();
+	var exactMode = parsed.exact;
 	activeSources.forEach(function (srcId) {
 		var elements = document.getElementsByClassName(srcId);
 		for (var i = 0; i < elements.length; i++) {
 			var wasHidden = !isElementVisible(elements[i]);
-			highlightInElement(elements[i], normalizedQuery, !wasHidden, srcId);
+			highlightInElement(elements[i], normalizedQuery, !wasHidden, srcId, exactMode);
 			if (wasHidden && elements[i].querySelectorAll('.searchHighlight').length > 0) {
 				revealForSearch(elements[i]);
 			}
@@ -520,8 +542,8 @@ function doSearch() {
 	} else {
 		document.getElementById('searchInfo').textContent = 'לא נמצא';
 	}
-	saveSearchState(query, activeSources);
-	searchOtherAliyot(normalizedQuery, activeSources, searchMatches.length);
+	saveSearchState(rawQuery, activeSources);
+	searchOtherAliyot(normalizedQuery, activeSources, searchMatches.length, exactMode);
 }
 
 function isInOtherSource(textNode, rootEl, sourceClass) {
@@ -546,7 +568,7 @@ function isTextNodeHidden(textNode, rootEl) {
 	return false;
 }
 
-function highlightInElement(el, normalizedQuery, skipHidden, sourceClass) {
+function highlightInElement(el, normalizedQuery, skipHidden, sourceClass, exactMode) {
 	var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
 	var textNodes = [];
 	while (walker.nextNode()) {
@@ -571,6 +593,11 @@ function highlightInElement(el, normalizedQuery, skipHidden, sourceClass) {
 		var parts = [];
 		var lastOrigIdx = 0;
 		while (idx !== -1) {
+			var matchEnd = idx + normalizedQuery.length;
+			if (exactMode && (!isWordBoundary(strippedText, idx - 1) || !isWordBoundary(strippedText, matchEnd))) {
+				idx = strippedText.indexOf(normalizedQuery, idx + 1);
+				continue;
+			}
 			var origStart = posMap[idx];
 			var origEnd = posMap[idx + normalizedQuery.length];
 
@@ -588,9 +615,11 @@ function highlightInElement(el, normalizedQuery, skipHidden, sourceClass) {
 		if (lastOrigIdx < originalText.length)
 			parts.push(document.createTextNode(originalText.substring(lastOrigIdx)));
 
-		var parent = node.parentNode;
-		for (var j = 0; j < parts.length; j++) parent.insertBefore(parts[j], node);
-		parent.removeChild(node);
+		if (parts.length > 0 && lastOrigIdx > 0) {
+			var parent = node.parentNode;
+			for (var j = 0; j < parts.length; j++) parent.insertBefore(parts[j], node);
+			parent.removeChild(node);
+		}
 	}
 }
 
@@ -718,8 +747,9 @@ function closeGlobalSearch() {
 }
 
 function startGlobalSearch() {
-	var query = document.getElementById('gsInput').value.trim();
-	if (!query) return;
+	var rawQuery = document.getElementById('gsInput').value;
+	var parsed = parseSearchQuery(rawQuery);
+	if (!parsed.query) return;
 
 	var activeSources = [];
 	var els = document.querySelectorAll('#gsFilters .sf.selected');
@@ -730,7 +760,7 @@ function startGlobalSearch() {
 		return;
 	}
 
-	saveSearchState(query, activeSources);
+	saveSearchState(rawQuery, activeSources);
 	globalSearchAbort = false;
 
 	var progress = document.getElementById('gsProgress');
@@ -752,7 +782,8 @@ function startGlobalSearch() {
 	totalCounter.textContent = '';
 	totalCounter.style.display = 'none';
 
-	var normalizedQuery = stripDiacritics(query).toLowerCase();
+	var normalizedQuery = stripDiacritics(parsed.query).toLowerCase();
+	var exactMode = parsed.exact;
 	var allFiles = [];
 	bookFolders.forEach(function (folder) {
 		var chapters = bookChapterCounts[folder] || 1;
@@ -780,7 +811,7 @@ function startGlobalSearch() {
 					totalCounter.textContent = 'סה"כ ' + totalMatches + ' תוצאות';
 					totalCounter.style.display = 'block';
 					saveSearchResults(groupedResults);
-					renderGroupedResults(groupedResults, query);
+					renderGroupedResults(groupedResults, rawQuery);
 					var rh = document.getElementById('gsResultsHeader');
 					if (rh) rh.style.display = 'block';
 				}
@@ -800,7 +831,7 @@ function startGlobalSearch() {
 			text.textContent = pct + '%';
 
 			if ((xhr.status === 200 || xhr.status === 0) && xhr.responseText) {
-				var matches = searchInHtml(xhr.responseText, normalizedQuery, activeSources);
+				var matches = searchInHtml(xhr.responseText, normalizedQuery, activeSources, exactMode);
 				if (matches.length > 0) {
 					totalMatches += matches.length;
 					if (!groupedResults[file.folder]) groupedResults[file.folder] = {};
@@ -845,7 +876,7 @@ function getOwnTextContent(el, sourceClass) {
 	return clone.textContent;
 }
 
-function searchInHtml(html, normalizedQuery, sources) {
+function searchInHtml(html, normalizedQuery, sources, exactMode) {
 	var parser = new DOMParser();
 	var doc = parser.parseFromString(html, 'text/html');
 	var matches = [];
@@ -857,6 +888,11 @@ function searchInHtml(html, normalizedQuery, sources) {
 			var stripped = stripDiacritics(text).toLowerCase();
 			var idx = stripped.indexOf(normalizedQuery);
 			while (idx !== -1) {
+				var matchEnd = idx + normalizedQuery.length;
+				if (exactMode && (!isWordBoundary(stripped, idx - 1) || !isWordBoundary(stripped, matchEnd))) {
+					idx = stripped.indexOf(normalizedQuery, idx + 1);
+					continue;
+				}
 				var posMap = buildOriginalPosMap(text);
 				var origIdx = posMap[idx];
 				var snippetStart = Math.max(0, origIdx - 40);
@@ -1093,7 +1129,7 @@ function getCurrentParashaAndNum() {
 	return null;
 }
 
-function searchOtherAliyot(normalizedQuery, activeSources, currentPageCount) {
+function searchOtherAliyot(normalizedQuery, activeSources, currentPageCount, exactMode) {
 	var current = getCurrentParashaAndNum();
 	if (!current || !current.num) return;
 
@@ -1116,7 +1152,7 @@ function searchOtherAliyot(normalizedQuery, activeSources, currentPageCount) {
 		xhr.onload = function () {
 			processed++;
 			if ((xhr.status === 200 || xhr.status === 0) && xhr.responseText) {
-				var matches = searchInHtml(xhr.responseText, normalizedQuery, activeSources);
+				var matches = searchInHtml(xhr.responseText, normalizedQuery, activeSources, exactMode);
 				if (matches.length > 0) {
 					parashaResults[num] = matches.length;
 				}
