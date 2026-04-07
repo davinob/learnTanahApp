@@ -231,11 +231,31 @@ function stripDiacritics(str) {
 	return str.replace(/[\u0591-\u05C7]/g, '');
 }
 
+function stripCantillation(str) {
+	return str.replace(/[\u0591-\u05AF]/g, '');
+}
+
+function hasNikud(str) {
+	return /[\u05B0-\u05BD\u05BF\u05C1\u05C2\u05C7]/.test(str);
+}
+
 function buildOriginalPosMap(text) {
 	var map = [];
 	for (var i = 0; i < text.length; i++) {
 		var code = text.charCodeAt(i);
 		if (code < 0x0591 || code > 0x05C7) {
+			map.push(i);
+		}
+	}
+	map.push(text.length);
+	return map;
+}
+
+function buildCantillationPosMap(text) {
+	var map = [];
+	for (var i = 0; i < text.length; i++) {
+		var code = text.charCodeAt(i);
+		if (code < 0x0591 || code > 0x05AF) {
 			map.push(i);
 		}
 	}
@@ -296,6 +316,30 @@ var bookHebrew = {
 };
 
 
+// ==================== SEARCH HELP ====================
+
+function showSearchHelp() {
+	var existing = document.getElementById('searchHelpOverlay');
+	if (existing) { existing.style.display = 'flex'; return; }
+	var overlay = document.createElement('div');
+	overlay.id = 'searchHelpOverlay';
+	overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:99999;display:flex;align-items:center;justify-content:center;';
+	overlay.onclick = function (e) { if (e.target === overlay) overlay.style.display = 'none'; };
+	var box = document.createElement('div');
+	box.style.cssText = 'background:#fff;border-radius:14px;padding:20px 22px;max-width:340px;width:90%;direction:rtl;text-align:right;font-size:15px;line-height:1.7;box-shadow:0 8px 30px rgba(0,0,0,0.25);';
+	box.innerHTML =
+		"<div style='font-size:17px;font-weight:bold;margin-bottom:10px;text-align:center;'>&#9432; עזרה לחיפוש</div>" +
+		"<div style='margin-bottom:8px;'><b>חיפוש רגיל:</b> הקלד מילה ← מוצא את כל המופעים (מתעלם מניקוד וטעמים)</div>" +
+		"<div style='margin-bottom:8px;'><b>\"מילה\"</b> ← מילה שלמה בלבד (לא כחלק ממילה אחרת)</div>" +
+		"<div style='margin-bottom:8px;'><b>\"מילה</b> ← תחילת מילה (אין אות לפני)</div>" +
+		"<div style='margin-bottom:8px;'><b>מילה\"</b> ← סוף מילה (אין אות אחרי)</div>" +
+		"<div style='margin-bottom:8px;'><b>חיפוש עם ניקוד:</b> הקלד עם ניקוד ← מוצא רק מילים עם אותו ניקוד (מתעלם מטעמים)</div>" +
+		"<div style='margin-bottom:8px;'><b>&#9881; מקורות:</b> לחץ על 'מקורות' כדי לבחור באילו פירושים לחפש (פסוק, רש\"י וכו')</div>" +
+		"<div style='text-align:center;margin-top:12px;'><button onclick='document.getElementById(\"searchHelpOverlay\").style.display=\"none\"' style='padding:6px 24px;border-radius:8px;border:1px solid #ccc;background:#f0f4f8;font-size:15px;cursor:pointer;'>סגור</button></div>";
+	overlay.appendChild(box);
+	document.body.appendChild(overlay);
+}
+
 // ==================== LOCAL SEARCH (book / chapter pages) ====================
 
 function initSearchUI() {
@@ -337,6 +381,7 @@ function initSearchUI() {
 		"<div class='sRow'>" +
 		"<input type='text' id='searchInput' placeholder='חיפוש בדף...' dir='auto' />" +
 		"<button class='sBtn' onclick='doSearch()'>&#x1F50D;</button>" +
+		"<button onclick='showSearchHelp()' style='font-size:16px;background:none;border:none;color:#888;cursor:pointer;padding:2px 4px;'>&#9432;</button>" +
 		"<button class='sClose' onclick='closeSearchPanel()'>&times;</button>" +
 		"</div>" +
 		"<div class='sRow'>" +
@@ -344,6 +389,7 @@ function initSearchUI() {
 		"<span class='sInfo' id='searchInfo'></span>" +
 		"<button class='sNav' onclick='searchNext()'>&rsaquo;</button>" +
 		"<span style='flex:1'></span>" +
+		"<button class='sToggle' onclick='window.location.href=\"../index.html\"'>&#x1F50D; חיפוש כללי</button>" +
 		"<button class='sToggle' onclick='toggleSourceFiltersPanel()'>&#9881; מקורות</button>" +
 		"</div>" +
 		"<div class='sFilters' id='sourceFilters'>" +
@@ -487,14 +533,25 @@ function revealForSearch(el) {
 }
 
 function parseSearchQuery(rawQuery) {
-	var exactMatch = false;
+	var exactStart = false;
+	var exactEnd = false;
 	var query = rawQuery.trim();
-	var quoted = query.match(/^"(.+)"$/);
-	if (quoted) {
-		query = quoted[1].trim();
-		exactMatch = true;
+	var qc = /[\u0022\u201C\u201D\u05F4\uFF02]/;
+	var hasStart = query.length > 0 && qc.test(query.charAt(0));
+	var hasEnd = query.length > 1 && qc.test(query.charAt(query.length - 1));
+	if (hasStart && hasEnd) {
+		query = query.substring(1, query.length - 1).trim();
+		exactStart = true;
+		exactEnd = true;
+	} else if (hasStart) {
+		query = query.substring(1).trim();
+		exactStart = true;
+	} else if (hasEnd) {
+		query = query.substring(0, query.length - 1).trim();
+		exactEnd = true;
 	}
-	return { query: query, exact: exactMatch };
+	var vowelMode = hasNikud(query);
+	return { query: query, exactStart: exactStart, exactEnd: exactEnd, vowelMode: vowelMode };
 }
 
 function isWordBoundary(text, idx) {
@@ -522,13 +579,14 @@ function doSearch() {
 		return;
 	}
 
-	var normalizedQuery = stripDiacritics(parsed.query).toLowerCase();
-	var exactMode = parsed.exact;
+	var normalizedQuery = parsed.vowelMode
+		? stripCantillation(parsed.query).toLowerCase()
+		: stripDiacritics(parsed.query).toLowerCase();
 	activeSources.forEach(function (srcId) {
 		var elements = document.getElementsByClassName(srcId);
 		for (var i = 0; i < elements.length; i++) {
 			var wasHidden = !isElementVisible(elements[i]);
-			highlightInElement(elements[i], normalizedQuery, !wasHidden, srcId, exactMode);
+			highlightInElement(elements[i], normalizedQuery, !wasHidden, srcId, parsed);
 			if (wasHidden && elements[i].querySelectorAll('.searchHighlight').length > 0) {
 				revealForSearch(elements[i]);
 			}
@@ -543,7 +601,7 @@ function doSearch() {
 		document.getElementById('searchInfo').textContent = 'לא נמצא';
 	}
 	saveSearchState(rawQuery, activeSources);
-	searchOtherAliyot(normalizedQuery, activeSources, searchMatches.length, exactMode);
+	searchOtherAliyot(normalizedQuery, activeSources, searchMatches.length, parsed);
 }
 
 function isInOtherSource(textNode, rootEl, sourceClass) {
@@ -568,7 +626,7 @@ function isTextNodeHidden(textNode, rootEl) {
 	return false;
 }
 
-function highlightInElement(el, normalizedQuery, skipHidden, sourceClass, exactMode) {
+function highlightInElement(el, normalizedQuery, skipHidden, sourceClass, parsed) {
 	var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
 	var textNodes = [];
 	while (walker.nextNode()) {
@@ -584,8 +642,12 @@ function highlightInElement(el, normalizedQuery, skipHidden, sourceClass, exactM
 	for (var i = 0; i < textNodes.length; i++) {
 		var node = textNodes[i];
 		var originalText = node.textContent;
-		var strippedText = stripDiacritics(originalText).toLowerCase();
-		var posMap = buildOriginalPosMap(originalText);
+		var strippedText = parsed.vowelMode
+			? stripCantillation(originalText).toLowerCase()
+			: stripDiacritics(originalText).toLowerCase();
+		var posMap = parsed.vowelMode
+			? buildCantillationPosMap(originalText)
+			: buildOriginalPosMap(originalText);
 
 		var idx = strippedText.indexOf(normalizedQuery);
 		if (idx === -1) continue;
@@ -594,12 +656,14 @@ function highlightInElement(el, normalizedQuery, skipHidden, sourceClass, exactM
 		var lastOrigIdx = 0;
 		while (idx !== -1) {
 			var matchEnd = idx + normalizedQuery.length;
-			if (exactMode && (!isWordBoundary(strippedText, idx - 1) || !isWordBoundary(strippedText, matchEnd))) {
+			if ((parsed.exactStart && !isWordBoundary(strippedText, idx - 1)) ||
+				(parsed.exactEnd && !isWordBoundary(strippedText, matchEnd))) {
 				idx = strippedText.indexOf(normalizedQuery, idx + 1);
 				continue;
 			}
+
 			var origStart = posMap[idx];
-			var origEnd = posMap[idx + normalizedQuery.length];
+			var origEnd = posMap[matchEnd];
 
 			if (origStart > lastOrigIdx)
 				parts.push(document.createTextNode(originalText.substring(lastOrigIdx, origStart)));
@@ -610,7 +674,7 @@ function highlightInElement(el, normalizedQuery, skipHidden, sourceClass, exactM
 			parts.push(span);
 
 			lastOrigIdx = origEnd;
-			idx = strippedText.indexOf(normalizedQuery, idx + normalizedQuery.length);
+			idx = strippedText.indexOf(normalizedQuery, matchEnd);
 		}
 		if (lastOrigIdx < originalText.length)
 			parts.push(document.createTextNode(originalText.substring(lastOrigIdx)));
@@ -664,6 +728,7 @@ function initGlobalSearchUI() {
 		"<button class='gsBtn' onclick='startGlobalSearch()'>חפש</button>" +
 		"</div>" +
 		"<div class='gsInputRow' style='flex-wrap:wrap;gap:4px;margin-top:6px'>" +
+		"<button class='sToggle' onclick='showSearchHelp()'>&#9432; עזרה</button>" +
 		"<button class='sToggle' onclick='gsToggleFilters()'>&#9881; מקורות</button>" +
 		"</div>" +
 		"<div class='sFilters' id='gsFilters'>" +
@@ -782,8 +847,9 @@ function startGlobalSearch() {
 	totalCounter.textContent = '';
 	totalCounter.style.display = 'none';
 
-	var normalizedQuery = stripDiacritics(parsed.query).toLowerCase();
-	var exactMode = parsed.exact;
+	var normalizedQuery = parsed.vowelMode
+		? stripCantillation(parsed.query).toLowerCase()
+		: stripDiacritics(parsed.query).toLowerCase();
 	var allFiles = [];
 	bookFolders.forEach(function (folder) {
 		var chapters = bookChapterCounts[folder] || 1;
@@ -831,7 +897,7 @@ function startGlobalSearch() {
 			text.textContent = pct + '%';
 
 			if ((xhr.status === 200 || xhr.status === 0) && xhr.responseText) {
-				var matches = searchInHtml(xhr.responseText, normalizedQuery, activeSources, exactMode);
+				var matches = searchInHtml(xhr.responseText, normalizedQuery, activeSources, parsed);
 				if (matches.length > 0) {
 					totalMatches += matches.length;
 					if (!groupedResults[file.folder]) groupedResults[file.folder] = {};
@@ -876,7 +942,7 @@ function getOwnTextContent(el, sourceClass) {
 	return clone.textContent;
 }
 
-function searchInHtml(html, normalizedQuery, sources, exactMode) {
+function searchInHtml(html, normalizedQuery, sources, parsed) {
 	var parser = new DOMParser();
 	var doc = parser.parseFromString(html, 'text/html');
 	var matches = [];
@@ -885,15 +951,20 @@ function searchInHtml(html, normalizedQuery, sources, exactMode) {
 		var elements = doc.getElementsByClassName(srcId);
 		for (var i = 0; i < elements.length; i++) {
 			var text = getOwnTextContent(elements[i], srcId);
-			var stripped = stripDiacritics(text).toLowerCase();
+			var stripped = parsed.vowelMode
+				? stripCantillation(text).toLowerCase()
+				: stripDiacritics(text).toLowerCase();
 			var idx = stripped.indexOf(normalizedQuery);
 			while (idx !== -1) {
 				var matchEnd = idx + normalizedQuery.length;
-				if (exactMode && (!isWordBoundary(stripped, idx - 1) || !isWordBoundary(stripped, matchEnd))) {
+				if ((parsed.exactStart && !isWordBoundary(stripped, idx - 1)) ||
+					(parsed.exactEnd && !isWordBoundary(stripped, matchEnd))) {
 					idx = stripped.indexOf(normalizedQuery, idx + 1);
 					continue;
 				}
-				var posMap = buildOriginalPosMap(text);
+				var posMap = parsed.vowelMode
+					? buildCantillationPosMap(text)
+					: buildOriginalPosMap(text);
 				var origIdx = posMap[idx];
 				var snippetStart = Math.max(0, origIdx - 40);
 				var snippetEnd = Math.min(text.length, origIdx + normalizedQuery.length + 60);
@@ -901,7 +972,7 @@ function searchInHtml(html, normalizedQuery, sources, exactMode) {
 					text.substring(snippetStart, snippetEnd).trim() +
 					(snippetEnd < text.length ? '...' : '');
 				matches.push({ source: srcId, snippet: snippet });
-				idx = stripped.indexOf(normalizedQuery, idx + normalizedQuery.length);
+				idx = stripped.indexOf(normalizedQuery, matchEnd);
 			}
 		}
 	});
@@ -1129,7 +1200,7 @@ function getCurrentParashaAndNum() {
 	return null;
 }
 
-function searchOtherAliyot(normalizedQuery, activeSources, currentPageCount, exactMode) {
+function searchOtherAliyot(normalizedQuery, activeSources, currentPageCount, parsed) {
 	var current = getCurrentParashaAndNum();
 	if (!current || !current.num) return;
 
@@ -1152,7 +1223,7 @@ function searchOtherAliyot(normalizedQuery, activeSources, currentPageCount, exa
 		xhr.onload = function () {
 			processed++;
 			if ((xhr.status === 200 || xhr.status === 0) && xhr.responseText) {
-				var matches = searchInHtml(xhr.responseText, normalizedQuery, activeSources, exactMode);
+				var matches = searchInHtml(xhr.responseText, normalizedQuery, activeSources, parsed);
 				if (matches.length > 0) {
 					parashaResults[num] = matches.length;
 				}
