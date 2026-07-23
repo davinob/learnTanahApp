@@ -3,7 +3,7 @@ description: Learn Tanah
 
 publish_to: 'none'
 
-version: 2.1.4+4318
+version: 2.1.4+4319
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
