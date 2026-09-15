@@ -141,9 +141,8 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
       allowUniversalAccessFromFileURLs: true,
       cacheEnabled: false,
       textZoom: Platform.isAndroid ? 170 : 100,
-      // See learnTorahApp/lib/main.dart for rationale: kills the
-      // Translate / Copy / Share popup that breaks active edits.
-      disableContextMenu: true,
+      // Keep the native Copy menu for normal reading. AdminBridge toggles
+      // disableContextMenu on only while an admin editing session is active.
     );
 
     if (useLocalContent) {
